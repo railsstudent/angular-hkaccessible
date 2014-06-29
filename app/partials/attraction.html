@@ -1,0 +1,26 @@
+<div class="container-fluid">
+	<div class="row">
+		<h1>{{ 'ATTRACTION' | translate }}</h1>
+		<h3 translate="NUMATTRACTION" translate-values="{ result_count: totalNumber }"></h3>
+	</div>
+	<!-- create button group to filter by category -->
+	<div ng-include src="'partials/includes/category_buttons.html'"></div>
+	
+	<!-- top pagination -->
+	<div class="row">
+		<pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" 
+			ng-model="currentPage" items-per-page="itemsPerPage" 
+			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></pagination>
+	</div>
+	<div class="row">
+		<div  ng-include src="'partials/includes/items_en.html'"></div>
+	</div>
+
+	<!-- bottom pagination -->
+	<div class="row">
+		<pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" 
+			ng-model="currentPage" items-per-page="itemsPerPage" 
+			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></pagination>
+	</div>
+</div>
+

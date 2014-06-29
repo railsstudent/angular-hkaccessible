@@ -1,0 +1,122 @@
+{
+  "other-venues": {
+    "locations": [
+      {
+        "id": "801",
+        "catergory": "church",
+        "name-en": "St. Andrew's Church",
+        "name-zh-hk": "聖安德烈堂",
+        "address-en": "138 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道138號 ",
+        "phone-number": "2367 1478",
+        "fax-number": "2367 6562",
+        "url-en": "www.standrews.org.hk/PTH%20website/main.html",
+        "url-zh-hk": "www.standrews.org.hk/PTH%20website/main.html",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "corridor": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "800",
+        "catergory": "church",
+        "name-en": "Kowloon Methodist Church",
+        "name-zh-hk": "循道衛理聯合教會九龍堂",
+        "address-en": "40 Gascoigne, Yaumati, Kowloon",
+        "address-zh-hk": "(English) 40 Gascoigne, Yaumati, Kowloon",
+        "phone-number": "2385-1764",
+        "fax-number": "2782-1517",
+        "url-en": "www.hkchurch.org/Search/Org.asp?ID=002261",
+        "url-zh-hk": "www.hkchurch.org/Search/Org.asp?ID=002261",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "corridor": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "798",
+        "catergory": "church",
+        "name-en": "Kowloon City Baptist Church",
+        "name-zh-hk": "九龍城浸信會",
+        "address-en": "206 Argyle Street, Kowloon City",
+        "address-zh-hk": "九龍城亞皆老街206號",
+        "phone-number": "2713 5111",
+        "fax-number": "2761 0533",
+        "url-en": "www.baptist.org.hk/new/en_aboutus01.php",
+        "url-zh-hk": "www.baptist.org.hk/new/en_aboutus01.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "corridor": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "796",
+        "catergory": "church",
+        "name-en": "Rosary Church Kowloon",
+        "name-zh-hk": "九龍玫瑰堂",
+        "address-en": "125 Chatham Road South, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀漆咸道125號",
+        "phone-number": "2368-0980",
+        "fax-number": "2723-0354 ",
+        "url-en": "rosarychurch.catholic.org.hk",
+        "url-zh-hk": "rosarychurch.catholic.org.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "L" },
+          "public-telephone": { "#text": "W0" },
+          "corridor": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "634",
+        "catergory": "church",
+        "name-en": "St John's Cathedral",
+        "name-zh-hk": "聖約翰座堂",
+        "address-en": "4-8 Garden Road, Central, Hong Kong",
+        "address-zh-hk": "中環花園道4-8號",
+        "phone-number": "2523-4157",
+        "fax-number": "2521-7830",
+        "url-en": "www.stjohnscathedral.org.hk",
+        "url-zh-hk": "www.stjohnscathedral.org.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W0" },
+          "car-park": { "#text": "P2" },
+          "corridor": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "633",
+        "catergory": "church",
+        "name-en": "The Methodist Church Hong Kong",
+        "name-zh-hk": "循道衛理聯合教會香港堂",
+        "address-en": "36 Hennessy Road, Wan Chai, Hong Kong",
+        "address-zh-hk": "灣仔軒尼詩道36號",
+        "phone-number": "2528 0225",
+        "fax-number": "2529 5170",
+        "url-en": "www.cmc-methodist.org.hk",
+        "url-zh-hk": "www.cmc-methodist.org.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "W1" },
+          "corridor": { "#text": "W1" }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1662 @@
+{
+  "hotels": {
+    "locations": [
+      {
+        "id": "1012",
+        "catergory": "hotel",
+        "name-en": "Hyatt Regency Hong Kong, Tsim Sha Tsui",
+        "name-zh-hk": "香港凱悅酒店, 尖沙咀",
+        "address-en": "18 Hanoi Road,  Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀河內道18號",
+        "phone-number": "2311 1234",
+        "fax-number": "2739 2320",
+        "url-en": "www.hongkong.tsimshatsui.hyatt.cn",
+        "url-zh-hk": "www.hongkong.tsimshatsui.hyatt.cn",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "1018",
+        "catergory": "hotel",
+        "name-en": "Imperial Hotel, The",
+        "name-zh-hk": "帝國酒店",
+        "address-en": "32-34 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道32-34號",
+        "phone-number": "(852) 2366 2201",
+        "fax-number": "(852) 2311 2360",
+        "url-en": "www.imperialhotel.com.hk",
+        "url-zh-hk": "www.imperialhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1017",
+        "catergory": "hotel",
+        "name-en": "Intercontinental Grand Stanford Hong Kong",
+        "name-zh-hk": "海景嘉福酒店",
+        "address-en": "70 Mody Road,  Tsim Sha Tsui",
+        "address-zh-hk": "尖東麼地道70號",
+        "phone-number": "2721 5161",
+        "fax-number": "2732 2233",
+        "url-en": "www.hongkong.intercontinental.com",
+        "url-zh-hk": "www.hongkong.intercontinental.com",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1016",
+        "catergory": "hotel",
+        "name-en": "Intercontinental Hong Kong",
+        "name-zh-hk": "香港洲際酒店",
+        "address-en": "18 Salisbury Road,  Tsim Sha Tsui",
+        "address-zh-hk": "九龍梳士巴利道18號",
+        "phone-number": "2721 1211",
+        "fax-number": "2739 4546",
+        "url-en": "www.intercontinental.com",
+        "url-zh-hk": "www.intercontinental.com",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1015",
+        "catergory": "hotel",
+        "name-en": "Kimberley Hotel, The",
+        "name-zh-hk": "君怡酒店",
+        "address-en": "28 Kimberley Road, Tsimshatsui,",
+        "address-zh-hk": "尖沙咀金巴利道28號",
+        "phone-number": "2723 3888",
+        "fax-number": "2723 1318",
+        "url-en": "www.kimberleyhotel.com.hk",
+        "url-zh-hk": "www.kimberleyhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1013",
+        "catergory": "hotel",
+        "name-en": "Kowloon Hotel, The",
+        "name-zh-hk": "九龍酒店",
+        "address-en": "19-21, Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道19-21號",
+        "phone-number": "2929 2888",
+        "fax-number": "2301 2000",
+        "url-en": "www.harbour-plaza.com/klnh",
+        "url-zh-hk": "www.harbour-plaza.com/klnh",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1011",
+        "catergory": "hotel",
+        "name-en": "Kowloon Shangri-La",
+        "name-zh-hk": "九龍香格里拉酒店",
+        "address-en": "64 Mody Road, Tsim Sha Tsui East. ",
+        "address-zh-hk": "尖東麼地道64號",
+        "phone-number": "2721 2111",
+        "fax-number": "2723 8686",
+        "url-en": "www.shangri-la.com/en/property/hongkong/kowloonshangrila",
+        "url-zh-hk": "www.shangri-la.com/en/property/hongkong/kowloonshangrila",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1008",
+        "catergory": "hotel",
+        "name-en": "Hotel Nikko Hong Kong",
+        "name-zh-hk": "香港日航酒店",
+        "address-en": "72 Mody Road, Tsim Sha Tsui East",
+        "address-zh-hk": "尖東麼地道72號",
+        "phone-number": "(852) 2739 1111",
+        "fax-number": "(852) 2311 3122",
+        "url-en": "www.hotelnikko.com.hk",
+        "url-zh-hk": "www.hotelnikko.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" },
+          "guest-room": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "guest-room-toilet": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1010",
+        "catergory": "hotel",
+        "name-en": "Langham Place ",
+        "name-zh-hk": "旺角朗豪酒店",
+        "address-en": "555 Shanghai Street, Mongkok, Kowloon ",
+        "address-zh-hk": "旺角上海街555號",
+        "phone-number": "3552 3388 ",
+        "fax-number": "3552 3322",
+        "url-en": "www.hongkong.langhamplacehotels.com",
+        "url-zh-hk": "www.hongkong.langhamplacehotels.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1009",
+        "catergory": "hotel",
+        "name-en": "Marco Polo Gateway Hotel ",
+        "name-zh-hk": "馬哥孛羅港威酒店",
+        "address-en": "Harbour City,  13 Canton Road, Tsim Sha Tsui ",
+        "address-zh-hk": "尖沙咀廣東道23號",
+        "phone-number": "2113 0888",
+        "fax-number": "2113 0022",
+        "url-en": "www.marcopolohotels.com/hotels/hongkong/kowloon/gateway/index.html",
+        "url-zh-hk": "www.marcopolohotels.com/hotels/hongkong/kowloon/gateway/index.html",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ]
+        }
+      },
+      {
+        "id": "1007",
+        "catergory": "hotel",
+        "name-en": "Marco Polo Hong Kong Hotel, The ",
+        "name-zh-hk": "馬可孛羅香港酒店",
+        "address-en": "3 Canton Road,  Tsim Sha Tsui ",
+        "address-zh-hk": "尖沙咀廣東道3號",
+        "phone-number": "2113 0088 ",
+        "fax-number": "2113 0011",
+        "url-en": "www.marcopolohotels.com/en/hotels/hongkong/kowloon/marco_polo_hongkong/index.html",
+        "url-zh-hk": "www.marcopolohotels.com/en/hotels/hongkong/kowloon/marco_polo_hongkong/index.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1004",
+        "catergory": "hotel",
+        "name-en": "Harbour Plaza Metropolis",
+        "name-zh-hk": "都會海逸酒店",
+        "address-en": "7 Metropolis Drive, Hunghom",
+        "address-zh-hk": "紅磡都會道7號",
+        "phone-number": "(852) 3160 6888",
+        "fax-number": "(852) 3160 6999",
+        "url-en": "www.harbour-plaza.com",
+        "url-zh-hk": "www.harbour-plaza.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" },
+          "guest-room": { "#text": "W2" },
+          "guest-room-toilet": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "1006",
+        "catergory": "hotel",
+        "name-en": "Marco Polo Prince Hotel ",
+        "name-zh-hk": "馬哥孛羅太子酒店",
+        "address-en": "Harbour City 23 Canton Road, Tsim Sha Tsui ",
+        "address-zh-hk": "尖沙咀廣東道23號",
+        "phone-number": "2113 1888",
+        "fax-number": "2113 0066",
+        "url-en": "www.marcopolohotels.com/en/hotels/hong_kong_sar/kowloon/prince/index.html",
+        "url-zh-hk": "www.marcopolohotels.com/en/hotels/hong_kong_sar/kowloon/prince/index.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1005",
+        "catergory": "hotel",
+        "name-en": "Metropark Hotel Kowloon ",
+        "name-zh-hk": "九龍維景酒店",
+        "address-en": "75 Waterloo Road, Ho Man Tin ",
+        "address-zh-hk": "何文田窩打老道75號",
+        "phone-number": "2761 1711 ",
+        "fax-number": "2761 0769",
+        "url-en": "hongkonghotel.metroparkhotelkowloon.com",
+        "url-zh-hk": "hongkonghotel.metroparkhotelkowloon.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1003",
+        "catergory": "hotel",
+        "name-en": "Mira Hotel ",
+        "name-zh-hk": "美麗華酒店",
+        "address-en": "118 Nathan Rd,  Tsim Sha Tsui ",
+        "address-zh-hk": "尖沙咀彌敦道118號",
+        "phone-number": "2368 1111",
+        "fax-number": "2369 0972",
+        "url-en": "www.themirahotel.com",
+        "url-zh-hk": "www.themirahotel.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1001",
+        "catergory": "hotel",
+        "name-en": "Harbour Plaza Hong Kong",
+        "name-zh-hk": "海逸酒店",
+        "address-en": "20 Tak Fung Street, Hunghom",
+        "address-zh-hk": "紅磡黃埔花園德豐街20號",
+        "phone-number": "(852) 2621 3188",
+        "fax-number": "(852) 2621 3311",
+        "url-en": "www.harbour-plaza.com",
+        "url-zh-hk": "www.harbour-plaza.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W1" },
+          "guest-room": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "guest-room-toilet": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1002",
+        "catergory": "hotel",
+        "name-en": "Nathan Hotel ",
+        "name-zh-hk": "彌敦酒店",
+        "address-en": "378 Nathan Road, Tsim Sha Tsui ",
+        "address-zh-hk": "九龍彌敦道378號",
+        "phone-number": "2388 5141",
+        "fax-number": "2780 1643",
+        "url-en": "www.nathanhotel.com",
+        "url-zh-hk": "www.nathanhotel.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "1000",
+        "catergory": "hotel",
+        "name-en": "Newton Hotel ",
+        "name-zh-hk": "九龍麗東酒店",
+        "address-en": "66 Boundary Street, Mong Kok ",
+        "address-zh-hk": "旺角界限街66號",
+        "phone-number": "2787 2338",
+        "fax-number": "2789 0688",
+        "url-en": "www.newtonkln.com",
+        "url-zh-hk": "www.newtonkln.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "999",
+        "catergory": "hotel",
+        "name-en": "Novotel Hong Kong Nathan Road ",
+        "name-zh-hk": "九龍諾富特酒店",
+        "address-en": "348 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "九龍彌敦道348號",
+        "phone-number": "3965 8888",
+        "fax-number": "3965 8833",
+        "url-en": "www.novotel.com/gb/hotel-6771-novotel-hong-kong-nathan-road-kowloon/index.shtml",
+        "url-zh-hk": "www.novotel.com/gb/hotel-6771-novotel-hong-kong-nathan-road-kowloon/index.shtml",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "997",
+        "catergory": "hotel",
+        "name-en": "Park Hotel ",
+        "name-zh-hk": "百樂酒店",
+        "address-en": "61-65 Chatham Rd.South, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀漆咸道南61-65號",
+        "phone-number": "2731 2100",
+        "fax-number": "2369 1877",
+        "url-en": "www.parkhotelgroup.com",
+        "url-zh-hk": "www.parkhotelgroup.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "995",
+        "catergory": "hotel",
+        "name-en": "Guang Dong Hotel",
+        "name-zh-hk": "粵海酒店",
+        "address-en": "18 Prat Avenue Road, TsimShaTsui",
+        "address-zh-hk": "(English) 18 Prat Avenue Road, TsimShaTsui",
+        "phone-number": "(852) 2837 0788",
+        "fax-number": "(852) 2808 1999",
+        "url-en": "www.gdhhotels.com",
+        "url-zh-hk": "www.gdhhotels.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "996",
+        "catergory": "hotel",
+        "name-en": "Peninsula Hong Kong, The ",
+        "name-zh-hk": "半島酒店",
+        "address-en": "Salisbury Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀梳士巴利道",
+        "phone-number": "2920 2888",
+        "fax-number": "2722 4170",
+        "url-en": "www.peninsula.com/hong_kong/en/default.aspx",
+        "url-zh-hk": "www.peninsula.com/hong_kong/en/default.aspx",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "994",
+        "catergory": "hotel",
+        "name-en": "Prudential Hotel",
+        "name-zh-hk": "恆豐酒店",
+        "address-en": "222 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道222號",
+        "phone-number": "2311 8222",
+        "fax-number": "2311 4760",
+        "url-en": "www.prudentialhotel.com",
+        "url-zh-hk": "www.prudentialhotel.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "990",
+        "catergory": "hotel",
+        "name-en": "Golden Mile Hong Kong",
+        "name-zh-hk": "香港金域假日酒店",
+        "address-en": "50 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道50號",
+        "phone-number": "(852) 2369 3111",
+        "fax-number": "(852) 2369 8016",
+        "url-en": "www.holidayinn.com/hongkong-gldn",
+        "url-zh-hk": "www.holidayinn.com/hongkong-gldn",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "993",
+        "catergory": "hotel",
+        "name-en": "Ramada Hotel Kowloon ",
+        "name-zh-hk": "九龍華美達酒店",
+        "address-en": "73-75 Chatham Road. Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀漆咸道南73-75號",
+        "phone-number": "2311 1100",
+        "fax-number": "2311 6000",
+        "url-en": "www.ramadahongkong.com",
+        "url-zh-hk": "www.ramadahongkong.com",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "992",
+        "catergory": "hotel",
+        "name-en": "Regal Kowloon Hotel ",
+        "name-zh-hk": "富豪九龍酒店",
+        "address-en": "71, Mody Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀麼地道71號",
+        "phone-number": "2722 1818",
+        "fax-number": "2369 6950",
+        "url-en": "www.regalhotel.com",
+        "url-zh-hk": "www.regalhotel.com",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-telephone": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "991",
+        "catergory": "hotel",
+        "name-en": "Shamrock Hotel ",
+        "name-zh-hk": "新樂酒店",
+        "address-en": "223 Nathan Road, Jordan",
+        "address-zh-hk": "佐敦彌敦道223號",
+        "phone-number": "2735 2271",
+        "fax-number": "2736 7354",
+        "url-en": "www.shamrockhotel.com.hk",
+        "url-zh-hk": "www.shamrockhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-telephone": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "989",
+        "catergory": "hotel",
+        "name-en": "W Hong Kong ",
+        "name-zh-hk": "喜達屋酒店及度假酒店",
+        "address-en": "1, Austin Road West, Tsim Sha Tsui",
+        "address-zh-hk": "九龍柯士甸道西1號",
+        "phone-number": "3717 2222",
+        "fax-number": "3717 2888",
+        "url-en": "exlorewhotels.com/hongkong",
+        "url-zh-hk": "exlorewhotels.com/hongkong",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "988",
+        "catergory": "hotel",
+        "name-en": "Empire Kowloon Hotel",
+        "name-zh-hk": "九龍皇悅酒店",
+        "address-en": "No. 62 Kimberley Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀金巴利道62號",
+        "phone-number": "(852) 3692 2222",
+        "url-en": "www.empirehotel.com.hk",
+        "url-zh-hk": "www.empirehotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": [
+            { "#text": "L" },
+            { "#text": "W1" }
+          ],
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "987",
+        "catergory": "hotel",
+        "name-en": "Eaton Hotel Hong Kong",
+        "name-zh-hk": "逸東酒店",
+        "address-en": "380 Nathan Road, Jordan",
+        "address-zh-hk": "佐敦彌敦道380號",
+        "phone-number": "(852) 2782 1818",
+        "fax-number": "(852) 2782 5563",
+        "url-en": "hongkong.eatonhotels.com",
+        "url-zh-hk": "hongkong.eatonhotels.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ]
+        }
+      },
+      {
+        "id": "986",
+        "catergory": "hotel",
+        "name-en": "Dorsett Seaview Hotel",
+        "name-zh-hk": "帝豪海景酒店",
+        "address-en": "268 Shanghai Street, Yaumatei",
+        "address-zh-hk": "油麻地上海街268號",
+        "phone-number": "(852) 2782 0882",
+        "fax-number": "(852) 2781 8800",
+        "url-en": "www.hongkonghotel.dorsettseaview.com.hk",
+        "url-zh-hk": "www.hongkonghotel.dorsettseaview.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "985",
+        "catergory": "hotel",
+        "name-en": "Cosmopolitan Hotel",
+        "name-zh-hk": "麗都酒店",
+        "address-en": "387-397 Queen's Road East, Wan Chai",
+        "address-zh-hk": "灣仔皇后大道東387-397號",
+        "phone-number": "3552 1111",
+        "fax-number": "3552 1122",
+        "url-en": "www.cosmopolitanhotel.com.hk",
+        "url-zh-hk": "www.cosmopolitanhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "984",
+        "catergory": "hotel",
+        "name-en": "Wharney Guang Dong Hotel, The",
+        "name-zh-hk": "華美粵海酒店",
+        "address-en": "57-73Lockhart Road, Wanchai",
+        "address-zh-hk": "灣仔駱克道57-73號 ",
+        "phone-number": "2861 1000",
+        "fax-number": "2865 6023",
+        "url-en": "www.gdhhotels.com",
+        "url-zh-hk": "www.gdhhotels.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "980",
+        "catergory": "hotel",
+        "name-en": "Dorsett Kowloon Hotel",
+        "name-zh-hk": "帝豪九龍酒店",
+        "address-en": "48 Anchor Street",
+        "address-zh-hk": "大角咀晏架街48號",
+        "phone-number": "(852) 2380 2223",
+        "fax-number": "(852) 2789 6868",
+        "url-en": "http://hongkonghotel.dorsettkowloon.com.hk/b5/",
+        "url-zh-hk": "http://hongkonghotel.dorsettkowloon.com.hk/b5/",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "983",
+        "catergory": "hotel",
+        "name-en": "Wesley Hong Kong, The",
+        "name-zh-hk": "衛蘭軒",
+        "address-en": "22 Hennessy Road, Wanchai",
+        "address-zh-hk": "灣仔軒尼詩道22號",
+        "phone-number": "2866 6688",
+        "fax-number": "2866 6633",
+        "url-en": "www.hotelwesley.com",
+        "url-zh-hk": "www.hotelwesley.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "982",
+        "catergory": "hotel",
+        "name-en": "South Pacific Hotel Hong Kong",
+        "name-zh-hk": "南洋酒店",
+        "address-en": "23 Morrison Hill Rd, Wanchai",
+        "address-zh-hk": "灣仔摩利臣山道23號",
+        "phone-number": "2572 3838",
+        "fax-number": "2893 7773",
+        "url-en": "www.southpacifichotel.com.hk",
+        "url-zh-hk": "www.southpacifichotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "981",
+        "catergory": "hotel",
+        "name-en": "Renaissance Harbour View Hotel Hong Kong",
+        "name-zh-hk": "萬麗海景酒店",
+        "address-en": "1 Harbour Road, Wan Chai",
+        "address-zh-hk": "灣仔港灣道1號",
+        "phone-number": "2802 8888",
+        "fax-number": "2802 8833",
+        "url-en": "www.renaisancehotels.com",
+        "url-zh-hk": "www.renaisancehotels.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "979",
+        "catergory": "hotel",
+        "name-en": "Regal Hong Kong Hotel",
+        "name-zh-hk": "富豪香港酒店",
+        "address-en": "88 Yee Wo Street Causeway Bay",
+        "address-zh-hk": "(English) 88 Yee Wo  Street Causeway Bay",
+        "phone-number": "2890 6633",
+        "fax-number": "2881 0777",
+        "url-en": "www.regalhotel.hk",
+        "url-zh-hk": "www.regalhotel.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "978",
+        "catergory": "hotel",
+        "name-en": "Ramada Hong Kong",
+        "name-zh-hk": "香港華美達酒店",
+        "address-en": "308 Des Voeux Rd W, Western District",
+        "address-zh-hk": "西環德輔道西308號",
+        "phone-number": "3410 3333",
+        "fax-number": "2559 8499",
+        "url-en": "www.ramadahongkong.com",
+        "url-zh-hk": "www.ramadahongkong.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "970",
+        "catergory": "hotel",
+        "name-en": "The Cityview Hotel",
+        "name-zh-hk": "城景國際酒店",
+        "address-en": "23 Waterloo Road, Kowloon",
+        "address-zh-hk": "窩打老道23號",
+        "phone-number": "(852) 2783 3888",
+        "fax-number": "(852) 2783 3899",
+        "url-en": "www.thecityview.com.hk",
+        "url-zh-hk": "www.thecityview.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "977",
+        "catergory": "hotel",
+        "name-en": "Metro Park Hotel",
+        "name-zh-hk": "維景酒店",
+        "address-en": "148 Tung Lo Wan Road, Causeway Bay",
+        "address-zh-hk": "銅鑼灣銅鑼灣道148號",
+        "phone-number": "2600 1000",
+        "fax-number": "2600 1111",
+        "url-en": "www.metroparkhotel.com",
+        "url-zh-hk": "www.metroparkhotel.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "976",
+        "catergory": "hotel",
+        "name-en": "Mandarin Oriental Hong Kong",
+        "name-zh-hk": "香港文華東方酒店",
+        "address-en": "5 Connaught Road Central",
+        "address-zh-hk": "中環干諾道中5號",
+        "phone-number": "2522 0111",
+        "fax-number": "2810 6190",
+        "url-en": "www.mandarinoriental.com/hongkong",
+        "url-zh-hk": "www.mandarinoriental.com/hongkong",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "975",
+        "catergory": "hotel",
+        "name-en": "Luk Kwok Hotel",
+        "name-zh-hk": "六國酒店",
+        "address-en": "72 Gloucester Road, Wanchai",
+        "address-zh-hk": "灣仔告士打道72號",
+        "phone-number": "2866 2166",
+        "fax-number": "2866 2622",
+        "url-en": "www.lukkwokhotel.com",
+        "url-zh-hk": "www.lukkwokhotel.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "974",
+        "catergory": "hotel",
+        "name-en": "L'Hotel Causeway Bay Harbour View",
+        "name-zh-hk": "銅鑼灣海景酒店",
+        "address-en": "18-24 King's Road, Causeway Bay ",
+        "address-zh-hk": "銅鑼灣英皇道18-24號 ",
+        "phone-number": "3553 2898",
+        "fax-number": "3553 2888",
+        "url-en": "www.lhotelcausewaybayhv.com/tc",
+        "url-zh-hk": "www.lhotelcausewaybayhv.com/tc",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "973",
+        "catergory": "hotel",
+        "name-en": "Le Meridien Cyberport",
+        "name-zh-hk": "數碼港艾美酒店",
+        "address-en": "100 Cyberport Road, Cyber Port",
+        "address-zh-hk": "南區數碼港道100號",
+        "phone-number": "2980 7788",
+        "fax-number": "2980 7888",
+        "url-en": "www.lemeridien.com/hongkong",
+        "url-zh-hk": "www.lemeridien.com/hongkong",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "972",
+        "catergory": "hotel",
+        "name-en": "Lanson Place",
+        "name-zh-hk": "逸蘭精品酒店",
+        "address-en": "133 Leighton Road, Causeway Bay",
+        "address-zh-hk": "銅鑼灣禮頓道133號",
+        "phone-number": "3477 6888",
+        "fax-number": "3477 6999",
+        "url-en": "www.lansonplace.com",
+        "url-zh-hk": "www.lansonplace.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "971",
+        "catergory": "hotel",
+        "name-en": "Lan Kwai Fong Hotel",
+        "name-zh-hk": "蘭桂坊酒店",
+        "address-en": "No.3 Kau U Fong, Central",
+        "address-zh-hk": "中環九如坊3號",
+        "phone-number": "3650 0000",
+        "fax-number": "3650 0088",
+        "url-en": "www.lankwaifonghotel.com.hk",
+        "url-zh-hk": "www.lankwaifonghotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "969",
+        "catergory": "hotel",
+        "name-en": "Hotel Jen",
+        "name-zh-hk": "仁民飯店",
+        "address-en": "508 Queen’s Road W, Western District",
+        "address-zh-hk": "西環皇后大道西508號",
+        "phone-number": "2974 1234",
+        "fax-number": "2974 0333",
+        "url-en": "www.hoteljen.com",
+        "url-zh-hk": "www.hoteljen.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "968",
+        "catergory": "hotel",
+        "name-en": "Harbour View International House",
+        "name-zh-hk": "灣景國際賓館",
+        "address-en": "4 Harbour Road,  Wanchai",
+        "address-zh-hk": "灣仔港灣道4號",
+        "phone-number": "2802 0111",
+        "fax-number": "2802 9063",
+        "url-en": "www.theharbourview.com.hk",
+        "url-zh-hk": "www.theharbourview.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "967",
+        "catergory": "hotel",
+        "name-en": "Harbour Plaza North Point Hong Kong",
+        "name-zh-hk": "北角海逸酒店",
+        "address-en": "665 King's Road, North Point",
+        "address-zh-hk": "北角英皇道665號",
+        "phone-number": "2187 8888",
+        "fax-number": "2187 8899",
+        "url-en": "www.harbour-plaza.com",
+        "url-zh-hk": "www.harbour-plaza.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "966",
+        "catergory": "hotel",
+        "name-en": "Habour Grand",
+        "name-zh-hk": "港島海逸君綽酒店",
+        "address-en": "23 Oil Street, North Point",
+        "address-zh-hk": "北角油街23號",
+        "phone-number": "2588 1234",
+        "fax-number": "2802 0677",
+        "url-en": "www.harbour-grand.com/en/hong-kong",
+        "url-zh-hk": "www.harbour-grand.com/en/hong-kong",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "965",
+        "catergory": "hotel",
+        "name-en": "Grand Hyatt HK",
+        "name-zh-hk": "君悅酒店",
+        "address-en": "1 Harbour Road, Wanchai",
+        "address-zh-hk": "灣仔港灣道1 號",
+        "phone-number": "2588 1234",
+        "fax-number": "2802 0677",
+        "url-en": "www.hongkong.grand.hyatt.com",
+        "url-zh-hk": "www.hongkong.grand.hyatt.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "964",
+        "catergory": "hotel",
+        "name-en": "Four Seasons",
+        "name-zh-hk": "四季酒店",
+        "address-en": "8 Finance Street, Central",
+        "address-zh-hk": "中環金融街8號",
+        "phone-number": "3196 8888",
+        "fax-number": "3196 8889",
+        "url-en": "www.fourseansons.com/hongkong",
+        "url-zh-hk": "www.fourseansons.com/hongkong",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "963",
+        "catergory": "hotel",
+        "name-en": "Express by Holiday Inn Causeway Bay",
+        "name-zh-hk": "銅鑼灣快捷假日酒店",
+        "address-en": "33 Sharp Street East, Causeway Bay",
+        "address-zh-hk": "銅鑼灣霎東街33號",
+        "phone-number": "2894 8888",
+        "fax-number": "2895 6459",
+        "url-en": "www.expressbyholidayinn.com",
+        "url-zh-hk": "www.expressbyholidayinn.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": [
+            { "#text": "L" },
+            { "#text": "W1" }
+          ],
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "962",
+        "catergory": "hotel",
+        "name-en": "Excelsior Hong  Kong, The",
+        "name-zh-hk": "香港怡東酒店",
+        "address-en": "281 Gloucester Road, Causeway Bay",
+        "address-zh-hk": "銅鑼灣告士打道281號",
+        "phone-number": "2894 8888",
+        "fax-number": "2895 6459",
+        "url-en": "www.excelsiorhongkong.com",
+        "url-zh-hk": "www.excelsiorhongkong.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": [
+            { "#text": "P1" },
+            { "#text": "W2" }
+          ],
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "961",
+        "catergory": "hotel",
+        "name-en": "Empire Hotel Hong  Kong, The",
+        "name-zh-hk": "港島皇悅酒店",
+        "address-en": "33 Hennessy Road, Wanchai",
+        "address-zh-hk": "灣仔軒尼詩道33號",
+        "phone-number": "2866 9111",
+        "fax-number": "2861 3121",
+        "url-en": "www.empirehotel.com.hk",
+        "url-zh-hk": "www.empirehotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "960",
+        "catergory": "hotel",
+        "name-en": "Empire Causeway Bay",
+        "name-zh-hk": "銅鑼灣皇悅酒店",
+        "address-en": "8 Wing Hing Street, | Causeway Bay",
+        "address-zh-hk": "銅鑼灣永興街8號",
+        "phone-number": "3692 2333",
+        "fax-number": "3692 2300",
+        "url-en": "www.empirehotel.com.hk",
+        "url-zh-hk": "www.empirehotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "959",
+        "catergory": "hotel",
+        "name-en": "Emperor (Happy  Valley) Hotel, The",
+        "name-zh-hk": "英皇駿景酒店",
+        "address-en": "1 Wang Tak Street, Happy Valley",
+        "address-zh-hk": "跑馬地宏德街1號",
+        "phone-number": "2893 3693",
+        "fax-number": "2834 6700",
+        "url-en": "www.emperorhotel.com.hk",
+        "url-zh-hk": "www.emperorhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "750",
+        "catergory": "hotel",
+        "name-en": "Royal View Hotel",
+        "name-zh-hk": "帝景酒店",
+        "address-en": "353 Castle Peak Road, Tsuen Wan",
+        "address-zh-hk": "荃灣青山道353號",
+        "phone-number": "3716 2888",
+        "fax-number": "3716 2999",
+        "url-en": "www.royalview.com.hk",
+        "url-zh-hk": "www.royalview.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-telephone": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "749",
+        "catergory": "hotel",
+        "name-en": "Royal Park Hotel",
+        "name-zh-hk": "帝都酒店",
+        "address-en": "8 Pak Hok Ting Street, Shatin",
+        "address-zh-hk": "沙田白鶴汀街8號",
+        "phone-number": " 2601 2111",
+        "fax-number": "2601 3666",
+        "url-en": "www.royalpark.com.hk",
+        "url-zh-hk": "www.royalpark.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "748",
+        "catergory": "hotel",
+        "name-en": "Panda Hotel",
+        "name-zh-hk": "悅來酒店",
+        "address-en": "3 Tsuen Wah Street,Tsuen Wan",
+        "address-zh-hk": "荃灣荃華街3號",
+        "phone-number": "2409 1111",
+        "fax-number": "2409 1818",
+        "url-en": "www.pandahotel.com.hk",
+        "url-zh-hk": "www.pandahotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "746",
+        "catergory": "hotel",
+        "name-en": "Hong Kong SkyCity Marriott Hotel",
+        "name-zh-hk": "天際萬豪酒店",
+        "address-en": "1 Sky City Road East, International Airport, Lantau ",
+        "address-zh-hk": "大嶼山香港國際機場航天城東路1號",
+        "phone-number": "3969 1888",
+        "fax-number": "3969 2288",
+        "url-en": "www.marriott.com/hotels/travel/hkgap-hong-kong-skycity-marriott-hotel/",
+        "url-zh-hk": "www.marriott.com/hotels/travel/hkgap-hong-kong-skycity-marriott-hotel/",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "744",
+        "catergory": "hotel",
+        "name-en": "Hong Kong Disneyland Hotel",
+        "name-zh-hk": "香港迪士尼樂園酒店",
+        "address-en": "Hong Kong Disneyland Resort Lantau Island",
+        "address-zh-hk": "大嶼山香港迪士尼樂園",
+        "phone-number": "3510 5000",
+        "url-en": "park.hongkongdisneyland.com/hkdl/zh_HK/hotels/landing?name=HongKongDisneylandHotelLandingPage",
+        "url-zh-hk": "park.hongkongdisneyland.com/hkdl/zh_HK/hotels/landing?name=HongKongDisneylandHotelLandingPage",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ]
+        }
+      },
+      {
+        "id": "743",
+        "catergory": "hotel",
+        "name-en": "Harbour Plaza Resort City",
+        "name-zh-hk": "嘉湖海逸酒店",
+        "address-en": "18 Tin Yan Road, Tin Shui Wai, New Territories",
+        "address-zh-hk": "天水圍天恩路18號",
+        "phone-number": "2180 6688",
+        "fax-number": "2180 6333",
+        "url-en": "www.harbour-plaza.com",
+        "url-zh-hk": "www.harbour-plaza.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "742",
+        "catergory": "hotel",
+        "name-en": "Dorsett Far East Hotel",
+        "name-zh-hk": "遠東帝豪酒店",
+        "address-en": "135-143Castle Peak Road, Tsuen Wan",
+        "address-zh-hk": "荃灣青山道135-143號",
+        "phone-number": "2406 9090",
+        "fax-number": "3657 2828",
+        "url-en": "hongkonghotel.dorsettfareast.com.hk",
+        "url-zh-hk": "hongkonghotel.dorsettfareast.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "741",
+        "catergory": "hotel",
+        "name-en": "Disney Hollywood Hotel",
+        "name-zh-hk": "迪士尼好萊塢酒店",
+        "address-en": "Hong Kong Disneyland Resort Lantau Island",
+        "address-zh-hk": "大嶼山香港迪士尼樂園",
+        "phone-number": "3510 5000",
+        "url-en": "park.hongkongdisneyland.com/hkdl/zh_HK/hotels/landing?name=HollywoodHotelLandingPage",
+        "url-zh-hk": "park.hongkongdisneyland.com/hkdl/zh_HK/hotels/landing?name=HollywoodHotelLandingPage",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "reception": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ]
+        }
+      },
+      {
+        "id": "530",
+        "catergory": "hotel",
+        "name-en": "Novotel Citygate HK Hote",
+        "name-zh-hk": "諾富特東薈城酒店",
+        "address-en": "51 Man Tung Road, Tung Chung",
+        "address-zh-hk": "東涌文東路51號",
+        "phone-number": "36028888",
+        "fax-number": "36028899",
+        "url-en": "http://www.novotel.com/gb/hotel-6239-novotel-hong-kong-citygate/index.shtml",
+        "url-zh-hk": "(English) http://www.novotel.com/gb/hotel-6239-novotel-hong-kong-citygate/index.shtml",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ]
+        }
+      },
+      {
+        "id": "520",
+        "catergory": "hotel",
+        "name-en": "Cosmo Hotel",
+        "name-zh-hk": "麗悅酒店",
+        "address-en": "375-377 Queen's Road East, Wan Chai",
+        "address-zh-hk": "灣仔皇后大道東375-377號",
+        "phone-number": "35528388",
+        "fax-number": "35528399",
+        "url-en": "http://www.cosmopolitanhotel.com.hk",
+        "url-zh-hk": "(English) http://www.cosmopolitanhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "519",
+        "catergory": "hotel",
+        "name-en": "Charterhouse, The",
+        "name-zh-hk": "利景酒店",
+        "address-en": "209 Wanchai Road, Wanchai",
+        "address-zh-hk": "灣仔灣仔道209號",
+        "phone-number": "28335566",
+        "fax-number": "28335888",
+        "url-en": "http://www.charterhouse.com",
+        "url-zh-hk": "(English) http://www.charterhouse.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "518",
+        "catergory": "hotel",
+        "name-en": "Century Hong Kong Hotel",
+        "name-zh-hk": "世紀香港酒店",
+        "address-en": "238 Jaffe Road, Wan Chai",
+        "address-zh-hk": "灣仔謝斐道238號",
+        "phone-number": "25958888",
+        "url-en": "http://www.novotel.hk",
+        "url-zh-hk": "(English) http://www.novotel.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "517",
+        "catergory": "hotel",
+        "name-en": "Central Park Hotel",
+        "name-zh-hk": "中環麗柏酒店",
+        "address-en": "263, Hollywood Road, Central",
+        "address-zh-hk": "中環荷李活道263號",
+        "phone-number": "28508899",
+        "fax-number": "34728888",
+        "url-en": "http://www.centralparkhotel.com.hk",
+        "url-zh-hk": "(English) http://www.centralparkhotel.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "516",
+        "catergory": "hotel",
+        "name-en": "Bishop Lei International House",
+        "name-zh-hk": "宏基國際賓館",
+        "address-en": "4 Robinson Road, Mid-Levels, HK",
+        "address-zh-hk": "中環半山羅便臣道4號",
+        "phone-number": "28680828",
+        "fax-number": "28681551",
+        "url-en": "http://www.bishopleihtl.com.hk",
+        "url-zh-hk": "(English) http://www.bishopleihtl.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W2" },
+          "reception": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "359",
+        "catergory": "art-performance-center",
+        "name-en": "298 Computer Zone",
+        "name-zh-hk": "298電腦特區",
+        "address-en": "298 Hennessy Road, Wanchai",
+        "address-zh-hk": "灣仔軒尼詩道298號",
+        "phone-number": "25729009",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "exhibition-area": { "#text": "H" },
+          "lift-area": { "#text": "W1" },
+          "corridor": { "#text": "W2" }
+        }
+      }
+    ]
+  }
+}

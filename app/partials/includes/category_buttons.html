@@ -1,0 +1,16 @@
+<!-- create button group to filter by category -->
+
+<!--div class="row" ng-controller="TransformDataCtrl" -->
+<div class="row">
+	<!--
+	<div class="btn-group" ng-repeat="category in categories">		
+	-->
+		<!--
+		<label class="btn btn-default btn-sm" ng-model="filter_category[category]" btn-checkbox>
+			{{ transformCategory(category) }}</label>
+		-->		
+	<div class="btn-group" ng-repeat="category in category.current">		
+		<label class="btn btn-default btn-sm" ng-model="filter_category[category.name]" btn-checkbox translate="{{category.name}}_button"  translate-values="{ elementCount: category.count }">
+		</label>
+	</div>
+</div>

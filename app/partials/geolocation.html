@@ -1,0 +1,11 @@
+<div class="container-fluid" ng-controller="MapCtrl">
+	<div class="row" style="font-size: 24px">
+		{{ 'MARKER_HEADER' | 
+			translate:{ num_marker: myMarkers.length, total_markers: 				totalMarkers } }}
+	</div>
+	<div class="row" id="map">
+		  <div ui-map="model.myMap" ui-options="mapOptions" class="map-canvas"
+		  	ui-event="{'map-idle' : 'onMapIdle()'}"></div>
+	</div>
+</div>
+

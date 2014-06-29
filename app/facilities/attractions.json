@@ -1,0 +1,1520 @@
+{
+  "attractions": {
+    "locations": [
+      {
+        "id": "709",
+        "catergory": "temples",
+        "name-en": "Sik Sik Yuen Wong Tai Sin Temple",
+        "name-zh-hk": "嗇色園黃大仙祠",
+        "address-en": "2, Chuk Yuen Village, Wong Tai Sin",
+        "address-zh-hk": "黃大仙竹園村2號",
+        "phone-number": "327 8141",
+        "fax-number": "2351 5640",
+        "url-en": "www.siksikyuen.org.hk",
+        "url-zh-hk": "www.siksikyuen.org.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Sik-Sik-Yuen-Wong-Tai-Sin-Temple.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "L" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "708",
+        "catergory": "temples",
+        "name-en": "Kowloon Mosque & Islamic Centre",
+        "name-zh-hk": "清真寺",
+        "address-en": "105 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道105 號",
+        "phone-number": "2724 0095",
+        "url-en": "www.islam.org.hk/Mosques/Hongkong",
+        "url-zh-hk": "www.islam.org.hk/Mosques/Hongkong",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" },
+          "temples-main": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "707",
+        "catergory": "temples",
+        "name-en": "Chi Lin Nunnery",
+        "name-zh-hk": "志蓮淨苑",
+        "address-en": "5 Chi Lin Drive, Diamond Hill",
+        "address-zh-hk": "鑽石山志蓮道5號",
+        "phone-number": "2354 1735",
+        "fax-number": "2351 4486",
+        "url-en": "www.chilin.org",
+        "url-zh-hk": "www.chilin.org",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC00772.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "706",
+        "catergory": "scenic-spots",
+        "name-en": "Nan Lian Garden ",
+        "name-zh-hk": "南蓮園池",
+        "address-en": "No. 60, Fung Tak Road, Diamond Hill, Kowloon. ",
+        "address-zh-hk": "鑽石山鳳德道60號",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_1016.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "705",
+        "catergory": "scenic-spots",
+        "name-en": "Kowloon walled City Park",
+        "name-zh-hk": "九龍寨城公園",
+        "address-en": "Tung Tau Tsuen Road, Kowloon City ",
+        "address-zh-hk": "九龍城東頭村道",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Kowloon-walled-City-Park.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "704",
+        "catergory": "scenic-spots",
+        "name-en": "1881 Heritage (Former Marine Police Headquarters) ",
+        "name-zh-hk": "1881 (前香港水警總部) ",
+        "address-en": "2A Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道2A",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0512.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "703",
+        "catergory": "scenic-spots",
+        "name-en": "Clock Tower ",
+        "name-zh-hk": "鐘樓",
+        "address-en": "Tsim Sha Tsui Clock Tower, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀天星碼頭旁",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0400.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "passages": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "702",
+        "catergory": "scenic-spots",
+        "name-en": "Avenue of Stars",
+        "name-zh-hk": "星光大道",
+        "address-en": "Tsim Sha Tsui promenade",
+        "address-zh-hk": "尖沙咀海旁",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0031.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "701",
+        "catergory": "museum",
+        "name-en": "Lei Cheng Uk Han Tomb Museum",
+        "name-zh-hk": "李鄭屋漢墓博物館",
+        "address-en": "41 Tonkin Street, Sham Shui Po",
+        "address-zh-hk": "深水埗東京街41號",
+        "phone-number": "2386 2863",
+        "fax-number": "2361 2105",
+        "url-en": "http://www.lcsd.gov.hk/CE/Museum/History/en_US/web/mh/about-us/lei-cheng-uk-han-tomb-museum.html",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/Museum/History/zh_TW/web/mh/about-us/lei-cheng-uk-han-tomb-museum.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "700",
+        "catergory": "museum",
+        "name-en": "Hong Kong Space Museum",
+        "name-zh-hk": "香港太空館",
+        "address-en": "10 Salisbury Road, Tsimshatsui",
+        "address-zh-hk": "尖沙咀梳士巴利道10號",
+        "phone-number": "2721 0226",
+        "fax-number": "2311 5804",
+        "url-en": "www.lcsd.gov.hk/CE/Museum/Space",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/Museum/Space",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0372.gif",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "information-counter": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "699",
+        "catergory": "museum",
+        "name-en": "Hong Kong Science Museum",
+        "name-zh-hk": "香港科學館",
+        "address-en": "2 Science Musuem Road, Tsimshatsui, Kowloon",
+        "address-zh-hk": "尖沙咀科學館道2號",
+        "phone-number": "2732 3232",
+        "fax-number": "2311 2248",
+        "url-en": "http://hk.science.museum",
+        "url-zh-hk": "http://hk.science.museum",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0003.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "698",
+        "catergory": "museum",
+        "name-en": "Hong Kong Museum of History",
+        "name-zh-hk": "香港歷史博物館",
+        "address-en": "100 Chatham Road South, Tsim Sha Tsui East",
+        "address-zh-hk": "尖沙咀漆咸道100號",
+        "phone-number": "2724 9042",
+        "fax-number": "2724 9090",
+        "url-en": "http://www.lcsd.gov.hk/CE/Museum/History/index.php",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/Museum/History/index.php",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0538.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "697",
+        "catergory": "museum",
+        "name-en": "Hong Kong Museum of Art",
+        "name-zh-hk": "香港藝術館",
+        "address-en": "10 Salisbury Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀梳士巴利道10號",
+        "phone-number": "2721 0116",
+        "fax-number": "2723 7666",
+        "url-en": "www.lcsd.gov.hk/CE/Museum/Arts",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/Museum/Arts",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0303.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "696",
+        "catergory": "museum",
+        "name-en": "Hong Kong Heritage Discovery Centre",
+        "name-zh-hk": "香港文物探知館",
+        "address-en": "Kowloon Park, Haiphong Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀海防道九龍公園",
+        "phone-number": "2208 4400",
+        "fax-number": "2377 9792",
+        "url-en": "http://www.amo.gov.hk/en/hdc.php",
+        "url-zh-hk": "http://www.amo.gov.hk/b5/hdc.php",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "694",
+        "catergory": "temples",
+        "name-en": "Po Lin Monastery",
+        "name-zh-hk": "寶蓮禪寺",
+        "address-en": "Po Lin Monastery, Lantau Island",
+        "address-zh-hk": "大嶼山昂坪",
+        "phone-number": "2985 5248",
+        "fax-number": "2985 5245",
+        "url-en": "www.plm.org.hk",
+        "url-zh-hk": "www.plm.org.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Po-Lin-Monastery.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W0" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "693",
+        "catergory": "temples",
+        "name-en": "Fung Ying Seen Koon",
+        "name-zh-hk": "蓬瀛仙館",
+        "address-en": "66 Pak Wo Road, Fan Ling",
+        "address-zh-hk": "粉嶺百和路66號",
+        "phone-number": "2669 9186",
+        "fax-number": "2669 8777",
+        "url-en": "www.fysk.org",
+        "url-zh-hk": "www.fysk.org",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Fung-Ying-Seen-Koon.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-telephone": { "#text": "W0" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "692",
+        "catergory": "temples",
+        "name-en": "Ten Thousand Buddhas Monastery",
+        "name-zh-hk": "萬佛寺",
+        "url-en": "www.10kuddhas.org",
+        "url-zh-hk": "www.10kuddhas.org",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "public-toilet": { "#text": "W0" },
+          "passages": { "#text": "W0" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "691",
+        "catergory": "temples",
+        "name-en": "Yuen Yuen Institute",
+        "name-zh-hk": "圓玄學院",
+        "address-en": "Lo Wai Lane, Sam Dip Tam,Tsuen Wan, NT",
+        "address-zh-hk": "荃灣三疊潭",
+        "phone-number": "2492 2220",
+        "fax-number": "2415 1996",
+        "url-en": "www.yuenyuen.org.hk",
+        "url-zh-hk": "www.yuenyuen.org.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "public-toilet": { "#text": "L" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W1" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "690",
+        "catergory": "temples",
+        "name-en": "Ching Chung Temple",
+        "name-zh-hk": "青松觀",
+        "address-en": "Tsing Chung Path,  Tsing Chung Koon Road, Tuen Mun",
+        "address-zh-hk": "屯門青松觀路青松徑",
+        "phone-number": "2462 1507",
+        "fax-number": "2789 4384",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Ching-Chung-Temple.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "passages": { "#text": "W1" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "689",
+        "catergory": "temples",
+        "name-en": "Che Kung Temple",
+        "name-zh-hk": "車公廟",
+        "address-en": "Che Kung Miu Road, Sha Tin",
+        "address-zh-hk": "沙田車公廟路7號",
+        "phone-number": "2603 4049",
+        "fax-number": "2603 4049",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Che-Kung-Temple.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W1" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "688",
+        "catergory": "temples",
+        "name-en": "Western Monastary",
+        "name-zh-hk": "西方寺",
+        "address-en": "Lo Wai Road, Tsuen Wan",
+        "address-zh-hk": "荃灣三疊潭",
+        "phone-number": "2411 5111",
+        "fax-number": "2415 0286",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W0" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W0" },
+          "temples-main": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "687",
+        "catergory": "scenic-spots",
+        "name-en": "Tai O Village",
+        "name-zh-hk": "大澳漁村",
+        "address-en": "Lantau Island",
+        "address-zh-hk": "大嶼山",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Tai-O-Village.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "686",
+        "catergory": "scenic-spots",
+        "name-en": "Sai Kung Promenade",
+        "name-zh-hk": "西貢海濱",
+        "address-en": "Sai Kung Promenade",
+        "address-zh-hk": "西貢",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Sai-Kung-Promenade.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "685",
+        "catergory": "scenic-spots",
+        "name-en": "Lam Tsuen Wishing Tree",
+        "name-zh-hk": "林村許願樹",
+        "address-en": "Lam Tsuen, Tai Wo, Tai Po",
+        "address-zh-hk": "大埔 林錦公路新屋排",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Lam-Tsuen-Wishing-Tree.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "684",
+        "catergory": "scenic-spots",
+        "name-en": "Lamma Island  ",
+        "name-zh-hk": "南丫島",
+        "address-en": "Lamma Island ",
+        "address-zh-hk": "南丫島 ",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0187.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "683",
+        "catergory": "scenic-spots",
+        "name-en": "Giant Budda",
+        "name-zh-hk": "天壇大佛",
+        "address-en": "Po Lin Monastery, Lantau Island",
+        "address-zh-hk": "大嶼山寶蓮禪寺",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Giant-Budda.jpg",
+        "accessible": {
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W0" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "682",
+        "catergory": "scenic-spots",
+        "name-en": "Cheung Chau",
+        "name-zh-hk": "長洲",
+        "address-en": "Cheung Chau  ",
+        "address-zh-hk": "長洲",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSCF0076.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "681",
+        "catergory": "museum",
+        "name-en": "Sheung Yiu Folk Museum",
+        "name-zh-hk": "上窰民俗文物館",
+        "address-en": "Pak Tam Chung Nature Trail,  Sai Kung",
+        "address-zh-hk": "西貢北潭湧自然教育徑",
+        "phone-number": "2792 6365",
+        "fax-number": "2194 4776",
+        "url-en": "www.heritagemuseum.gov.hk/chinese/branch_sel_syf.htm",
+        "url-zh-hk": "www.heritagemuseum.gov.hk/chinese/branch_sel_syf.htm",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W2" },
+          "exhibition-area": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "680",
+        "catergory": "museum",
+        "name-en": "Sam Tung Uk Museum",
+        "name-zh-hk": "三棟屋博物館",
+        "address-en": "2 Kwu Uk Lane,  Tsuen Wan",
+        "address-zh-hk": "荃灣古屋里2號",
+        "phone-number": "2411 2001",
+        "fax-number": "2413 9271",
+        "url-en": "www.hk.heritage.museum",
+        "url-zh-hk": "www.hk.heritage.museum",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "679",
+        "catergory": "museum",
+        "name-en": "Ping Shan Tang Clan Gallery",
+        "name-zh-hk": "屏山鄧族文物館",
+        "address-en": "Ping Shan Heritage Trail, Hang Tau Tsuen, Ping Shan,  Yuen Long, NT",
+        "address-zh-hk": "新界元朗屏山坑頭村",
+        "phone-number": "2617 1959",
+        "url-en": "www.amo.gov.hk",
+        "url-zh-hk": "www.amo.gov.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "678",
+        "catergory": "museum",
+        "name-en": "Hong Kong Railway Museum",
+        "name-zh-hk": "香港鐵路博物館",
+        "address-en": "13 Shung Tak Street,  Tai Po Market, Tai Po",
+        "address-zh-hk": "香港大埔大埔墟崇德街13號",
+        "phone-number": "2653 3455",
+        "fax-number": "2638 0897",
+        "url-en": "www.heritagemuseum.gov.hk/chinese/branch_sel_hkr.htm",
+        "url-zh-hk": "www.heritagemuseum.gov.hk/chinese/branch_sel_hkr.htm",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W2" },
+          "exhibition-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "677",
+        "catergory": "museum",
+        "name-en": "Hong Kong Heritage Museum",
+        "name-zh-hk": "香港文化博物館",
+        "address-en": "1 Man Lam Road, Shatin",
+        "address-zh-hk": "香港新界沙田文林路一號",
+        "phone-number": "2180 8188",
+        "fax-number": "2180 8111",
+        "url-en": "www.hk.heritage.museum",
+        "url-zh-hk": "www.hk.heritage.museum",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/101_1118.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W2" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "676",
+        "catergory": "museum",
+        "name-en": "Art Museum, Institute of Chinese Studies",
+        "name-zh-hk": "中國文化研究所文物館",
+        "address-en": "The Chinese University  of Hong Kong, Shatin",
+        "address-zh-hk": "沙田香港中文大學",
+        "phone-number": "2609 7416 ",
+        "fax-number": "2603 5366",
+        "url-en": "http://www.cuhk.edu.hk/ics/amm",
+        "url-zh-hk": "http://www.cuhk.edu.hk/ics/amm",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "675",
+        "catergory": "scenic-spots",
+        "name-en": "Murray House",
+        "name-zh-hk": "美利樓",
+        "address-en": "Stanley Plaza",
+        "address-zh-hk": "赤柱廣場",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Murray-House.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "674",
+        "catergory": "scenic-spots",
+        "name-en": "The Peak",
+        "name-zh-hk": "山頂",
+        "address-en": "Victoria Peak",
+        "address-zh-hk": "太平山頂",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/The-Peak.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "673",
+        "catergory": "scenic-spots",
+        "name-en": "Golden Bauhinia Square",
+        "name-zh-hk": "金紫荊廣場",
+        "address-en": "Wanchai North, Hong Kong",
+        "address-zh-hk": "灣仔會議道博覽海濱花園內",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Golden-Bauhinia-Square.gif",
+        "accessible": {
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+       {
+        "id": "672",
+        "catergory": "museum",
+        "name-en": "University Museum and Art Gallery, The",
+        "name-zh-hk": "香港大學美術博物館",
+        "address-en": "90 Bonham Road, Pokfulam, Hong Kong",
+        "address-zh-hk": "香港般咸道九十號",
+        "phone-number": "2241 5500",
+        "fax-number": "2546 9659",
+        "url-en": "www.hku.hk/hkumag",
+        "url-zh-hk": "www.hku.hk/hkumag",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "670",
+        "catergory": "museum",
+        "name-en": "Law Uk Folk Museum",
+        "name-zh-hk": "羅屋民俗館",
+        "address-en": "14 Kut Shing Street, Chai Wan, Hong Kong",
+        "address-zh-hk": "香港柴灣吉勝街14號",
+        "phone-number": "2896 7006",
+        "fax-number": "2724 9090",
+        "url-en": "www.lcsd.gov.hk/CE/Museum/History/b5/luf.php",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/Museum/History/b5/luf.php",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "exhibition-area": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "669",
+        "catergory": "museum",
+        "name-en": "Hong Kong Racing Museum, The",
+        "name-zh-hk": "香港賽馬會博物館",
+        "address-en": "2/F Happy Valley Stand,  Happy Valley",
+        "address-zh-hk": "跑馬地跑馬地球場2/F",
+        "phone-number": "2966 8065",
+        "fax-number": "2966 7057",
+        "url-en": "www.hkjc.com/chinese/special/2004_archives_museum/am04_index_mu.asp",
+        "url-zh-hk": "www.hkjc.com/chinese/special/2004_archives_museum/am04_index_mu.asp",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "668",
+        "catergory": "museum",
+        "name-en": "Hong Kong Museum of Medical Sciences",
+        "name-zh-hk": "香港醫學博物館",
+        "address-en": "2 Caine Lane,  Mid-Levels, HK",
+        "address-zh-hk": "香港半山區堅巷2號",
+        "phone-number": "2549 5123",
+        "fax-number": "2559 9458",
+        "url-en": "www.hkmms.org.hk",
+        "url-zh-hk": "www.hkmms.org.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "667",
+        "catergory": "museum",
+        "name-en": "Hong Kong Museum of Coastal Defence",
+        "name-zh-hk": "香港海防博物館",
+        "address-en": "175 Tung Hei Rd,  Shau Kei Wan, Hong Kong",
+        "address-zh-hk": "香港筲箕灣東喜道175號",
+        "phone-number": "2569 1500",
+        "fax-number": "2569 1637",
+        "url-en": "www.lcsd.gov.hk/CE/Museum/Coastal/index.php",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/Museum/Coastal/index.php",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "666",
+        "catergory": "museum",
+        "name-en": "Hong Kong Maritime Museum",
+        "name-zh-hk": "香港海事博物館",
+        "address-en": "Central Ferry Pier No. 8, Hong Kong",
+        "address-zh-hk": "香港中環八號碼頭",
+        "phone-number": "3713 2500",
+        "fax-number": "2813 8033",
+        "url-en": "www.hkmaritimemuseum.org",
+        "url-zh-hk": "www.hkmaritimemuseum.org",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "665",
+        "catergory": "museum",
+        "name-en": "Hong Kong Film Archive",
+        "name-zh-hk": "香港電影資料館",
+        "address-en": "50 Lei King Road, Sai Wan Ho, Hong Kong",
+        "address-zh-hk": "香港西灣河鯉景道50號",
+        "phone-number": "2739 2193",
+        "fax-number": "2311 5229",
+        "url-en": "www.lcsd.gov.hk/CE/CulturalService/HKFA/b5/index.php",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/CulturalService/HKFA/b5/index.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "664",
+        "catergory": "museum",
+        "name-en": "Hong Kong Correctional Services Museum",
+        "name-zh-hk": "香港懲教博物館",
+        "address-en": "No 45, Tung Tau Wan Road, Stanley, Hong Kong",
+        "address-zh-hk": "香港赤柱東頭灣道45號",
+        "phone-number": "2147 3199",
+        "fax-number": "3921 9033",
+        "url-en": "www.csd.gov.hk/tc_chi/hkcsm/hkcsm.html",
+        "url-zh-hk": "www.csd.gov.hk/tc_chi/hkcsm/hkcsm.html",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "663",
+        "catergory": "museum",
+        "name-en": "Flagstaff House Museum of Tea Ware",
+        "name-zh-hk": "茶具文物館",
+        "address-en": "10 Cotton Tree Drive, Central, Hong Kong (inside Hong Kong Park)",
+        "address-zh-hk": "中區紅棉路10號(香港公園內)",
+        "phone-number": "2869 0690",
+        "fax-number": "2810 0021",
+        "url-en": "http://www.lcsd.gov.hk/CE/Museum/Arts/english/tea/tea.html",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/Museum/Arts/english/tea/tea.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "exhibition-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "662",
+        "catergory": "museum",
+        "name-en": "Fireboat Alexander Grantham  Exhibition Gallery",
+        "name-zh-hk": "葛亮洪號滅火輪展覽館",
+        "address-en": "Quarry Bay Park, Hong Kong",
+        "address-zh-hk": "鰂魚涌公園",
+        "phone-number": "2367 7821",
+        "fax-number": "3580 0498",
+        "url-en": "http://www.lcsd.gov.hk/CE/Museum/History/en/fbag.php",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/Museum/History/en/fbag.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "661",
+        "catergory": "museum",
+        "name-en": "Dr Sun Yat-Sen Museum",
+        "name-zh-hk": "孫中山紀念館",
+        "address-en": "7 Castle Road, Mid Level, Central, Hong Kong",
+        "address-zh-hk": "中環半山衛城道7號",
+        "phone-number": "2367 6373",
+        "fax-number": "3580 0498",
+        "url-en": "http://hk.drsunyatsen.museum/index.php",
+        "url-zh-hk": "http://hk.drsunyatsen.museum/index.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "exhibition-area": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "659",
+        "catergory": "temples",
+        "name-en": "Man Mo Temple",
+        "name-zh-hk": "文武廟",
+        "address-en": "124-126 Hollywood Road, Sheung Wan",
+        "address-zh-hk": "上環荷李活道124號",
+        "phone-number": "2540 0350",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "passages": { "#text": "W0" },
+          "temples-main": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "658",
+        "catergory": "temples",
+        "name-en": "Tin Hau Temple(Tin Hau)",
+        "name-zh-hk": "天后廟(天后)",
+        "address-en": "10 Tin Hau Temple Road,  Tin Hau.",
+        "address-zh-hk": "天后天后廟道10號",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Tin-Hau-Temple-Tin-Hau.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "passages": { "#text": "W1" },
+          "temples-main": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "657",
+        "catergory": "temples",
+        "name-en": "Tin HauTemple(Stanley)",
+        "name-zh-hk": "天后廟(赤柱)",
+        "address-en": "Stanley Main Street, Stanley",
+        "address-zh-hk": "赤柱赤柱大街",
+        "phone-number": "2813 0282",
+        "fax-number": "2813 0320",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Tin-HauTemple-Stanley.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "passages": { "#text": "W1" },
+          "temples-main": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "656",
+        "catergory": "theme-parks",
+        "name-en": "Noah’s Ark",
+        "name-zh-hk": "挪亞方舟",
+        "address-en": "33 Pak Yan Road, Ma Wan, N.T",
+        "address-zh-hk": "馬灣珀欣路33號",
+        "phone-number": "3411 8888",
+        "fax-number": "3411 8889",
+        "url-en": "www.noahsark.com.hk",
+        "url-zh-hk": "www.noahsark.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0514.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "655",
+        "catergory": "theme-parks",
+        "name-en": "Ma Wan Park",
+        "name-zh-hk": "馬灣公園",
+        "address-en": "Flat 44 & 45, Tin Liu Village, Ma Wan, N.T",
+        "address-zh-hk": "馬灣田寮村44及45號",
+        "phone-number": "3446 1163",
+        "fax-number": "3446 1230",
+        "url-en": "www.mawanpark.com",
+        "url-zh-hk": "www.mawanpark.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0637.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "654",
+        "catergory": "theme-parks",
+        "name-en": "Hong Kong Wetlands Park",
+        "name-zh-hk": "香港濕地公園",
+        "address-en": "Wetland Park Road, Tin Shui Wai, NT",
+        "address-zh-hk": "天水圍濕地公園路",
+        "phone-number": "3152 2666",
+        "fax-number": "3152 2668",
+        "url-en": "www.wetlandpark.com",
+        "url-zh-hk": "www.wetlandpark.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Hong-Kong-Wetlands-Park.gif",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "ticketing-office": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ]
+        }
+      },
+      {
+        "id": "653",
+        "catergory": "theme-parks",
+        "name-en": "Hong Kong Disneyland",
+        "name-zh-hk": "香港迪士尼樂園",
+        "address-en": "Lantau Island, HK",
+        "address-zh-hk": "大嶼山竹篙灣",
+        "phone-number": "3550-3388 / 1830830",
+        "url-en": "www.hongkongdisneyland.com",
+        "url-zh-hk": "www.hongkongdisneyland.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0703.gif",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "652",
+        "catergory": "theme-parks",
+        "name-en": "Ocean Park",
+        "name-zh-hk": "海洋公園",
+        "address-en": "Wong Chuk Hang, Hong Kong",
+        "address-zh-hk": "黃竹坑",
+        "phone-number": "2552 0291",
+        "fax-number": "2873 5584",
+        "url-en": "www.oceanpark.com.hk",
+        "url-zh-hk": "www.oceanpark.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Ocean-Park.gif",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "information-counter": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "ticketing-office": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "646",
+        "catergory": "hong-kong-convention-and-exhibition-centres",
+        "name-en": "Convention and Exhibition Centre",
+        "name-zh-hk": "香港會議展覽中心",
+        "address-en": "1 Expo Drive, Wanchai",
+        "address-zh-hk": "灣仔博覽道1號",
+        "phone-number": "2582 8888",
+        "fax-number": "2802 7284",
+        "url-en": "www.hkcec.com",
+        "url-zh-hk": "www.hkcec.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Convention-and-Exhibition-Centre.jpg",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W2" },
+          "ticketing-office": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "wheelchair-seating": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "643",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Hong Kong Academy for Performing Arts",
+        "name-zh-hk": "香港演藝學院",
+        "address-en": "1 Gloucester Road, Wanchai, HK",
+        "address-zh-hk": "灣仔告士打道1號",
+        "phone-number": "2584 8633",
+        "fax-number": "2824 1071",
+        "url-en": "www.hkapa.edu",
+        "url-zh-hk": "www.hkapa.edu",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "wheelchair-seating": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "642",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Hong Kong City Hall",
+        "name-zh-hk": "香港大會堂",
+        "address-en": "5 Edinburgh Place, Central, HK",
+        "address-zh-hk": "中環愛丁堡廣場5號",
+        "phone-number": "2921 2840",
+        "fax-number": "2524 5898",
+        "url-en": "www.cityhall.gov.hk/index.php",
+        "url-zh-hk": "www.cityhall.gov.hk/index.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "641",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Hong Kong Stadium",
+        "name-zh-hk": "香港大球場",
+        "address-en": "55 Eastern Hospital Road,So Kon Po, HK",
+        "address-zh-hk": "銅鑼灣掃桿埔東院道55號",
+        "phone-number": "2895 7895",
+        "fax-number": "2895 7962",
+        "url-en": "www.lcsd.gov.hk/stadium/hks",
+        "url-zh-hk": "www.lcsd.gov.hk/stadium/hks",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "639",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Queen Elizabeth Stadium",
+        "name-zh-hk": "伊利沙伯體育館",
+        "address-en": "18 Oi Kwan Road, Wanchai, HK",
+        "address-zh-hk": "灣仔愛群道18號",
+        "phone-number": "2591 1346",
+        "fax-number": "2803 5794",
+        "url-en": "www.lcsd.gov.hk/CE/Entertainment/Stadia/QE/index.php",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/Entertainment/Stadia/QE/index.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "wheelchair-seating": { "#text": "H" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "636",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Sheung Wan Civic Centre",
+        "name-zh-hk": "上環文娛中心",
+        "address-en": "5/F Sheung Wan Municipal Services Building, 345 Queen's Rd, HK",
+        "address-zh-hk": "上環皇后大道中345號 上環市政大廈5樓",
+        "phone-number": "2853 2668",
+        "fax-number": "2543 9771",
+        "url-en": "www.lcsd.gov.hk/CE/CulturalService/SWCC/index-new.html",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/CulturalService/SWCC/index-new.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "537",
+        "catergory": "market",
+        "name-en": "Ladies’ Market (Tung Choi Street)",
+        "name-zh-hk": "女人街 (通菜街)",
+        "address-en": "Tung Choi Street, Mongkok",
+        "address-zh-hk": "旺角通菜街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_9137.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "536",
+        "catergory": "market",
+        "name-en": "Ladies' Market (Jardine's Crescent)",
+        "name-zh-hk": "女人街 (渣甸坊)",
+        "address-en": "Jardine's Crescent, Causeway Bay",
+        "address-zh-hk": "銅鑼灣渣甸坊",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Passage.gif",
+        "accessible": {
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "535",
+        "catergory": "market",
+        "name-en": "Ladies' Market (Li Yuen Street West)",
+        "name-zh-hk": "女人街 (利源西街)",
+        "address-en": "Li Yuen Street West, Central",
+        "address-zh-hk": "中環利源西街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC059731.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W0" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "534",
+        "catergory": "market",
+        "name-en": "Ladies' Market (Li Yuen Street East)",
+        "name-zh-hk": "女人街 (利源東街)",
+        "address-en": "Li Yuen Street East, Central",
+        "address-zh-hk": "中環利源東街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC059731.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W0" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "208",
+        "catergory": "market",
+        "name-en": "Ngong Ping Market",
+        "name-zh-hk": "昂坪市集",
+        "address-en": "Ngong Ping, Lantau",
+        "address-zh-hk": "大嶼山昂坪",
+        "accessible": {
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "207",
+        "catergory": "market",
+        "name-en": "Ap Liu Street Flea Market",
+        "name-zh-hk": "鴨寮街跳蚤市場",
+        "address-en": "Intersection at Yu Chau Street and Nan Cheong Street, Sham Shui Po",
+        "address-zh-hk": "深水埗欽洲街與南昌街交界",
+        "phone-number": "33234343",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC02952.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "206",
+        "catergory": "market",
+        "name-en": "Yuen Po Street Bird Garden",
+        "name-zh-hk": "雀鳥花園",
+        "address-en": "Yuen Po Street, Mongkok",
+        "address-zh-hk": "旺角園圃街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_8830.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "205",
+        "catergory": "market",
+        "name-en": "Flower Market",
+        "name-zh-hk": "花墟",
+        "address-en": "Sai Yee Street to Yuen Po Steet , Mongkok",
+        "address-zh-hk": "旺角洗衣街至園圃街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC05042.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "204",
+        "catergory": "market",
+        "name-en": "Gold Fish Market",
+        "name-zh-hk": "金魚街",
+        "address-en": "Tung Choi Street, from Mongkok Road to Nullah Road, Mongkok",
+        "address-zh-hk": "旺角通菜街旺角道至水渠道",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_9028.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "203",
+        "catergory": "market",
+        "name-en": "Ladies’ Market",
+        "name-zh-hk": "花園街",
+        "address-en": "Fa Yuen Street, Mongkok",
+        "address-zh-hk": "旺角花園街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_8937.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "201",
+        "catergory": "market",
+        "name-en": "Jade Market",
+        "name-zh-hk": "玉器市場",
+        "address-en": "Canton Road, Yaumati",
+        "address-zh-hk": "油麻地廣東道",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0089.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "200",
+        "catergory": "market",
+        "name-en": "Temple Street Night Market",
+        "name-zh-hk": "廟街夜市",
+        "address-en": "Ning Po Street to Man Ming Lane, Yaumati",
+        "address-zh-hk": "油麻地寧波街至文明里",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0291.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "199",
+        "catergory": "market",
+        "name-en": "Toy Market",
+        "name-zh-hk": "玩具街",
+        "address-en": "Tai Yuen Street, Wanchai",
+        "address-zh-hk": "灣仔太原街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Toy-Market.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "198",
+        "catergory": "market",
+        "name-en": "Dried Seafood Street",
+        "name-zh-hk": "海味街",
+        "address-en": "Des Voeux Road West, Sai Ying Pun",
+        "address-zh-hk": "西營盤德輔道西",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Dried-Seafood-Street.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "196",
+        "catergory": "market",
+        "name-en": "Antique Market",
+        "name-zh-hk": "古董街",
+        "address-en": "Hollywood Road, Sheung Wan",
+        "address-zh-hk": "上環荷李活道",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Antique-Market.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "public-toilet": { "#text": "W0" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "195",
+        "catergory": "market",
+        "name-en": "Herbal Medicine Market",
+        "name-zh-hk": "藥材街",
+        "address-en": "Ko Shing Street, Sheung Wan",
+        "address-zh-hk": "上環高陞街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0483.jpg",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "194",
+        "catergory": "market",
+        "name-en": "Stanley Market",
+        "name-zh-hk": "赤柱市集",
+        "address-en": "Stanley Main Street, Stanley",
+        "address-zh-hk": "赤柱赤柱大街",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Stanley-Market.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" }
+        }
+      }
+    ]
+  }
+}

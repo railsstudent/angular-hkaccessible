@@ -1,0 +1,2393 @@
+{
+  "shopping-dining": {
+    "locations": [
+      {
+        "id": "591",
+        "catergory": "food-courts",
+        "name-en": "Cityplaza",
+        "name-zh-hk": "太古城中心",
+        "address-en": "Phase 1,2 3/F, 18 Taikoo Shing Road, Taikoo Shing",
+        "address-zh-hk": "(English) Phase 1,2 3/F, 18 Taikoo Shing Road,  Taikoo Shing",
+        "phone-number": "2568 8665",
+        "fax-number": "2560 2151",
+        "url-en": "http://www.cityplaza.com/chi/default.htm",
+        "url-zh-hk": "http://www.cityplaza.com/chi/default.htm",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "802",
+        "catergory": "food-courts",
+        "name-en": "Silvercord",
+        "name-zh-hk": "新港中心",
+        "address-en": "B/F, 30 Canton Road, Tsimshatsui",
+        "address-zh-hk": "尖沙咀廣東道30號",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "799",
+        "catergory": "food-courts",
+        "name-en": "Plaza Hollywood",
+        "name-zh-hk": "荷里活廣場",
+        "address-en": "L3, 3 Lung Poon Street, Diamon Hill",
+        "address-zh-hk": "鑽石山龍蟠街3號",
+        "phone-number": "2118 8811",
+        "fax-number": "2118 8078",
+        "url-en": "www.plazahollywood.com",
+        "url-zh-hk": "www.plazahollywood.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "797",
+        "catergory": "food-courts",
+        "name-en": "Olympian City",
+        "name-zh-hk": "奧海城",
+        "address-en": "G/F, 11 Hoi Fai Road,Yai Kok Tsui",
+        "address-zh-hk": "大角咀海輝道11-18號",
+        "phone-number": "2271 4168",
+        "url-en": "www.olympiancity.com.hk",
+        "url-zh-hk": "www.olympiancity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "788",
+        "catergory": "food-courts",
+        "name-en": "Metropolis",
+        "name-zh-hk": "都會商場",
+        "address-en": "6 Metropolis Drive, Hung Hom",
+        "address-zh-hk": "紅磡都會道",
+        "phone-number": "2121 0619",
+        "fax-number": "21210608",
+        "url-en": "http://www.fortunemalls.com.hk/eng/",
+        "url-zh-hk": "http://www.fortunemalls.com.hk/cht/",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "795",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Ko Shan Theatre",
+        "name-zh-hk": "高山劇場",
+        "address-en": "77 Ko Shan Road Park, Hung Hum, Kowloon,",
+        "address-zh-hk": "紅磡高山道77號",
+        "phone-number": "2740 9222",
+        "fax-number": "2781 4783",
+        "url-en": "www.lcsd.gov.hk/kst",
+        "url-zh-hk": "www.lcsd.gov.hk/kst",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "794",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Hong Kong Cultural Centre",
+        "name-zh-hk": "香港體育館",
+        "address-en": "10 Salisbury Road, Tsim Sha Tsui, Kowloon",
+        "address-zh-hk": "紅磡暢運道9號",
+        "phone-number": "2355 7234",
+        "fax-number": "2363 2549",
+        "url-en": "www.lcsd.gov.hk/CE/Entertainment/Stadia/HKC/index.php",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/Entertainment/Stadia/HKC/index.php",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_00971.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W2" },
+          "wheelchair-seating": { "#text": "H" },
+          "car-park": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "793",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Hong Kong Cultural Centre",
+        "name-zh-hk": "香港文化中心",
+        "address-en": "10 Salisbury Road, Tsim Sha Tsui, Kowloon",
+        "address-zh-hk": "尖沙咀梳士巴利道10號",
+        "phone-number": "2734 2009",
+        "fax-number": "2739 0066",
+        "url-en": "www.lcsd.gov.hk/CE/CulturalService/HKCC/index.html",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/CulturalService/HKCC/index.html",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_03921.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "792",
+        "catergory": "hong-kong-convention-and-exhibition-centres",
+        "name-en": "Kowloonbay International Trade & Exhibition Centre",
+        "name-zh-hk": "九龍灣國際展貿中心",
+        "address-en": "1 Trademart Driver, Kowloon Bay, Kowloon",
+        "address-zh-hk": "展貿徑1號",
+        "phone-number": "2620 2222",
+        "url-en": "http://www.kitec.com.hk/eng/index.php",
+        "url-zh-hk": "http://www.kitec.com.hk/tchi/index.php",
+        "accessible": {
+          "main-entrance": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "wheelchair-seating": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "786",
+        "catergory": "food-courts",
+        "name-en": "Harbour City",
+        "name-zh-hk": "海港城",
+        "address-en": "L3, 3 - 27 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道",
+        "phone-number": "2118 8666",
+        "url-en": "www.harbourcity.com.hk",
+        "url-zh-hk": "www.harbourcity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "783",
+        "catergory": "food-courts",
+        "name-en": "Grand Century Place",
+        "name-zh-hk": "新世紀廣場",
+        "address-en": "L5, 193 Prince Road West, Mongkok ",
+        "address-zh-hk": "旺角太子道西193號",
+        "phone-number": "2397 0790",
+        "fax-number": "2381 0365",
+        "url-en": "www.grandcenturyplace.com.hk",
+        "url-zh-hk": "www.grandcenturyplace.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSCF2466.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "784",
+        "catergory": "shopping-malls",
+        "name-en": "Wong Tai Sin Shopping Centre",
+        "name-zh-hk": "黃大仙中心",
+        "address-en": "103 Ching Tak Street,  Wong Tai Sin",
+        "address-zh-hk": "黃大仙正德街103號",
+        "phone-number": "2320 7582",
+        "fax-number": "2322 2739",
+        "url-en": "www.thelinkreit.com/tc/prop/prop_detail.asp?pid=19",
+        "url-zh-hk": "www.thelinkreit.com/tc/prop/prop_detail.asp?pid=19",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0217.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "782",
+        "catergory": "shopping-malls",
+        "name-en": "Whampoa World",
+        "name-zh-hk": "黃埔新天地",
+        "address-en": "Whampoa Garden, Hung Hom",
+        "address-zh-hk": "紅磡黃埔花園",
+        "phone-number": "2121 8344",
+        "url-en": "www.whampoaworld.com",
+        "url-zh-hk": "www.whampoaworld.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "780",
+        "catergory": "food-courts",
+        "name-en": "Festival Walk",
+        "name-zh-hk": "又一城",
+        "address-en": "L2, 80 Tat Chee Avenue, Kowloon Tong",
+        "address-zh-hk": "九龍塘達之路80號",
+        "phone-number": "2844 2222",
+        "fax-number": "2265 8112",
+        "url-en": "www.festivalwalk.com",
+        "url-zh-hk": "www.festivalwalk.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "781",
+        "catergory": "shopping-malls",
+        "name-en": "Tsim Sha Tsui Centre",
+        "name-zh-hk": "尖沙咀中心",
+        "address-en": "66 & 68 Mody Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖東麼地道66及68號",
+        "phone-number": "2721 5489",
+        "url-en": "www.tsimshatsuicentre.com.hk/index_en.asp",
+        "url-zh-hk": "www.tsimshatsuicentre.com.hk/index_en.asp",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W1" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "779",
+        "catergory": "shopping-malls",
+        "name-en": "Telford Plaza Phase II",
+        "name-zh-hk": "德福廣場二期",
+        "address-en": "33 Wai Yim Street, Kowloon Bay,",
+        "address-zh-hk": "九龍灣偉業街33號",
+        "phone-number": "2750 0877",
+        "fax-number": "2751 6725",
+        "url-en": "www.telford-plaza.com",
+        "url-zh-hk": "www.telford-plaza.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "770",
+        "catergory": "food-courts",
+        "name-en": "Dragon Center",
+        "name-zh-hk": "西九龍中心",
+        "address-en": "L8, 37K Yen Chow Street, Sham Shui Po",
+        "address-zh-hk": "深水埗欽州街37號K",
+        "phone-number": "2360 3565",
+        "fax-number": "2360 5307",
+        "url-en": "www.dragoncentre.com.hk",
+        "url-zh-hk": "www.dragoncentre.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "L" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "778",
+        "catergory": "shopping-malls",
+        "name-en": "Telford Plaza Phase I",
+        "name-zh-hk": "德福廣場一期",
+        "address-en": "33 Wai Yim Street, Kowloon Bay,",
+        "address-zh-hk": "九龍灣偉業街33號",
+        "phone-number": "2750 0877",
+        "fax-number": "2751 6725",
+        "url-en": "www.telford-plaza.com",
+        "url-zh-hk": "www.telford-plaza.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "777",
+        "catergory": "shopping-malls",
+        "name-en": "Sun Arcade, The",
+        "name-zh-hk": "新太陽廣場",
+        "address-en": "28 Canton Road,  Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道28號",
+        "phone-number": "2735 8702",
+        "url-en": "www.thesunarcade.com.hk",
+        "url-zh-hk": "www.thesunarcade.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "776",
+        "catergory": "shopping-malls",
+        "name-en": "Silvercord",
+        "name-zh-hk": "新港中心",
+        "address-en": "30 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道30號 ",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "775",
+        "catergory": "shopping-malls",
+        "name-en": "Plaza Hollywood",
+        "name-zh-hk": "荷里活廣場",
+        "address-en": "3 Lung Poon Street, Diamond Hill",
+        "address-zh-hk": "鑽石山龍蟠街3號",
+        "phone-number": "2118 8811",
+        "fax-number": "2118 8078",
+        "url-en": "www.plazahollywood.com",
+        "url-zh-hk": "www.plazahollywood.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "774",
+        "catergory": "shopping-malls",
+        "name-en": "Pioneer Centre",
+        "name-zh-hk": "始創中心",
+        "address-en": "750-758 Nathan Road, Mong Kok",
+        "address-zh-hk": "旺角彌敦道750－758號",
+        "phone-number": "9727 7000",
+        "url-en": "www.bighongkong.com/travel/mongkok",
+        "url-zh-hk": "www.bighongkong.com/travel/mongkok",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "773",
+        "catergory": "shopping-malls",
+        "name-en": "Park Lane",
+        "name-zh-hk": "栢麗購物大道",
+        "address-en": "111-181 Nathan Rd, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0048.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "public-toilet": { "#text": "W0" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "772",
+        "catergory": "shopping-malls",
+        "name-en": "Olympian City",
+        "name-zh-hk": "奧海城",
+        "address-en": "11 Hoi Fai Road, West Kowloon",
+        "address-zh-hk": "大角咀海輝道11-18號",
+        "phone-number": "2271 4168",
+        "url-en": "www.olympiancity.com.hk",
+        "url-zh-hk": "www.olympiancity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "771",
+        "catergory": "shopping-malls",
+        "name-en": "Ocean Terminal",
+        "name-zh-hk": "海運大廈",
+        "address-en": "3 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道",
+        "phone-number": "2118 8666",
+        "url-en": "www.harbourcity.com.hk",
+        "url-zh-hk": "www.harbourcity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "769",
+        "catergory": "shopping-malls",
+        "name-en": "Ocean Centre",
+        "name-zh-hk": "海洋中心",
+        "address-en": "3 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道",
+        "phone-number": "2118 8666",
+        "url-en": "www.harbourcity.com.hk",
+        "url-zh-hk": "www.harbourcity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "768",
+        "catergory": "shopping-malls",
+        "name-en": "New World Centre",
+        "name-zh-hk": "新世界中心",
+        "address-en": "20 Salisbury Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀梳士巴利道20號",
+        "phone-number": "2734 8800",
+        "fax-number": "2369 5284",
+        "url-en": "www.nwc.com.hk",
+        "url-zh-hk": "www.nwc.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "767",
+        "catergory": "shopping-malls",
+        "name-en": "Miramar Shopping Centre",
+        "name-zh-hk": "美麗華商場",
+        "address-en": "132 Nathan Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀彌敦道132號",
+        "phone-number": "2315 5555 ",
+        "fax-number": "2722 5555",
+        "url-en": "www.miramarshoppingcentre.com",
+        "url-zh-hk": "www.miramarshoppingcentre.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "766",
+        "catergory": "shopping-malls",
+        "name-en": "Metropolis, The",
+        "name-zh-hk": "都會商場",
+        "address-en": "6 Metropolis Drive, Hung Hom",
+        "address-zh-hk": "紅磡都會道",
+        "phone-number": "2121 0619",
+        "fax-number": "21210608",
+        "url-en": "www.ckharcades.com/ck_eng/EAI/METROPOLIS/metropolis.htm",
+        "url-zh-hk": "www.ckharcades.com/ck_eng/EAI/METROPOLIS/metropolis.htm",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0121.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "765",
+        "catergory": "shopping-malls",
+        "name-en": "MegaBox",
+        "name-zh-hk": "MegaBox",
+        "address-en": "38 Wang Chui Road, Kowloon Bay",
+        "address-zh-hk": "九龍灣宏照道38號",
+        "phone-number": "2989 3000",
+        "url-en": "www.megabox.com.hk",
+        "url-zh-hk": "www.megabox.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "764",
+        "catergory": "shopping-malls",
+        "name-en": "Langham Place",
+        "name-zh-hk": "朗豪坊",
+        "address-en": "555 Shanghai Street, Mongkok",
+        "address-zh-hk": "旺角亞皆老街8號",
+        "phone-number": "3520 2800",
+        "url-en": "www.langhamplace.com.hk",
+        "url-zh-hk": "www.langhamplace.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0259.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "763",
+        "catergory": "shopping-malls",
+        "name-en": "KCP",
+        "name-zh-hk": "九龍城廣場",
+        "address-en": "128 Carpenter Road, Kowloon City",
+        "address-zh-hk": "九龍城賈炳達道128號",
+        "phone-number": "2383 3608",
+        "fax-number": "2718 0796",
+        "url-en": "www.kcp.hk",
+        "url-zh-hk": "www.kcp.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "762",
+        "catergory": "shopping-malls",
+        "name-en": "Harbour City",
+        "name-zh-hk": "海港城",
+        "address-en": "3 - 27 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道",
+        "phone-number": "2118 8666",
+        "url-en": "www.harbourcity.com.hk",
+        "url-zh-hk": "www.harbourcity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "761",
+        "catergory": "shopping-malls",
+        "name-en": "Grand Century Place",
+        "name-zh-hk": "新世紀廣場",
+        "address-en": "193 Prince Edward Rd. West, Mong Kok",
+        "address-zh-hk": "旺角太子道西193號",
+        "phone-number": "2397 0790",
+        "fax-number": "2381 0365",
+        "url-en": "place.com.hk",
+        "url-zh-hk": "place.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "760",
+        "catergory": "shopping-malls",
+        "name-en": "Gateway Arcade",
+        "name-zh-hk": "港威商場",
+        "address-en": "3 - 27 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道",
+        "phone-number": "2118 8666",
+        "url-en": "www.harbourcity.com.hk",
+        "url-zh-hk": "www.harbourcity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "759",
+        "catergory": "shopping-malls",
+        "name-en": "Festival Walk",
+        "name-zh-hk": "又一城",
+        "address-en": "80 Tat Chee Avenue, Kowloon Tong",
+        "address-zh-hk": "九龍塘達之路80號",
+        "phone-number": "2844 2222",
+        "fax-number": "2265 8112",
+        "url-en": "www.festivalwalk.com",
+        "url-zh-hk": "www.festivalwalk.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "758",
+        "catergory": "shopping-malls",
+        "name-en": "Empire Centre",
+        "name-zh-hk": "帝國中心",
+        "address-en": "66 & 68 Mody Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀麼地道66-68號",
+        "phone-number": "2721 5489",
+        "url-en": "www.tsimshatsuicentre.com.hk/index_en.asp",
+        "url-zh-hk": "www.tsimshatsuicentre.com.hk/index_en.asp",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "757",
+        "catergory": "shopping-malls",
+        "name-en": "Elements",
+        "name-zh-hk": "圓方",
+        "address-en": "1 Austin Road West, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀柯士甸道西一號",
+        "phone-number": "2735 5234",
+        "url-en": "www.elementshk.com",
+        "url-zh-hk": "www.elementshk.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0074.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "756",
+        "catergory": "shopping-malls",
+        "name-en": "Dragon Center",
+        "name-zh-hk": "西九龍中心",
+        "address-en": "37K Yen Chow St, Shum Shui Po",
+        "address-zh-hk": "深水埗欽州街37號K",
+        "phone-number": "2360 3565",
+        "fax-number": "2360 5307",
+        "url-en": "www.dragoncentre.com.hk",
+        "url-zh-hk": "www.dragoncentre.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "L" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "755",
+        "catergory": "shopping-malls",
+        "name-en": "China Hong Kong City",
+        "name-zh-hk": "中港城",
+        "address-en": "33 Canton Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀廣東道33號",
+        "phone-number": "2736 0222",
+        "fax-number": "3119 0338",
+        "url-en": "www.chkc.com.hk",
+        "url-zh-hk": "www.chkc.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0218.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "754",
+        "catergory": "shopping-malls",
+        "name-en": "APM",
+        "name-zh-hk": "APM",
+        "address-en": "418 Kwun Tong Rd, Kwun Tong",
+        "address-zh-hk": "觀塘道418號創紀之城5期",
+        "phone-number": "2267 0500",
+        "fax-number": "2267 0055",
+        "url-en": "http://www.apm-millenniumcity.com/",
+        "url-zh-hk": "http://www.apm-millenniumcity.com/",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "753",
+        "catergory": "hong-kong-convention-and-exhibition-centres",
+        "name-en": "Hong Kong Science and Technology Parks ",
+        "name-zh-hk": "香港科技園 – 科學園",
+        "address-en": "1 Science Park East Avenue Hong Kong Science Park, Shatin, New Territories",
+        "address-zh-hk": "白石角科技大道東1號",
+        "phone-number": "2639 8000",
+        "fax-number": "2655 8668",
+        "url-en": "http://www.hkstp.org/HKSTPC/en_html/en_index.jsp",
+        "url-zh-hk": "http://www.hkstp.org/HKSTPC/en_html/en_index.jsp",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/Hong-Kong-Science-and-Technology-Parks.jpg",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "wheelchair-seating": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "752",
+        "catergory": "hong-kong-convention-and-exhibition-centres",
+        "name-en": "Asia World-Expo",
+        "name-zh-hk": "亞洲國際博覽館",
+        "address-en": "AsiaWorld-Expo, Hong Kong International Airport, Lantau, Hong Kong",
+        "address-zh-hk": "大嶼山香港國際機場",
+        "phone-number": "3606 8828",
+        "fax-number": "3606 8889",
+        "url-en": "www.asiaworld-expo.com",
+        "url-zh-hk": "www.asiaworld-expo.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "wheelchair-seating": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "751",
+        "catergory": "arts-and-performance-centres",
+        "name-en": "Sha Tin Town Hall",
+        "name-zh-hk": "沙田大會堂",
+        "address-en": "1 Yuen Wo Road, Sha Tin, N.T.",
+        "address-zh-hk": "沙田源禾路1號",
+        "phone-number": "2694 2570",
+        "fax-number": "2693 4878",
+        "url-en": "www.lcsd.gov.hk/CE/CulturalService/Shatin",
+        "url-zh-hk": "www.lcsd.gov.hk/CE/CulturalService/Shatin",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "740",
+        "catergory": "shopping-malls",
+        "name-en": "Tuen Mun Town Plaza",
+        "name-zh-hk": "屯門市廣場",
+        "address-en": "1 Tuen Shun Street, ",
+        "address-zh-hk": "屯門屯順街1號",
+        "phone-number": "2450 7782",
+        "url-en": "www.tmtp.com.hk",
+        "url-zh-hk": "www.tmtp.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "739",
+        "catergory": "shopping-malls",
+        "name-en": "Skyplaza",
+        "name-zh-hk": "翔天廊",
+        "address-en": "1 Sky City Road East, Hong Kong International Airport",
+        "address-zh-hk": "大嶼山香港國際機場二號客運大樓",
+        "phone-number": "2183 3561",
+        "url-en": "www.hongkongairport.com",
+        "url-zh-hk": "www.hongkongairport.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC01939.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "738",
+        "catergory": "shopping-malls",
+        "name-en": "New Town Plaza",
+        "name-zh-hk": "新城市廣場",
+        "address-en": "10 Shatin MainStreet, Shatin",
+        "address-zh-hk": "沙田沙田正街10號",
+        "phone-number": "2699 5992",
+        "fax-number": "2693 1096",
+        "url-en": "www.newtownplaza.com.hk",
+        "url-zh-hk": "www.newtownplaza.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/101_1036.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "723",
+        "catergory": "shopping-malls",
+        "name-en": "Metroplaza",
+        "name-zh-hk": "新都會廣場",
+        "address-en": "223 Hing Fong Road, Kwai Fong, Tsuen Wan",
+        "address-zh-hk": "葵芳興芳路223號",
+        "phone-number": "2429 6500",
+        "fax-number": "2418 1387",
+        "url-en": "www.metroplaza.com.hk",
+        "url-zh-hk": "www.metroplaza.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "722",
+        "catergory": "shopping-malls",
+        "name-en": "Metro City Phase II",
+        "name-zh-hk": "新都城II期",
+        "address-en": "8 Yan King Road, Tseung Kwan O",
+        "address-zh-hk": "將軍澳欣景路8號",
+        "phone-number": "3194 3200",
+        "fax-number": "3194 3220",
+        "url-en": "www.hld.com/english/property/locallease/arcade/kowloon/metroplz/index.htm",
+        "url-zh-hk": "www.hld.com/english/property/locallease/arcade/kowloon/metroplz/index.htm",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "721",
+        "catergory": "shopping-malls",
+        "name-en": "Maritime Square",
+        "name-zh-hk": "青衣城",
+        "address-en": "33 Tsing King Road, Tsing Yi, N.T.",
+        "address-zh-hk": "青衣青敬路33號",
+        "phone-number": "2449 9013",
+        "fax-number": "2449 0013",
+        "url-en": "www.maritimesquare.com",
+        "url-zh-hk": "www.maritimesquare.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC02061.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "720",
+        "catergory": "shopping-malls",
+        "name-en": "Hong Kong Gold Coast Piazza",
+        "name-zh-hk": "黃金海岸購物商場",
+        "address-en": "1/F Gold Coast Piazza, 1 Castle Peak Road, Castle Peak Bay",
+        "address-zh-hk": "屯門青山公路1號",
+        "phone-number": "2452 6566",
+        "fax-number": "2440 0115",
+        "url-en": "www.goldcoastpiazza.com.hk",
+        "url-zh-hk": "www.goldcoastpiazza.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "718",
+        "catergory": "food-courts",
+        "name-en": "APM",
+        "name-zh-hk": "APM",
+        "address-en": "L1, 418 Kwun Tong Road, Kwun Tong",
+        "address-zh-hk": "觀塘道418號創紀之城5期",
+        "phone-number": "2267 0500",
+        "fax-number": "2267 0055",
+        "url-en": "www.apm-millenniumcity.com",
+        "url-zh-hk": "www.apm-millenniumcity.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "719",
+        "catergory": "shopping-malls",
+        "name-en": "HomeSquare",
+        "name-zh-hk": "新城市中央廣場",
+        "address-en": "138 Shatin Rural Committee Road, Shatin",
+        "address-zh-hk": "沙田鄉事會路138號",
+        "phone-number": "2634 0666",
+        "url-en": "www.homesquare.com.hk",
+        "url-zh-hk": "www.homesquare.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/101_1014.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "717",
+        "catergory": "shopping-malls",
+        "name-en": "East Point City",
+        "name-zh-hk": "東港城",
+        "address-en": "8 Chung Wa Road, Tseung Kwan O Town Centre",
+        "address-zh-hk": "將軍澳重華路8號",
+        "phone-number": "2703 9346",
+        "fax-number": "2703 9371",
+        "url-en": "www.eastpointcity.com.hk",
+        "url-zh-hk": "www.eastpointcity.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "716",
+        "catergory": "shopping-malls",
+        "name-en": "Discovery Park",
+        "name-zh-hk": "愉景新城",
+        "address-en": "398 Castle Peak Road, Tsuen Wan, NT",
+        "address-zh-hk": "荃灣青山公路398號",
+        "phone-number": "2940 2228",
+        "fax-number": "2940 2890",
+        "url-en": "www.discoverypark.com.hk",
+        "url-zh-hk": "www.discoverypark.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "715",
+        "catergory": "shopping-malls",
+        "name-en": "Citywalk",
+        "name-zh-hk": "荃新天地",
+        "address-en": "1 Yeung Uk Road, Tsuen Wan",
+        "address-zh-hk": "荃灣楊屋道1號",
+        "phone-number": "3926 5700",
+        "url-en": "www.citywalk.com.hk",
+        "url-zh-hk": "www.citywalk.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "714",
+        "catergory": "shopping-malls",
+        "name-en": "Citygate Outlets",
+        "name-zh-hk": "東薈城名店倉",
+        "address-en": "20 Tat Tung Road, Tung Chung",
+        "address-zh-hk": "東涌達東路20號",
+        "phone-number": "2109 2933",
+        "fax-number": "2109 6607",
+        "url-en": "www.citygateoutlets.com.hk",
+        "url-zh-hk": "www.citygateoutlets.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0237.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "713",
+        "catergory": "food-courts",
+        "name-en": "Skyplaza",
+        "name-zh-hk": "翔天廊",
+        "address-en": "1 Sky City Road East, Hong Kong International Airport,",
+        "address-zh-hk": "大嶼山香港國際機場二號客運大樓",
+        "phone-number": "2183 3561",
+        "url-en": "www.hongkongairport.com",
+        "url-zh-hk": "www.hongkongairport.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/DSC019391.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "712",
+        "catergory": "food-courts",
+        "name-en": "New Town Plaza",
+        "name-zh-hk": "新城市廣場",
+        "address-en": "10 Shatin Centre Street, Shatin",
+        "address-zh-hk": "沙田沙田正街10號",
+        "phone-number": "2699 5992",
+        "fax-number": "2693 1096",
+        "url-en": "www.newtownplaza.com.hk",
+        "url-zh-hk": "www.newtownplaza.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "711",
+        "catergory": "food-courts",
+        "name-en": "Discovery Park",
+        "name-zh-hk": "愉景新城",
+        "address-en": "L1, 398 Castle Peak Road, Tsuen Wan",
+        "address-zh-hk": "荃灣青山公路398號",
+        "phone-number": "2940 2228",
+        "fax-number": "2940 2890",
+        "url-en": "www.discoverypark.com.hk",
+        "url-zh-hk": "www.discoverypark.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "710",
+        "catergory": "food-courts",
+        "name-en": "Citygate Outlets",
+        "name-zh-hk": "東薈城名店倉",
+        "address-en": "L2, 20 Tat Tung Road, Tung Chung",
+        "address-zh-hk": "東涌達東路20號",
+        "phone-number": "2109 2933",
+        "fax-number": "2109 6607",
+        "url-en": "www.citygateoutlets.com.hk",
+        "url-zh-hk": "www.citygateoutlets.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "630",
+        "catergory": "computer-centres",
+        "name-en": "Wan Chai Computer Center",
+        "name-zh-hk": "灣仔電腦城",
+        "address-en": "130 Hennessy Road, Wanchai",
+        "address-zh-hk": "灣仔軒尼詩道130號",
+        "phone-number": "2834 7685",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "L" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "629",
+        "catergory": "computer-centres",
+        "name-en": "Windsor House: Computer Mall",
+        "name-zh-hk": "皇室堡電腦城",
+        "address-en": "10-12/F. 311 Gloucester Road, Causeway Bay ",
+        "address-zh-hk": "銅鑼灣告士打道 皇室大廈10樓至12樓",
+        "phone-number": "2895 6796",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "628",
+        "catergory": "computer-centres",
+        "name-en": "298 Computer Zone 298",
+        "name-zh-hk": "298電腦特區",
+        "address-en": "Hennessy Road, Wanchai",
+        "address-zh-hk": "灣仔軒尼詩道298號",
+        "phone-number": "2572 9009",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W1" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "624",
+        "catergory": "shopping-malls",
+        "name-en": "World Trade Centre",
+        "name-zh-hk": "世貿中心",
+        "address-en": "311 Gloucester Road, Causeway Bay",
+        "address-zh-hk": "銅鑼灣告士打道280號",
+        "phone-number": "2576 4121",
+        "fax-number": "2577 6391",
+        "url-en": "www.wtcmore.com",
+        "url-zh-hk": "www.wtcmore.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "623",
+        "catergory": "shopping-malls",
+        "name-en": "Windsor House",
+        "name-zh-hk": "皇室堡",
+        "address-en": "311 Gloucester Road, Causeway Bay",
+        "address-zh-hk": "銅鑼灣告士打道311號",
+        "phone-number": "2895 0668",
+        "fax-number": "2881 1214",
+        "url-en": "www.windsorhouse.hk",
+        "url-zh-hk": "www.windsorhouse.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "L" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "622",
+        "catergory": "shopping-malls",
+        "name-en": "Western Market",
+        "name-zh-hk": "西港城",
+        "address-en": "323 Des Voeux Road C, Central",
+        "address-zh-hk": "上環干諾道中323號",
+        "phone-number": "6029 2675",
+        "fax-number": "2620 0108",
+        "url-en": "www.westernmarket.com.hk",
+        "url-zh-hk": "www.westernmarket.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0445.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W0" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "621",
+        "catergory": "shopping-malls",
+        "name-en": "United Centre",
+        "name-zh-hk": "統一中心",
+        "address-en": "95 Queensway, Admiralty",
+        "address-zh-hk": "金鐘金鐘道95號",
+        "phone-number": "2528 4570",
+        "fax-number": "2861 0043",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0397.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W1" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "620",
+        "catergory": "shopping-malls",
+        "name-en": "Time Square",
+        "name-zh-hk": "時代廣場",
+        "address-en": "1 Matheson Street, Causeway Bay",
+        "address-zh-hk": "銅鑼灣勿地臣街1號",
+        "phone-number": "2118 8900",
+        "fax-number": "2118 8934",
+        "url-en": "www.timessquare.com.hk",
+        "url-zh-hk": "www.timessquare.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "619",
+        "catergory": "shopping-malls",
+        "name-en": "Stanley Plaza",
+        "name-zh-hk": "赤柱廣場",
+        "address-en": "Carmel Road,  Stanley",
+        "address-zh-hk": "赤柱佳美道",
+        "phone-number": "2813 4623",
+        "fax-number": "2813 9041",
+        "url-en": "www.thelinkreit.com/en/shopping/c_stanley.asp",
+        "url-zh-hk": "www.thelinkreit.com/en/shopping/c_stanley.asp",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "618",
+        "catergory": "shopping-malls",
+        "name-en": "Shun Tak Centre",
+        "name-zh-hk": "信德中心",
+        "address-en": "200 Connaught Road, Central",
+        "address-zh-hk": "上環干諾道中200號",
+        "phone-number": "2547 6942",
+        "fax-number": "2858 7121",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0020.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W0" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "615",
+        "catergory": "shopping-malls",
+        "name-en": "Queensway Plaza",
+        "name-zh-hk": "金鐘廊",
+        "address-en": "93 Queensway, Admiralty",
+        "address-zh-hk": "金鐘金鐘道93號",
+        "phone-number": "2529 6203",
+        "fax-number": "2529 6207",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0417.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "public-toilet": { "#text": "W0" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "614",
+        "catergory": "shopping-malls",
+        "name-en": "Prince’s Building",
+        "name-zh-hk": "太子大廈",
+        "address-en": "1A-3 Des Voeux Road, Central",
+        "address-zh-hk": "中環德士古道1A-3號",
+        "phone-number": "(852) 2524 0704",
+        "fax-number": "(852) 2525 0776",
+        "url-en": "www.centralhk.com",
+        "url-zh-hk": "www.centralhk.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "613",
+        "catergory": "shopping-malls",
+        "name-en": "Peak Tower, The",
+        "name-zh-hk": "凌霄閣",
+        "address-en": "128 Peak Road.  Victoria Peak",
+        "address-zh-hk": "山頂山頂道128號",
+        "phone-number": "2849 0608",
+        "fax-number": "2849 6237",
+        "url-en": "www.thepeak.com.hk",
+        "url-zh-hk": "www.thepeak.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "612",
+        "catergory": "shopping-malls",
+        "name-en": "Peak Galleria, The",
+        "name-zh-hk": "山頂廣場",
+        "address-en": "118 Peak Road. Victoria Peak",
+        "address-zh-hk": "山頂山頂道118號",
+        "phone-number": "2843 4113",
+        "fax-number": "2849 5213",
+        "url-en": "www.thepeakgalleria.com",
+        "url-zh-hk": "www.thepeakgalleria.com",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "611",
+        "catergory": "shopping-malls",
+        "name-en": "Paradise Mall",
+        "name-zh-hk": "杏花新城",
+        "address-en": "100 Shing Tai Street, Heng Fa Chuen, Chai Wan",
+        "address-zh-hk": "柴灣杏花邨城泰街100號",
+        "phone-number": "2595 1010",
+        "fax-number": "2595 1011",
+        "url-en": "www.paradise-mall.com.hk",
+        "url-zh-hk": "www.paradise-mall.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "610",
+        "catergory": "shopping-malls",
+        "name-en": "Pacific Place",
+        "name-zh-hk": "太古廣場",
+        "address-en": "88 Queensway,Admiralty",
+        "address-zh-hk": "金鐘金鐘道88號",
+        "phone-number": "(852) 2844 8900",
+        "fax-number": "(852) 2918 9577",
+        "url-en": "www.pacificplace.com.hk",
+        "url-zh-hk": "www.pacificplace.com.hk",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0458.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "609",
+        "catergory": "shopping-malls",
+        "name-en": "Man Yee Building",
+        "name-zh-hk": "萬宜大廈",
+        "address-en": "60-38 Des Voeux Road, Central",
+        "address-zh-hk": "中環德輔道中60-68號",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "608",
+        "catergory": "shopping-malls",
+        "name-en": "Lee Theatre Plaza",
+        "name-zh-hk": "利舞臺廣場",
+        "address-en": "99 Percival Street, Causeway Bay",
+        "address-zh-hk": "銅鑼灣波斯富街99號",
+        "phone-number": "(852) 2504 2781",
+        "fax-number": "(852) 2504 2032",
+        "url-en": "www.leegardens.com.hk",
+        "url-zh-hk": "(English) www.leegardens.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "607",
+        "catergory": "shopping-malls",
+        "name-en": "Lee Gardens, The",
+        "name-zh-hk": "利園",
+        "address-en": "33 Hysan Avenue, Causeway Bay",
+        "address-zh-hk": "銅鑼灣希慎道33號",
+        "phone-number": "2907 5772",
+        "url-en": "www.leegardens.com.hk",
+        "url-zh-hk": "www.leegardens.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "606",
+        "catergory": "shopping-malls",
+        "name-en": "Landmark, The",
+        "name-zh-hk": "置地廣場",
+        "address-en": "11 Pedder Street, Central",
+        "address-zh-hk": "中環畢打街11號",
+        "phone-number": "2525 4142",
+        "fax-number": "2522 0351",
+        "url-en": "www.hkland.com/commercial_property/hongkong_properties/thelandmark/index.html",
+        "url-zh-hk": "www.hkland.com/commercial_property/hongkong_properties/thelandmark/index.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "604",
+        "catergory": "shopping-malls",
+        "name-en": "Laforet",
+        "name-zh-hk": "東角",
+        "address-en": "24-26 East Point Rd, Causeway Bay",
+        "address-zh-hk": "銅鑼灣東角道24-26號",
+        "url-en": "www.laforet.hk",
+        "url-zh-hk": "www.laforet.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": [
+            { "#text": "L" },
+            { "#text": "V" }
+          ],
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "603",
+        "catergory": "shopping-malls",
+        "name-en": "Island Beverley",
+        "name-zh-hk": "金百利",
+        "address-en": "1 Great George Street, Causeway Bay",
+        "address-zh-hk": "銅鑼灣記利佐治街1號",
+        "phone-number": "2852 2808",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "602",
+        "catergory": "shopping-malls",
+        "name-en": "IFC Mall",
+        "name-zh-hk": "國際金融中心商場",
+        "address-en": "1 Harbour View Street, Central",
+        "address-zh-hk": "中環金融街8號",
+        "phone-number": "2147 3538",
+        "fax-number": "2147 3558",
+        "url-en": "www.ifc.com.hk",
+        "url-zh-hk": "www.ifc.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "600",
+        "catergory": "shopping-malls",
+        "name-en": "Cityplaza",
+        "name-zh-hk": "太古城中心 第1、2期",
+        "address-en": "18 Taikoo Shing Rd, Taikoo Shing",
+        "address-zh-hk": "鰂魚涌太古城道18號",
+        "phone-number": "2568 8665",
+        "fax-number": "2560 2151",
+        "url-en": "www.cityplaza.com",
+        "url-zh-hk": "www.cityplaza.com",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0320.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "599",
+        "catergory": "shopping-malls",
+        "name-en": "Causeway Place",
+        "name-zh-hk": "銅鑼灣地帶",
+        "address-en": "2-10 Great George Street, Causeway Bay",
+        "address-zh-hk": "銅鑼灣記利佐治街2-10號",
+        "url-en": "www.causewayplace.hk",
+        "url-zh-hk": "www.causewayplace.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "L" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "598",
+        "catergory": "shopping-malls",
+        "name-en": "Causeway Bay Plaza Phase 2",
+        "name-zh-hk": "銅鑼灣廣場二期",
+        "address-en": "463-483 Lockhart Rd, Causeway Bay",
+        "address-zh-hk": "銅鑼灣駱克道463-483號",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W1" }
+          ],
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W1" }
+        }
+      },
+      {
+        "id": "595",
+        "catergory": "shopping-malls",
+        "name-en": "Causeway Bay Plaza Phase 1",
+        "name-zh-hk": "銅鑼灣廣場一期",
+        "address-en": "489 Hennessy Road, Causeway Bay",
+        "address-zh-hk": "銅鑼灣軒尼斯道489號",
+        "accessible": {
+          "main-entrance": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "594",
+        "catergory": "shopping-malls",
+        "name-en": "Alexandra House",
+        "name-zh-hk": "歷山大廈",
+        "address-en": "18 Chater Road, Central",
+        "address-zh-hk": "中環遮打道18號",
+        "url-en": "www.hkland.com/commercial_property/hongkong_properties/alexandrahouse/index.html",
+        "url-zh-hk": "www.hkland.com/commercial_property/hongkong_properties/alexandrahouse/index.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "593",
+        "catergory": "shopping-malls",
+        "name-en": "Admiralty Centre",
+        "name-zh-hk": "海富中心",
+        "address-en": "18 Harcourt Road, Central",
+        "address-zh-hk": "金鐘夏愨道18號",
+        "phone-number": "2528 4086",
+        "fax-number": "2865 4844",
+        "url-en": "http://www.mtr.com.hk/eng/properties/urban_lines_admiraltycentre.html",
+        "url-zh-hk": "http://www.mtr.com.hk/eng/properties/urban_lines_admiraltycentre.html",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0456.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "592",
+        "catergory": "food-courts",
+        "name-en": "Times Square",
+        "name-zh-hk": "時代廣場",
+        "address-en": "B/F, 1 Matheson Street, Causeway Bay",
+        "address-zh-hk": "銅鑼灣勿地臣街1號",
+        "phone-number": "2118 8900",
+        "fax-number": "2118 8934",
+        "url-en": "www.timessquare.com.hk",
+        "url-zh-hk": "www.timessquare.com.hk",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "590",
+        "catergory": "food-courts",
+        "name-en": "Admiralty Centre",
+        "name-zh-hk": "海富中心",
+        "address-en": "2/F, 18 Harcourt Road, Admiralty",
+        "address-zh-hk": "金鐘夏慤道18號",
+        "phone-number": "2528 4086",
+        "fax-number": "2865 4844",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "291",
+        "catergory": "computer-centres",
+        "name-en": "New Capital Computer Plaza",
+        "name-zh-hk": "新高登電腦商場",
+        "address-en": "85-89 Un Chau Street, Sham Shui Po",
+        "address-zh-hk": "深水埗元州街85號",
+        "phone-number": "27083886",
+        "fax-number": "27083886",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "public-toilet": { "#text": "L" },
+          "corridor": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "290",
+        "catergory": "computer-centres",
+        "name-en": "Golden Computer Arcade",
+        "name-zh-hk": "黃金電腦商場",
+        "address-en": "G/F & B/F, 146-152 Fuk Wa Street, Sham Shui Po",
+        "address-zh-hk": "深水埗福華街146-152號，G/F & B/F",
+        "phone-number": "27292101",
+        "fax-number": "23866010",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "corridor": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "289",
+        "catergory": "computer-centres",
+        "name-en": "Golden Shopping Center",
+        "name-zh-hk": "高登電腦中心",
+        "address-en": "1/F, 146-152 Fuk Wa Street, Sham Shui Po",
+        "address-zh-hk": "深水埗福華街146-152號1樓",
+        "phone-number": "23868137",
+        "fax-number": "21949939",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0451.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W0" },
+          "public-toilet": { "#text": "W1" },
+          "passages": { "#text": "W0" }
+        }
+      },
+      {
+        "id": "288",
+        "catergory": "computer-centres",
+        "name-en": "Star Computer City",
+        "name-zh-hk": "星光電腦城",
+        "address-en": "2/F.,3 Salisbury Road, Tsim Sha Tsui",
+        "address-zh-hk": "尖沙咀梳士巴利道3號星光行2樓",
+        "phone-number": "27362608",
+        "fax-number": "27362606",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "L" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "287",
+        "catergory": "computer-centres",
+        "name-en": "Mong Kok Computer Center",
+        "name-zh-hk": "旺角電腦中心",
+        "address-en": "8, Nelson Street, Mongkok",
+        "address-zh-hk": "旺角奶路臣街8號",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W1" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "286",
+        "catergory": "computer-centre",
+        "name-en": "Wan Chai Computer Center",
+        "name-zh-hk": "灣仔電腦城",
+        "address-en": "130 Hennessy Road, Wanchai",
+        "address-zh-hk": "灣仔軒尼詩道130號",
+        "phone-number": "28347685",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "L" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "285",
+        "catergory": "computer-centre",
+        "name-en": "Windsor House: Computer Mall",
+        "name-zh-hk": "皇室堡電腦城",
+        "address-en": "10-12/F. 311 Gloucester Road, Causeway Bay ",
+        "address-zh-hk": "銅鑼灣告士打道皇室大廈10樓至12樓",
+        "phone-number": "28956796",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "lift-area": { "#text": "H" },
+          "public-toilet": { "#text": "W2" },
+          "car-park": { "#text": "P1" },
+          "corridor": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "511",
+        "catergory": "art-performance-center",
+        "name-en": "Sha Tin Town Hall",
+        "name-zh-hk": "沙田大會堂",
+        "address-en": "1 Yuen Wo Road, Sha Tin, N.T.",
+        "address-zh-hk": "沙田源禾路1號",
+        "phone-number": "26942570",
+        "fax-number": "26934878",
+        "url-en": "http://www.lcsd.gov.hk/CE/CulturalService/Shatin",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/CulturalService/Shatin",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "510",
+        "catergory": "art-performance-center",
+        "name-en": "Ko Shan Theatre",
+        "name-zh-hk": "高山劇場",
+        "address-en": "77 Ko Shan Road Park, Hung Hum, Kowloon",
+        "address-zh-hk": "紅磡高山道77號",
+        "phone-number": "27409222",
+        "fax-number": "27814783",
+        "url-en": "http://www.lcsd.gov.hk/kst",
+        "url-zh-hk": "http://www.lcsd.gov.hk/kst",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "509",
+        "catergory": "art-performance-center",
+        "name-en": "Hong Kong Coliseum",
+        "name-zh-hk": "香港體育館",
+        "address-en": "9 Cheong Wan Road, Hunghom, Kowloon",
+        "address-zh-hk": "紅磡暢運道9號",
+        "phone-number": "23557234",
+        "fax-number": "23632549",
+        "url-en": "http://www.lcsd.gov.hk/CE/Entertainment/Stadia/HKC/index.php",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/Entertainment/Stadia/HKC/index.php",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/IMG_0097.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W2" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "508",
+        "catergory": "art-performance-center",
+        "name-en": "Hong Kong Cultural Centre",
+        "name-zh-hk": "香港文化中心",
+        "address-en": "10 Salisbury Road, Tsim Sha Tsui, Kowloon",
+        "address-zh-hk": "尖沙咀梳士巴利道10號",
+        "phone-number": "27342009",
+        "fax-number": "27342009",
+        "url-en": "http://www.lcsd.gov.hk/CE/CulturalService/HKCC/index.html",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/CulturalService/HKCC/index.html",
+        "image": "http://rehab.kanhan.com/rehab/wp-content/uploads/2014/01/100_0392.gif",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": { "#text": "W2" },
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" },
+          "passages": { "#text": "W2" }
+        }
+      },
+      {
+        "id": "507",
+        "catergory": "art-performance-center",
+        "name-en": "Hong Kong Academy for Performing Arts",
+        "name-zh-hk": "香港演藝學院",
+        "address-en": "1 Gloucester Road, Wanchai, HK",
+        "address-zh-hk": "灣仔告士打道1號",
+        "phone-number": "25848633",
+        "fax-number": "28241071",
+        "url-en": "http://www.hkapa.edu",
+        "url-zh-hk": "(English) http://www.hkapa.edu",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "wheelchair-seating": { "#text": "W2" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "506",
+        "catergory": "art-performance-center",
+        "name-en": "Hong Kong City Hall",
+        "name-zh-hk": "香港大會堂",
+        "address-en": "5 Edinburgh Place, Central, HK",
+        "address-zh-hk": "中環愛丁堡廣場5號",
+        "phone-number": "29212840",
+        "fax-number": "25245898",
+        "url-en": "http://www.cityhall.gov.hk/index.php",
+        "url-zh-hk": "http://www.cityhall.gov.hk/index.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P2" }
+        }
+      },
+      {
+        "id": "505",
+        "catergory": "art-performance-center",
+        "name-en": "Hong Kong Stadium",
+        "name-zh-hk": "香港大球場",
+        "address-en": "55 Eastern Hospital Road,So Kon Po, HK",
+        "address-zh-hk": "銅鑼灣掃桿埔東院道55號",
+        "phone-number": "28957895",
+        "fax-number": " 28957962",
+        "url-en": "http://www.lcsd.gov.hk/stadium/hks",
+        "url-zh-hk": "http://www.lcsd.gov.hk/stadium/hks",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      },
+      {
+        "id": "504",
+        "catergory": "art-performance-center",
+        "name-en": "Queen Elizabeth Stadium",
+        "name-zh-hk": "伊利沙伯體育館",
+        "address-en": "18 Oi Kwan Road, Wanchai, HK",
+        "address-zh-hk": "灣仔愛群道18號",
+        "phone-number": "25911346",
+        "fax-number": "28035794",
+        "url-en": "http://www.lcsd.gov.hk/CE/Entertainment/Stadia/QE/index.php",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/Entertainment/Stadia/QE/index.php",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": [
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "ticketing-office": { "#text": "W2" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": [
+            { "#text": "V" },
+            { "#text": "W1" }
+          ],
+          "wheelchair-seating": { "#text": "H" }
+        }
+      },
+      {
+        "id": "503",
+        "catergory": "art-performance-center",
+        "name-en": "Sheung Wan Civic Centre",
+        "name-zh-hk": "上環文娛中心",
+        "address-en": "5/F Sheung Wan Municipal Services Building, 345 Queen's Rd, HK",
+        "address-zh-hk": "上環皇后大道中345號上環市政大廈5樓",
+        "phone-number": "28532668",
+        "fax-number": "25439771",
+        "url-en": "(繁體中文) http://www.lcsd.gov.hk/CE/CulturalService/SWCC/index-new.html",
+        "url-zh-hk": "http://www.lcsd.gov.hk/CE/CulturalService/SWCC/index-new.html",
+        "accessible": {
+          "main-entrance": { "#text": "W2" },
+          "information-counter": { "#text": "W1" },
+          "ticketing-office": { "#text": "W1" },
+          "lift-area": [
+            { "#text": "H" },
+            { "#text": "V" },
+            { "#text": "W2" }
+          ],
+          "public-toilet": { "#text": "W2" },
+          "public-telephone": { "#text": "W1" },
+          "car-park": { "#text": "P1" }
+        }
+      }
+    ]
+  }
+} 
