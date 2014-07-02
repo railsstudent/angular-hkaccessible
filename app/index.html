@@ -6,15 +6,14 @@
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css"/>
 
-  <!--[if lte IE 8]>
-    <script>
-    // The ieshiv takes care of our ui.directives, bootstrap module directives and 
-    // AngularJS's ng-view, ng-include, ng-pluralize and ng-switch directives.
-    // However, IF you have custom directives (yours or someone else's) then
-    // enumerate the list of tags in window.myCustomTags
-    </script>
-    <script src="build/angular-ui-ieshiv.js"></script>
-  <![endif]-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 <body>
@@ -76,6 +75,7 @@
 
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/jquery/dist/jquery.js"></script> 
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script type="text/javascript" src="../bower_components/isteven-angular-multiselect/angular-multi-select.js"></script>
   <script type="text/javascript" src="../bower_components/angular-translate/angular-translate.js"></script>
