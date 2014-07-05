@@ -106,7 +106,8 @@ var translationsEN = {
   DIALOGS_YES: "Yes",
   DIALOGS_NO: "No", 
   MARKER_HEADER : "Visible: {{num_marker}} marker(s),  {{total_markers}} in total",
-  LAT_LNG : "Lat/Lng: {{lat}}, {{ lng }}"
+  LAT_LNG : "Lat/Lng: {{lat}}, {{ lng }}",
+  CHOOSE_CATEGORY : "Choose category:"
 }
 
 var translationsZHHK = {
@@ -215,7 +216,8 @@ var translationsZHHK = {
   DIALOGS_YES: "是",
   DIALOGS_NO: "否",
   MARKER_HEADER : "載入 {{num_marker}} 個座標,  共計 {{total_markers}} 個座標",
-  LAT_LNG : "經緯度: {{lat}}, {{ lng }}"
+  LAT_LNG : "經緯度: {{lat}}, {{ lng }}",
+  CHOOSE_CATEGORY : "選擇類別："
 };
 
 // Declare app level module which depends on filters, and services

@@ -43,3 +43,5 @@ div .gutter {
 .left-ident {
   margin-left: 25px;
 }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

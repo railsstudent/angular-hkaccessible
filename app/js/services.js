@@ -255,51 +255,57 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 	}])
 .factory('GetAddress', ['$q', '$http', function($q, $http) {
 	return {
-		getAddressNames : function() { 
+		
+		getAddressNamesByKey : function(key) { 
 
-			var first  = $http.get("facilities/attractions.json"),
-			    second = $http.get("facilities/shoppings.json"),
-				third  = $http.get("facilities/hotels.json"),
-				fourth = $http.get("facilities/other_venues.json");
+			var name = "facilities/attractions.json";
+			if (_.isEqual(key, "attraction")) {
+				name = "facilities/attractions.json";
+			}	
+			if (_.isEqual(key, "shopping")) {
+				name = "facilities/shoppings.json";
+			}	
+			if (_.isEqual(key, "hotel")) {
+				name = "facilities/hotels.json";
+			}	
+			if (_.isEqual(key, "other")) {
+				name = "facilities/other_venues.json";
+			}	
 	
 			var deferred = $q.defer();		
-			var latlngs = [];
-			$q.all([first, second, third, fourth]).then(function(result) {
-				  var tmp = [];
-				  angular.forEach(result, function(response) {
-				    var data = [];
-				    if (response.data.attractions) {
-				    	data = response.data.attractions.locations;
-				    }
-				    if (response.data.hotels) {
-				    	data = response.data.hotels.locations;
-				    }
-				    if (response.data['shopping-dining']) {
-				    	data = response.data['shopping-dining'].locations;
-				    }
-				    if (response.data['other-venues']) {
-				    	data = response.data['other-venues'].locations;
-				    }
-				    if (data) {
-				    	var subResult = _.filter(data, function(d) {
+			$http.get(name).success(function(accessibleData) {
+				var tmp = [];				   
+				if (accessibleData) {
+					var data = undefined;
+					if (accessibleData.attractions) {
+						data = accessibleData.attractions.locations;
+					}
+					if (accessibleData.hotels) {
+						data = accessibleData.hotels.locations;						
+					}
+					if (accessibleData['shopping-dining']) {
+						data = accessibleData['shopping-dining'].locations;
+					}
+					if (accessibleData["other-venues"]) {
+						data = accessibleData["other-venues"].locations;
+					}
+				   	var subResult = _.filter(data, function(d) {
 				    		return _.isEqual(_.isNull(d['address-en']), false) && 
 				    				_.isEqual(_.isEmpty(d['address-en']), false);
 				    	});
 
-				    	subResult = _.map(subResult, function(t) {
-				    		return  {
-					     			address_en : t['address-en'] + ", Hong Kong",
-					     			address_zh_hk : t['address-zh-hk'],
-					     			name_en : t['name-en'],
-					     			name_zh_hk : t['name-zh-hk']
-					     		};
-				    	});
-				    	tmp = _.union(tmp, subResult);
-			    	}
-				  });
-				return tmp;
-			}).then(function(tmpResult) {
-				deferred.resolve(tmpResult);
+				   	tmp = _.map(subResult, function(t) {
+				   		return  {
+				   			address_en : t['address-en'] + ", Hong Kong",
+				   			address_zh_hk : t['address-zh-hk'],
+				   			name_en : t['name-en'],
+				   			name_zh_hk : t['name-zh-hk']
+				   		};
+				   	});
+				}
+				deferred.resolve(tmp);
+			}).error(function(data) {
+				deferred.reject([]);
 			});		
 			return deferred.promise;
 		}
@@ -430,7 +436,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		var currLocation = loc;
 
 		if (_.isNull(addressObj)) {
-			return d.reject({url: "", loc : currLocation});
+			return d.reject({url: "", loc : currLocation, lat: "N/A", lng: "N/A"});
 		}
 
 		GeocoderCache.geocodeAddress(addressObj)
@@ -453,7 +459,6 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 						console.log("Error in PlaceExplorer Service get method.");
 						d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A"});
 					});
-//				d.resolve({ url : "", loc : currLocation, lat: data.lat, lng: data.lng });
 			}, function(data) {
 				d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
 			}); 
