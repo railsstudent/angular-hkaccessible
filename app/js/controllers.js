@@ -615,6 +615,26 @@ moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria'
         $rootScope.$broadcast('dialogs.wait.complete');     
       };
 
+      // http://stackoverflow.com/questions/12410062/check-if-infowindow-is-opened-google-maps-v3
+      var isInfoWindowOpen = function isWinOpen(infoWindow) {
+        if (infoWindow) {
+            var map = infoWindow.getMap();
+            // return (map !== null && typeof map !== "undefined");
+            return _.isEqual(_.isNull(map), false) && 
+                    _.isEqual(_.isUndefined(map), false); 
+        }
+        return false;
+      };
+
+      //http://stackoverflow.com/questions/1544739/google-maps-api-v3-how-to-remove-all-markers
+      var clearOverlays = function _clearOverlays() {
+        _.each($scope.myMarkers, function(m) {
+          m.setMap(null);
+        });
+        $scope.totalMarkers = 0;
+        $scope.myMarkers = [];  
+      }
+
       $scope.dropdown = {
         myChoice : undefined,
         data : [ 
@@ -625,9 +645,12 @@ moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria'
         ],
         loadMarkers : function(myChoice) {
 
+          if (isInfoWindowOpen($scope.currentInfoWindow)) {
+            $scope.currentInfoWindow.close();
+          }
           $scope.currentInfoWindow = undefined;
-          $scope.totalMarkers = 0;
-          $scope.myMarkers = [];  
+
+          clearOverlays();
 
           var dlg = dialogs.wait(undefined, undefined, 0, 
                 { backdrop: true, 
