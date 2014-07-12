@@ -1,8 +1,30 @@
-<div class="container-fluid">
-	<div class="row">
-		<h1>{{ 'SHOPPING' | translate }}</h1>
-		<h3 translate="NUMSHOPPING" translate-values="{ result_count: totalNumber }"></h3>
+<!-- http://stackoverflow.com/questions/16599105/twitter-follow-button-appears-as-link-in-angular-templates 
+
+The real issue with Angular seems to be the asynchronous Javascript codes these platforms usually provide (which dynamically create a script tag calling the actual JS code needed to make the button work). If you call the right JS file directly (and synchronously), it works great.
+
+-->
+<!-- https://dev.twitter.com/docs/follow-button -->
+<div class="container-fluid">	
+	<div class="jumbotron">
+		<div class="container=fluid">
+			<div class="row">
+				<h1 translate="APP_TITLE"></h1>
+				<h2>{{ 'SHOPPING' | translate }}
+					<small translate="NUM" translate-values="{ result_count: totalNumber }"></small>
+				</h2>
+				<!--
+				<a href="https://twitter.com/con_leung" class="twitter-follow-button" data-show-count="false">Follow @con_leung</a>
+				<script src="js/custom.js"></script>
+			-->
+				<iframe allowtransparency="true" frameborder="0" scrolling="no"
+              		src="//platform.twitter.com/widgets/follow_button.html?screen_name=con_leung&show_count=true"
+              		style="width:200px; height:20px;"></iframe>
+		 		<iframe src="http://ghbtns.com/github-btn.html?user=railsstudent&repo=angular-hkaccessible&type=watch"
+		  		allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20" ></iframe>
+			</div>
+		</div>
 	</div>
+
 	<!-- create button group to filter by category -->
 	<div ng-include src="'partials/includes/category_buttons.html'"></div>
 	

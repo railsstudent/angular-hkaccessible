@@ -13,10 +13,7 @@ var translationsEN = {
   "HOTEL" : "Hotels",
   "OTHERVENUE" : "Other Venues",
   "BRAND" : "Hong Kong",
-  "NUMATTRACTION" : "Number of accessible attractions: {{result_count}}",
-  "NUMSHOPPING" : "Number of accessible shopping and dining venues: {{result_count}}",
-  "NUMHOTEL" : "Number of accessible hotels: {{result_count}}",
-  "NUMOTHERVENUE" : "Number of accessible venues: {{result_count}}",
+  "NUM" : "Count: {{result_count}}",
   "SEARCH" : "Search: ",
   "W0" : "Facilities inaccessible to wheelchair users", 
   "W2" : "Facilities accessible to wheelchair users and meeting local design standard",
@@ -107,7 +104,10 @@ var translationsEN = {
   DIALOGS_NO: "No", 
   MARKER_HEADER : "Visible: {{num_marker}} marker(s),  {{total_markers}} in total",
   LAT_LNG : "Lat/Lng: {{lat}}, {{ lng }}",
-  CHOOSE_CATEGORY : "Choose category:"
+  CHOOSE_CATEGORY : "Choose category:",
+  LINKS : "Related Links",
+  GEOLOCATION : "Accessible Location Map",
+  APP_TITLE:  "Accessible facilities in Hong Kong"
 }
 
 var translationsZHHK = {
@@ -123,10 +123,7 @@ var translationsZHHK = {
   HOTEL : "酒店",
   OTHERVENUE : "其他場所",
   BRAND : "香港",
-  NUMATTRACTION : "無障礙觀光景點的數目: {{result_count}}",
-  NUMSHOPPING : "無障購物及餐飲場所的數目: {{result_count}}",
-  NUMHOTEL : "無障礙酒店的數目: {{result_count}}",
-  NUMOTHERVENUE : "無障礙其他場所的數目: {{result_count}}",
+  NUM : "數目: {{result_count}}",
   SEARCH : "搜索：",
   W0 : "設施不適合輪椅使用者", 
   W2 : "設施符合本地通用設計標準，適合輪椅使用者",
@@ -217,7 +214,10 @@ var translationsZHHK = {
   DIALOGS_NO: "否",
   MARKER_HEADER : "載入 {{num_marker}} 個座標,  共計 {{total_markers}} 個座標",
   LAT_LNG : "經緯度: {{lat}}, {{ lng }}",
-  CHOOSE_CATEGORY : "選擇類別："
+  CHOOSE_CATEGORY : "選擇類別：",
+  LINKS : "相關連結",
+  GEOLOCATION : "無障礙場所位置圖",
+  APP_TITLE:  "香港無障礙設施"
 };
 
 // Declare app level module which depends on filters, and services
@@ -226,6 +226,7 @@ angular.module('hkAccessibleApp', [
   'hkAccessibleFilters',
   'myApp.directives',
   'hkAccessibleControllers',
+  'hkAccessibleControllers2',
   'pascalprecht.translate',
   'ui.map',
   'ui.event',
@@ -282,5 +283,11 @@ angular.module('hkAccessibleApp', [
             url: '/geolocation',
             templateUrl: 'partials/geolocation.html',
             controller: 'MapCtrl'
-          });
+          })
+      .state('related_links', 
+        {
+          url : '/links',
+          templateUrl : 'partials/link.html',
+          controller : 'MiscCtrl'
+        });
   }]);

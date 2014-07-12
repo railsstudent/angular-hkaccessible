@@ -420,7 +420,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		}
 	};
 }])
-.factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache', 
+.factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache',  
 	function($http, $q, GeocoderCache) {
 
 	var clientId = "WYNS11XAUSZMO2SAJJ5TDNZYZ4YZMYID4NY1FDBSNTF0PARA";
@@ -435,30 +435,35 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		var d = $q.defer();
 		var currLocation = loc;
 
-		if (_.isNull(addressObj)) {
+		if (_.isNull(addressObj) || _.isUndefined(addressObj)) {
 			return d.reject({url: "", loc : currLocation, lat: "N/A", lng: "N/A"});
 		}
 
 		GeocoderCache.geocodeAddress(addressObj)
 			.then(function(data) {
 				var exploreUrl = apiUrl + data.lat + ',' + data.lng;
-				$http.jsonp(exploreUrl)
-				 	.success(function(imgData) {
-				 		if (_.isEqual(_.isNull(imgData), false)) {
-							var firstItem = imgData.response.groups[0].items[0]
-												.venue.photos.groups[0].items[0]; 
-							var imgUrl = firstItem.prefix + thumbnail + firstItem.suffix;
-							d.resolve({ url : imgUrl, loc : currLocation
-								, lat: data.lat.toFixed(4), lng: data.lng.toFixed(4) });
-						} else {
-							d.resolve({ url : "", loc : currLocation
-									, lat: "N/A", lng: "N/A" });
-						}
-					})
-					.error(function(data) {
-						console.log("Error in PlaceExplorer Service get method.");
-						d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A"});
-					});
+				
+					$http.jsonp(exploreUrl)
+					 	.success(function(imgData) {
+					 		if (_.isEqual(_.isNull(imgData), false)) {
+								var firstItem = imgData.response.groups[0].items[0]
+													.venue.photos.groups[0].items[0]; 
+								var imgUrl = firstItem.prefix + thumbnail + firstItem.suffix;
+								
+								var result = { url : imgUrl, loc : currLocation
+									, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
+								
+								d.resolve( result );
+							} else {
+								console.log("no image: [" + data.address + "]");	
+								var result = { url : "", loc : currLocation	, lat: "N/A", lng: "N/A" };
+								d.resolve( result );
+							}
+						})
+						.error(function(data) {
+							console.log("Error in PlaceExplorer Service get method.");
+							d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A"});
+						});
 			}, function(data) {
 				d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
 			}); 

@@ -1,0 +1,13 @@
+
+<div class"container-fluid">
+	<div class="page-header">
+		<h1 translate="{{ 'LINKS' }}"></h1>
+	</div>
+	<div class="row">
+		<ul ng-repeat="link in links">
+			<li>
+				<a ng-href="{{link.url}}" target="_blank">{{ link.desc }}</a>
+			</li>
+		</ul>
+	</div>
+</div>

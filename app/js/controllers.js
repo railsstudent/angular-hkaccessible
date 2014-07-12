@@ -598,8 +598,7 @@ moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria'
                     if (progress < 100) {
                         $rootScope.$broadcast('dialogs.wait.progress',
                         { progress: progress,
-                            msg : progress.toFixed(2) + 
-                                    $translate.instant("DIALOGS_PERCENT_COMPLETE")
+                            msg : progress.toFixed(2) + $translate.instant("DIALOGS_PERCENT_COMPLETE")
                         });
                     } else {
                         $rootScope.$broadcast('dialogs.wait.complete');
@@ -620,8 +619,7 @@ moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria'
         if (infoWindow) {
             var map = infoWindow.getMap();
             // return (map !== null && typeof map !== "undefined");
-            return _.isEqual(_.isNull(map), false) && 
-                    _.isEqual(_.isUndefined(map), false); 
+            return _.isEqual(_.isNull(map), false) &&  _.isEqual(_.isUndefined(map), false); 
         }
         return false;
       };
