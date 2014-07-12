@@ -2,15 +2,17 @@
 
 	<!-- http://stackoverflow.com/questions/20674220/how-to-call-service-method-from-ng-change-of-select-in-angularjs -->
 	<!-- http://stackoverflow.com/questions/23568180/how-to-ng-translate-inside-select-box-option-in-angularjs -->
-    <div class="page-header">
-    	<h2 translate="GEOLOCATION"></h2> 
-	    <div class="btn-group nullable form-group">
-	      <select ng-model="dropdown.myChoice" class="form-control input-lg"
-	      		ng-change="dropdown.loadMarkers(dropdown.myChoice)"  
-	      		ng-options="data.tranlsation_key | translate for data in dropdown.data">
-	   		<option value="" translate="CHOOSE_CATEGORY"></option>
-		  </select>
-	    </div>
+	<div class="jumbotron">
+	    <div class="container-fluid">
+	    	<h2 translate="GEOLOCATION"></h2> 
+		    <div class="btn-group nullable form-group">
+		      <select ng-model="dropdown.myChoice" class="form-control input-lg"
+		      		ng-change="dropdown.loadMarkers(dropdown.myChoice)"  
+		      		ng-options="data.tranlsation_key | translate for data in dropdown.data">
+		   		<option value="" translate="CHOOSE_CATEGORY"></option>
+			  </select>
+		    </div>
+		</div>
 	</div>
 	<div class="row" style="font-size: 24px">
 		{{ 'MARKER_HEADER' | translate:{ num_marker: myMarkers.length, total_markers: totalMarkers } }}
