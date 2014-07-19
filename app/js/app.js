@@ -221,7 +221,7 @@ var translationsZHHK = {
 };
 
 // Declare app level module which depends on filters, and services
-angular.module('hkAccessibleApp', [
+var myApp = angular.module('hkAccessibleApp', [
   'hkAccessibleServices',
   'hkAccessibleFilters',
   'hkDirectives',
@@ -241,7 +241,9 @@ angular.module('hkAccessibleApp', [
   'dialogs.main',
   'dialogs.controllers',
   'angular-underscore'
-])
+]);
+
+myApp
 .config(['$translateProvider', function($translateProvider) {
     $translateProvider.translations('zh_hk', translationsZHHK)
       .translations('en', translationsEN);
@@ -249,3 +251,4 @@ angular.module('hkAccessibleApp', [
     $translateProvider.fallbackLanguage('zh_hk');
     $translateProvider.useMissingTranslationHandlerLog();
 }]);
+

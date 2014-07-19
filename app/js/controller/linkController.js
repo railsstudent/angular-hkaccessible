@@ -2,7 +2,7 @@
 
 var moduleCtrl = angular.module('linkController', []);
 
-moduleCtrl.controller ('MiscCtrl', [ '$scope', function($scope) {
+moduleCtrl.controller ('LinkCtrl', [ '$scope', '$timeout', function($scope, $timeout) {
 
 	$scope.links = [ 
 	   { url : 'http://www.gov.hk/en/theme/psi/datasets/accessguide.htm', 
@@ -14,6 +14,15 @@ moduleCtrl.controller ('MiscCtrl', [ '$scope', function($scope) {
 	   }
 
 	];
+
+	 $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        console.log('stateChangeSuccess');
+
+        $timeout(function() {
+            $location.hash('top_page');
+            $anchorScroll();
+        }, 300);
+      });
 
 }]);
 

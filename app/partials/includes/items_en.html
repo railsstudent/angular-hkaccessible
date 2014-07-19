@@ -38,7 +38,7 @@
 						<p ng-show="showImage">
 							<img ng-src="{{ location.exploreImage }}" class="img-responsive" alt="Responsive Image"></img>
 						</p>
-						<p translate="LAT_LNG" translate-values='{lat: location.geo.lat,  lng: location.geo.lng }'> </p> <!--  {{location.geo.lat}}, {{location.geo.lng}} -->
+						<p translate="LAT_LNG" translate-values='{lat: location.geo.lat,  lng: location.geo.lng }'> </p> 
 						<p>{{ 'CATEGORY' | translate }} {{ location.catergory | translate }}</p>
 						<p translate='NAME' translate-values='{ displayvalue : location.name_en }'></p>
 						<p translate='ADDRESS' translate-values='{ displayvalue : location.address_en}'></p>
@@ -61,6 +61,13 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="row bg-primary">
+				<div class="col-sx-12 col-sm-12 col-md-12">
+					<a ng-click="scrollToElement('top_page')" class="btn btn-default">
+						<span class="glyphicon glyphicon-arrow-up"></span>
+					</a>
 				</div>
 			</div>
     	</accordion-group>

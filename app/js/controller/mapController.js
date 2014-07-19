@@ -2,8 +2,9 @@ var mapModuleCtrl = angular.module('mapController', []);
 
 mapModuleCtrl
 	.controller('MapCtrl', ['$rootScope', '$scope', 'GetAddress', 'GeocoderCache','dialogs', '$translate',
-      function($rootScope, $scope, GetAddress, 
-          GeocoderCache, dialogs, $translate) {
+      '$timeout',
+
+      function($rootScope, $scope, GetAddress, GeocoderCache, dialogs, $translate, $timeout) {
 
       // http://codepen.io/m-e-conroy/pen/ALsdF
       // angular-dialog-service
@@ -137,4 +138,13 @@ mapModuleCtrl
             .then(createMapMarkers, closeProgressDialog);
         }
       };
+
+      $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        console.log('stateChangeSuccess');
+
+        $timeout(function() {
+            $location.hash('top_page');
+            $anchorScroll();
+        }, 300);
+      });
    }]);

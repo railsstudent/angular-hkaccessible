@@ -47,6 +47,6 @@ stateModule
 	        {
 	          url : '/links',
 	          templateUrl : 'partials/link.html',
-	          controller : 'MiscCtrl'
+	          controller : 'LinkCtrl'
 	        });
 	  }]);

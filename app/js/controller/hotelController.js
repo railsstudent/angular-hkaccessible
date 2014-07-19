@@ -7,7 +7,8 @@ var moduleCtrl = angular.module('hotelController', []);
 // hotel controller
 moduleCtrl
   .controller('HotelCtrl', ['$scope',  'Accessible', 'MatchCriteria',  'PlaceExplorer', 
-    function($scope, Accessible, MatchCriteria, PlaceExplorer) {
+    '$location', '$anchorScroll', '$timeout', 
+    function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout) {
 
       $scope.totalNumber = 0;
       $scope.currentPage = 1;
@@ -33,6 +34,15 @@ moduleCtrl
       $scope.$on('TRANSLATE_ACCESSIBILITY_DESC', function() {
           $scope.access_obj = Accessible.translateAccessDesc($scope.service_area, 
                                 $scope.access_obj);
+      });
+
+      $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        console.log('stateChangeSuccess');
+
+          $timeout(function() {
+              $location.hash('top_page');
+              $anchorScroll();
+          }, 300);
       });
 
       Accessible.get("facilities/hotels.json","hotels").
@@ -84,6 +94,11 @@ moduleCtrl
             data.loc.exploreImage = data.url;
             $scope.showImage = false;
         });
+    };
+
+    $scope.scrollToElement = function scrollTo(id) {
+        $location.hash(id);
+        $anchorScroll();
     };
 
       var searchData = function search() {

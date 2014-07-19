@@ -62,13 +62,25 @@
     </div>
   </nav>
 
-<div class="container" ui-view></div>
+  <div class="container" ui-view></div>
 
+  <div class="footer">
+      <div class="container">
+        <p class="text-muted">
+          {{ 'AUTHOR' | translate }}<span app-author></span>
+          <br/>
+          {{ 'VERSION' | translate }}<span app-version></span>
+        </p>
+      </div>
+  </div>
+
+<!--
   <div class="container-fluid">
     <div class="row"><hr/><div>
     <div class="row left-ident">{{ 'AUTHOR' | translate }}<span app-author></span></div>
     <div class="row left-ident">{{ 'VERSION' | translate }}<span app-version></span></div>
   </div>
+-->
 
   <link rel="stylesheet" href="../bower_components/isteven-angular-multiselect/angular-multi-select.css">
 

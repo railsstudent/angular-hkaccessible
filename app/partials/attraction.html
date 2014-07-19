@@ -5,9 +5,8 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 -->
 
 <!-- https://dev.twitter.com/docs/follow-button -->
-<div class="container-fluid">
-
-	<div class="jumbotron">
+<div class="container-fluid" id="top_page">
+	<div class="jumbotron" >
 		<div class="container=fluid">
 			<div class="row">
 				<h1 translate="APP_TITLE"></h1>
@@ -30,12 +29,14 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 	<!-- create button group to filter by category -->
 	<div ng-include src="'partials/includes/category_buttons.html'"></div>
 	
+	
 	<!-- top pagination -->
 	<div class="row">
 		<pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" 
 			ng-model="currentPage" items-per-page="itemsPerPage" 
 			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></pagination>
 	</div>
+
 	<div class="row">
 		<div  ng-include src="'partials/includes/items_en.html'"></div>
 	</div>
@@ -45,6 +46,6 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 		<pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" 
 			ng-model="currentPage" items-per-page="itemsPerPage" 
 			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></pagination>
-	</div>
+	</div>	
 </div>
 
