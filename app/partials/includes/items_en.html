@@ -29,8 +29,11 @@
 
 	 <accordion close-others="true">
 	 	<accordion-group  
-	 		ng-repeat="location in filtered | offset: (currentPage - 1) * itemsPerPage | limitTo: itemsPerPage" heading="{{ location.name_en }}/ {{ location.name_zh_hk }}" ng-click="loadExploreImage(location)">
-      		
+	 		ng-repeat="location in filtered | offset: (currentPage - 1) * itemsPerPage | limitTo: itemsPerPage" ng-click="loadExploreImage(location)" is-open="status.open" >
+      		<accordion-heading >
+	      		{{ location.name_en }}/ {{ location.name_zh_hk }}
+      			<i class="pull-right glyphicon " ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"> </i>
+	      	</accordion-heading>
 			<div class="row bg-primary">
 				<div class="col-sx-6 col-sm-6 col-md-6 gutter">
 					<li>
@@ -65,7 +68,7 @@
 			</div>
 			<div class="row bg-primary">
 				<div class="col-sx-12 col-sm-12 col-md-12">
-					<a ng-click="scrollToElement('top_page')" class="btn btn-default">
+					<a ng-click="scrollToElement('top_page')" class="btn btn-default"  style="margin-bottom: 10px">
 						<span class="glyphicon glyphicon-arrow-up"></span>
 					</a>
 				</div>
