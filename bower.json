@@ -18,7 +18,7 @@
     "ngstorage": "latest",
     "angular-dialog-service": "5.0.0",
     "angular-ui-router": "0.2.10",
-    "underscore" : "1.6.0",
+    "underscore" : "32216a4afe97c0c3665897b58be73409d5571dcf",
     "angular-underscore" : "latest"
   },
   "resolutions": {
