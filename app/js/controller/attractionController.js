@@ -7,9 +7,13 @@ var moduleCtrl = angular.module('attractionController', []);
 // attraction controller
 // use filterFilter, https://docs.angularjs.org/guide/filter
 // example
-moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria', '$modal', 'PlaceExplorer', 
-   '$location', '$anchorScroll', '$timeout',
-   function($scope, Accessible, MatchCriteria, $modal, PlaceExplorer, $location, $anchorScroll, $timeout) {
+//moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria', '$modal', 'PlaceExplorer', 
+//   '$location', '$anchorScroll', '$timeout',
+//   function($scope, Accessible, MatchCriteria, $modal, PlaceExplorer, $location, $anchorScroll, $timeout) {
+
+moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer', 
+   '$location', '$anchorScroll', '$timeout', 'locationResult',
+   function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout, locationResult) {
   	
     $scope.totalNumber = 0;
     $scope.currentPage = 1;
@@ -46,31 +50,20 @@ moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria'
         }, 300);
     });
 
-    Accessible.get("facilities/attractions.json","attractions").
-      then(function(locationResult) {
-        $scope.locations = locationResult.data;
-        $scope.filtered = locationResult.data;
-        $scope.totalNumber = $scope.filtered.length;
-        //http://stackoverflow.com/questions/17802140/underscore-js-map-array-of-key-value-pairs-to-an-object-one-liner
-        $scope.filter_category = _.object(
-          _.map(locationResult.category.current, function(c) {
-            return [c.name , true];
-          })
-        );
+    $scope.locations = locationResult.data;
+    $scope.filtered = locationResult.data;
+    $scope.totalNumber = $scope.filtered.length;
+    //http://stackoverflow.com/questions/17802140/underscore-js-map-array-of-key-value-pairs-to-an-object-one-liner
+    $scope.filter_category = _.object(
+      _.map(locationResult.category.current, function(c) {
+        return [c.name , true];
+      })
+    );
 
-        $scope.service_area = locationResult.service_area;        
-        $scope.access_obj = locationResult.access_obj;
-        $scope.category.original = locationResult.category.original;
-        $scope.category.current = locationResult.category.current;
-      }, function(errResult) {
-        $scope.locations = [];
-        $scope.filtered  = [];
-        $scope.access_obj = [];
-        $scope.service_area = [];
-        $scope.totalNumber = $scope.filtered.length;
-        $scope.category.original = []; 
-        $scope.category.current = [];
-      });
+    $scope.service_area = locationResult.service_area;        
+    $scope.access_obj = locationResult.access_obj;
+    $scope.category.original = locationResult.category.original;
+    $scope.category.current = locationResult.category.current;
 
     $scope.showImage = false;
     // http://stackoverflow.com/questions/19251226/load-from-http-get-on-accordion-group-open-using-angularjs

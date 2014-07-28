@@ -7,8 +7,8 @@ var moduleCtrl = angular.module('otherVenueController', []);
 // other venue controller
 moduleCtrl
   .controller('VenueCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer', 
-      '$location', '$anchorScroll', '$timeout', 
-   function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout) {
+      '$location', '$anchorScroll', '$timeout', 'locationResult', 
+   function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout, locationResult) {
 
       $scope.totalNumber = 0;
       $scope.currentPage = 1;

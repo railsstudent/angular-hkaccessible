@@ -17,30 +17,55 @@ stateModule
 	          { 
 	            url: '/attractions',
 	            templateUrl: 'partials/attraction.html',
+	            resolve: {
+	            	locationResult : [ 'Accessible', function(Accessible) {
+	            		return Accessible.get("facilities/attractions.json", "attractions");
+	            	}]
+	            },
 	            controller: 'AttractionCtrl'
 	          })
 	      .state('shopping_dining', 
 	          { 
 	            url: '/shopping_dining',
 	            templateUrl: 'partials/shopping.html',
+	            resolve: {
+	            	locationResult : [ 'Accessible', function(Accessible) {
+	            		return Accessible.get('facilities/shoppings.json', 'shopping-dining');
+	            	}]
+	            },
 	            controller: 'ShopDineCtrl'
 	          })
 	      .state('hotels', 
 	          { 
 	            url: '/hotels',
 	            templateUrl: 'partials/hotel.html',
+	            resolve: {
+	            	locationResult : [ 'Accessible', function(Accessible) {
+	            		return Accessible.get('facilities/hotels.json', 'hotels');
+	            	}]
+	            },
 	            controller: 'HotelCtrl'
 	          })
 	      .state('other_venues', 
 	          { 
 	            url: '/other_venues',
 	            templateUrl: 'partials/other.html',
+	            resolve: {
+	            	locationResult : [ 'Accessible', function(Accessible) {
+	            		return Accessible.get('facilities/other_venues.json', 'other-venues');
+	            	}]
+	            },
 	            controller: 'VenueCtrl'
 	          })
 	      .state('geolocation', 
 	          { 
 	            url: '/geolocation',
 	            templateUrl: 'partials/geolocation.html',
+	            resolve: {
+	            	locationResult : [ 'Accessible', function(Accessible) {
+	            		return Accessible.get("facilities/shoppings.json","shopping-dining";
+	            	}]
+	            },
 	            controller: 'MapCtrl'
 	          })
 	      .state('related_links', 

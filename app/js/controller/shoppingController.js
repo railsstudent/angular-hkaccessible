@@ -7,8 +7,8 @@ var moduleCtrl = angular.module('shoppingController', []);
 // shopping and dining controller 
 moduleCtrl
   .controller('ShopDineCtrl', ['$scope', 'Accessible', 'MatchCriteria', 'PlaceExplorer', 
-      '$location', '$anchorScroll', '$timeout', 
-    function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout) {
+      '$location', '$anchorScroll', '$timeout', 'locationResult', 
+    function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout, locationResult) {
 
       $scope.totalNumber = 0;
       $scope.currentPage = 1;
@@ -32,8 +32,7 @@ moduleCtrl
       };
 
       $scope.$on('TRANSLATE_ACCESSIBILITY_DESC', function() {
-          $scope.access_obj = Accessible.translateAccessDesc($scope.service_area, 
-                                 $scope.access_obj);
+          $scope.access_obj = Accessible.translateAccessDesc($scope.service_area, $scope.access_obj);
       });
 
       $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
@@ -45,31 +44,20 @@ moduleCtrl
         }, 300);
       });
 
-      Accessible.get("facilities/shoppings.json","shopping-dining").
-        then(function(locationResult) {
-          $scope.locations = locationResult.data;
-          $scope.filtered = locationResult.data;
-          $scope.totalNumber = $scope.filtered.length;
-          $scope.filter_category = _.object(
-            _.map(locationResult.category.current, function(c) {
-              return [c.name, true];
-            })
-          );
+      $scope.locations = locationResult.data;
+      $scope.filtered = locationResult.data;
+      $scope.totalNumber = $scope.filtered.length;
+      $scope.filter_category = _.object(
+        _.map(locationResult.category.current, function(c) {
+          return [c.name, true];
+        })
+      );
 
-          $scope.service_area = locationResult.service_area;        
-          $scope.access_obj = locationResult.access_obj;
-          $scope.category.original = locationResult.category.original;
-          $scope.category.current = locationResult.category.current;
-        }, function(err) {
-          $scope.locations = [];
-          $scope.filtered  = [];
-          $scope.access_obj = [];
-          $scope.service_area = [];
-          $scope.totalNumber = $scope.filtered.length;
-          $scope.category.original = []; 
-          $scope.category.current = [];
-        });
-
+      $scope.service_area = locationResult.service_area;        
+      $scope.access_obj = locationResult.access_obj;
+      $scope.category.original = locationResult.category.original;
+      $scope.category.current = locationResult.category.current;
+       
     $scope.showImage = false;    
     // http://stackoverflow.com/questions/19251226/load-from-http-get-on-accordion-group-open-using-angularjs
     $scope.loadExploreImage = function loadImg(location) {
