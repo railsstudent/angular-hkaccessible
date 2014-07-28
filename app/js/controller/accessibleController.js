@@ -2,16 +2,12 @@
 
 /* Controllers */
 
-var moduleCtrl = angular.module('attractionController', []);
+var moduleCtrl = angular.module('accessibleController', []);
 
 // attraction controller
 // use filterFilter, https://docs.angularjs.org/guide/filter
 // example
-//moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria', '$modal', 'PlaceExplorer', 
-//   '$location', '$anchorScroll', '$timeout',
-//   function($scope, Accessible, MatchCriteria, $modal, PlaceExplorer, $location, $anchorScroll, $timeout) {
-
-moduleCtrl.controller('AttractionCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer', 
+moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer', 
    '$location', '$anchorScroll', '$timeout', 'locationResult',
    function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout, locationResult) {
   	

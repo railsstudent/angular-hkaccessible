@@ -19,10 +19,10 @@ stateModule
 	            templateUrl: 'partials/attraction.html',
 	            resolve: {
 	            	locationResult : [ 'Accessible', function(Accessible) {
-	            		return Accessible.get("facilities/attractions.json", "attractions");
+	            		return Accessible.get('facilities/attractions.json', 'attractions');
 	            	}]
 	            },
-	            controller: 'AttractionCtrl'
+	            controller: 'AccessibleCtrl'
 	          })
 	      .state('shopping_dining', 
 	          { 
@@ -33,7 +33,7 @@ stateModule
 	            		return Accessible.get('facilities/shoppings.json', 'shopping-dining');
 	            	}]
 	            },
-	            controller: 'ShopDineCtrl'
+	            controller: 'AccessibleCtrl'
 	          })
 	      .state('hotels', 
 	          { 
@@ -44,7 +44,7 @@ stateModule
 	            		return Accessible.get('facilities/hotels.json', 'hotels');
 	            	}]
 	            },
-	            controller: 'HotelCtrl'
+	            controller: 'AccessibleCtrl'
 	          })
 	      .state('other_venues', 
 	          { 
@@ -55,7 +55,7 @@ stateModule
 	            		return Accessible.get('facilities/other_venues.json', 'other-venues');
 	            	}]
 	            },
-	            controller: 'VenueCtrl'
+	            controller: 'AccessibleCtrl'
 	          })
 	      .state('geolocation', 
 	          { 
@@ -63,7 +63,7 @@ stateModule
 	            templateUrl: 'partials/geolocation.html',
 	            resolve: {
 	            	locationResult : [ 'Accessible', function(Accessible) {
-	            		return Accessible.get("facilities/shoppings.json","shopping-dining";
+	            		return Accessible.get("facilities/shoppings.json","shopping-dining");
 	            	}]
 	            },
 	            controller: 'MapCtrl'
