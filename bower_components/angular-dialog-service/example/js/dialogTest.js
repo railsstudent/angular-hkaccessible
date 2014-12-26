@@ -1,4 +1,4 @@
-angular.module('modalTest',['ui.bootstrap','dialogs.main','pascalprecht.translate'])
+angular.module('modalTest',['ui.bootstrap','dialogs.main','pascalprecht.translate','dialogs.default-translations'])
 	.controller('dialogServiceTest',function($scope,$rootScope,$timeout,$translate,dialogs){
 		
 		//-- Variables --//
@@ -44,6 +44,10 @@ angular.module('modalTest',['ui.bootstrap','dialogs.main','pascalprecht.translat
 					var dlg = dialogs.wait(undefined,undefined,_progress);
 					_fakeWaitProgress();
 					break;
+				case 'customwait':
+					var dlg = dialogs.wait('Custom Wait Header','Custom Wait Message',_progress);
+					_fakeWaitProgress();
+					break;
 				case 'notify':
 					dialogs.notify();
 					break;
@@ -78,6 +82,7 @@ angular.module('modalTest',['ui.bootstrap','dialogs.main','pascalprecht.translat
 					_fakeWaitProgress();
 				}else{
 					$rootScope.$broadcast('dialogs.wait.complete');
+					_progress = 0;
 				}
 			},1000);
 		};

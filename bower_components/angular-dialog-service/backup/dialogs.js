@@ -1,21 +1,21 @@
+/**
+ * Note:
+ * 		1. This version requires Angular UI Bootstrap >= v0.10.0 with templates
+ *      2. Optional angular-translate for i18n support
+ */
+
 (function(){
-"use strict";
+	'use strict';
+
 //== Translate Substitute Module =============================================//
 
 /**
- * For those not using Angular-Translate (pascalprecht.translate), this will sub
+ * For those not use Angular-Translate (pascalprecht.translate), this will sub
  * in for it so we don't have to include Angular-Translate if we don't want to.
  */
 
 var translateSubMod = angular.module('translate.sub',[]);
 
-	/**
-	 * $translate Service
-	 * Sets up a $translateProvider service to use in your module's config
-	 * function.  $translate.Provider syntax is the same as Angular-Translate,
-	 * use $translate.Provider.translations(lang,obj) to change the defaults
-	 * for modal button, header and message text.
-	 */
 	translateSubMod.provider('$translate',[function(){
 		var _translations = []; // object of key/value translation pairs
 		var _current = 'en-US'; // default language
@@ -37,7 +37,6 @@ var translateSubMod = angular.module('translate.sub',[]);
 				 * Instant
 				 * Retrieve the translation for the given key, if key not found
 				 * return an empty string.
-				 * Example: $translate.instant('DIALOGS_OK');
 				 */
 				instant : function(what){
 					if(angular.isDefined(what) && angular.isDefined(_translations[_current][what]))
@@ -50,16 +49,13 @@ var translateSubMod = angular.module('translate.sub',[]);
 
 	}]); // end $translate
 
-	/**
-	 * Translate Filter
-	 * For use in an Angular template.  
-	 * Example: {{"DIALOGS_CLOSE" | translate}}
-	 */
 	translateSubMod.filter('translate',['$translate',function($translate){
 		return function(what){
 			return $translate.instant(what);
 		};
 	}]); // end translate / translate.sub
+
+
 //== Controllers =============================================================//
 
 var ctrlrs; // will be dialogs.controllers module
@@ -171,6 +167,8 @@ ctrlrs.controller('confirmDialogCtrl',['$scope','$modalInstance','$translate','d
 		$modalInstance.close('yes');
 	}; // end yes
 }]); // end ConfirmDialogCtrl / dialogs.controllers
+	
+	
 //== Services ================================================================//
 
 angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
@@ -420,6 +418,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
 
 		}]; // end $get
 	}]); // end provider dialogs
+
 //== Dialogs.Main Module =====================================================//
 
 /**
@@ -429,7 +428,7 @@ angular.module('dialogs.services',['ui.bootstrap.modal','dialogs.controllers'])
  */
 
 angular.module('dialogs.main',['dialogs.services','ngSanitize']) // requires angular-sanitize.min.js (ngSanitize) //code.angularjs.org/1.2.1/angular-sanitize.min.js
-		
+	
 	.config(['$translateProvider',function($translateProvider){
 		/** 
 		 * if Angular-Translate is not loaded, use the translate substitute
@@ -472,4 +471,5 @@ angular.module('dialogs.main',['dialogs.services','ngSanitize']) // requires ang
     	$templateCache.put('/dialogs/notify.html','<div class="modal-header dialog-header-notify"><button type="button" class="close" ng-click="close()" class="pull-right">&times;</button><h4 class="modal-title text-info"><span class="glyphicon glyphicon-info-sign"></span> '+startSym+'header'+endSym+'</h4></div><div class="modal-body text-info" ng-bind-html="msg"></div><div class="modal-footer"><button type="button" class="btn btn-primary" ng-click="close()">'+startSym+'"DIALOGS_OK" | translate'+endSym+'</button></div>');
     	$templateCache.put('/dialogs/confirm.html','<div class="modal-header dialog-header-confirm"><button type="button" class="close" ng-click="no()">&times;</button><h4 class="modal-title"><span class="glyphicon glyphicon-check"></span> '+startSym+'header'+endSym+'</h4></div><div class="modal-body" ng-bind-html="msg"></div><div class="modal-footer"><button type="button" class="btn btn-default" ng-click="yes()">'+startSym+'"DIALOGS_YES" | translate'+endSym+'</button><button type="button" class="btn btn-primary" ng-click="no()">'+startSym+'"DIALOGS_NO" | translate'+endSym+'</button></div>');
 	}]); // end run / dialogs.main
-})();
+
+})(); // end 'use strict' closure
