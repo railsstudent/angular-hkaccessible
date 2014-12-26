@@ -1,7 +1,7 @@
 {
   "name": "angular-hkAccessible",
   "description": "Hong Kong Accessible Facilities for AngularJS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "private": true,
@@ -16,7 +16,7 @@
     "angular-ui-map": "0.5.0",
     "angular-translate-handler-log": "2.0.0",
     "ngstorage": "latest",
-    "angular-dialog-service": "5.0.0",
+    "angular-dialog-service": "5.2.5",
     "angular-ui-router": "0.2.10",
     "underscore" : "32216a4afe97c0c3665897b58be73409d5571dcf",
     "angular-underscore" : "latest"
