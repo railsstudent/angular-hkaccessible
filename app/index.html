@@ -50,10 +50,12 @@
           </li>
         </ul>
         <ul class="nav navbar-nav pull-right">
-          <li>
-            <p class="navbar-text" translate="CHANGE_LANG"></p>
-            <button type="button" class="btn btn-primary navbar-btn" translate="EN_LANG" ng-click="changeLanguage('en')"></button>
-            <button type="button" class="btn btn-primary navbar-btn" translate="TC_LANG" ng-click="changeLanguage('zh_hk')"></button>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span translate="CHANGE_LANG"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a ng-click="changeLanguage('en')" translate="EN_LANG">English</a></li>
+              <li><a ng-click="changeLanguage('zh_hk')" translate="TC_LANG">Traditional Chinese</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -88,7 +90,7 @@
   <script type="text/javascript" src="../bower_components/angular-translate-handler-log/angular-translate-handler-log.min.js"></script>
   <script type="text/javascript" src="../bower_components/ngstorage/ngStorage.min.js"></script>
   <script type="text/javascript" src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-  <script type="text/javascript" src="../bower_components/angular-dialog-service/dialogs.min.js"></script>
+  <script type="text/javascript" src="../bower_components/angular-dialog-service/dist/dialogs.min.js"></script>
   <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="../bower_components/underscore/underscore-min.js"></script>
   <script type="text/javascript" src="../bower_components/angular-underscore/angular-underscore.min.js"></script>
