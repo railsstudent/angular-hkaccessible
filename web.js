@@ -1,7 +1,9 @@
 var express = require("express");
 var logfmt = require("logfmt");
+var compression = require("compression");
 var app = express();
 
+app.use(compression());
 app.use(logfmt.requestLogger());
 
 // http://stackoverflow.com/questions/23860275/javascript-angular-not-loading-when-using-express
