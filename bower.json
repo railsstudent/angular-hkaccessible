@@ -6,22 +6,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "1.2.x",
-    "angular-loader": "1.2.x",
-    "angular-mocks": "~1.2.15",
-    "bootstrap": "~3.1.x",
-    "angular-bootstrap": "~0.11.x",
-    "isteven-angular-multiselect": "1.1.0",
-    "angular-translate": "~2.1.x",
-    "angular-ui-map": "0.5.0",
-    "angular-translate-handler-log": "2.0.0",
-    "ngstorage": "latest",
-    "angular-dialog-service": "5.2.5",
-    "angular-ui-router": "0.2.10",
-    "underscore" : "32216a4afe97c0c3665897b58be73409d5571dcf",
-    "angular-underscore" : "latest"
-  },
-  "resolutions": {
-    "angular-translate": "2.1.x"
+    "angular-ui-map": "0.5.0"
   }
 }
