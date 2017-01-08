@@ -13,27 +13,27 @@
 	</div>
 	<div class="row gutter" ng-repeat="s_area in service_area">
 		<div>{{ s_area | translate }}:</div>
-		<div     
+		<div
 		    multi-select
 		    input-model="access_obj[s_area]"
 		    output-model="selected_access[s_area]"
 		    button-label="logo imgCode"
 		    item-label="logo imgCode desc"
 		    max-labels="3"
-		    helper-elements="'all' 'none'" 
+		    helper-elements="'all' 'none'"
 		    tick-property="ticked">
 		</div>
 	</div>
 </div>
 <div class="col-sx-10 col-sm-8 col-md-10">
 
-	 <accordion close-others="true">
-	 	<accordion-group  
+	 <uib-accordion close-others="true">
+	 	<div uib-accordion-group class="panel-default"
 	 		ng-repeat="location in filtered | offset: (currentPage - 1) * itemsPerPage | limitTo: itemsPerPage" ng-click="loadExploreImage(location)" is-open="status.open" >
-      		<accordion-heading >
+      		<uib-accordion-heading>
 	      		{{ location.name_en }}/ {{ location.name_zh_hk }}
       			<i class="pull-right glyphicon " ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"> </i>
-	      	</accordion-heading>
+	      	</uib-accordion-heading>
 			<div class="row bg-primary">
 				<div class="col-sx-6 col-sm-6 col-md-6 gutter">
 					<li>
@@ -41,7 +41,7 @@
 						<p ng-show="showImage">
 							<img ng-src="{{ location.exploreImage }}" class="img-responsive" alt="Responsive Image"></img>
 						</p>
-						<p translate="LAT_LNG" translate-values='{lat: location.geo.lat,  lng: location.geo.lng }'> </p> 
+						<p translate="LAT_LNG" translate-values='{lat: location.geo.lat,  lng: location.geo.lng }'> </p>
 						<p>{{ 'CATEGORY' | translate }} {{ location.catergory | translate }}</p>
 						<p translate='NAME' translate-values='{ displayvalue : location.name_en }'></p>
 						<p translate='ADDRESS' translate-values='{ displayvalue : location.address_en}'></p>
@@ -57,10 +57,10 @@
 						<div class="row">
 							<div class="col-sx-6 col-sm-6 col-md-6" tooltip="{{ key | translate }}">
 								{{ key | translate }}:
-							</div>	
+							</div>
 							<div class="col-sx-6 col-sm-6 col-md-6">
-								<img ng-repeat="code in codes" ng-src="{{ code.imgUrl }}" alt="{{ code.descCode | translate }}" tooltip-placement="right" tooltip="{{ code.descCode | translate }}" hspace="3">		
-								</img>						
+								<img ng-repeat="code in codes" ng-src="{{ code.imgUrl }}" alt="{{ code.descCode | translate }}" tooltip-placement="right" tooltip="{{ code.descCode | translate }}" hspace="3">
+								</img>
 							</div>
 						</div>
 					</div>
@@ -73,7 +73,6 @@
 					</a>
 				</div>
 			</div>
-    	</accordion-group>
-	 </accordion>
+		</div>
+	 </uib-accordion>
 </div>
-

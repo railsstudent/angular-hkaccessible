@@ -7,10 +7,10 @@ var moduleCtrl = angular.module('accessibleController', []);
 // attraction controller
 // use filterFilter, https://docs.angularjs.org/guide/filter
 // example
-moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer', 
+moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer',
    '$location', '$anchorScroll', '$timeout', 'locationResult',
    function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout, locationResult) {
-  	
+
     $scope.totalNumber = 0;
     $scope.currentPage = 1;
     $scope.maxSize = 8;
@@ -33,7 +33,7 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
     };
 
     $scope.$on('TRANSLATE_ACCESSIBILITY_DESC', function() {
-        $scope.access_obj = Accessible.translateAccessDesc($scope.service_area, 
+        $scope.access_obj = Accessible.translateAccessDesc($scope.service_area,
             $scope.access_obj);
     });
 
@@ -49,14 +49,17 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
     $scope.locations = locationResult.data;
     $scope.filtered = locationResult.data;
     $scope.totalNumber = $scope.filtered.length;
-    //http://stackoverflow.com/questions/17802140/underscore-js-map-array-of-key-value-pairs-to-an-object-one-liner
-    $scope.filter_category = _.object(
+    /*$scope.filter_category = _.object(
       _.map(locationResult.category.current, function(c) {
         return [c.name , true];
       })
-    );
+    );*/
+    $scope.filter_category = _.reduce(locationResult.category.current, function(o, c) {
+        o[c.name] = true;
+        return o;
+    }, []);
 
-    $scope.service_area = locationResult.service_area;        
+    $scope.service_area = locationResult.service_area;
     $scope.access_obj = locationResult.access_obj;
     $scope.category.original = locationResult.category.original;
     $scope.category.current = locationResult.category.current;
@@ -65,23 +68,23 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
     // http://stackoverflow.com/questions/19251226/load-from-http-get-on-accordion-group-open-using-angularjs
     $scope.loadExploreImage = function loadImg(location) {
 
-      var geoAddress = { 
+      var geoAddress = {
         address_en : location.address_en + ', Hong Kong',
         address_zh_hk : location["address-zh-hk"],
         name_en : location.name_en,
-        name_zh_hk : location.name_zh_hk 
+        name_zh_hk : location.name_zh_hk
       };
 
       PlaceExplorer.getImageUrl(location, geoAddress)
-        .then(function(data) { 
-            data.loc.geo.lat = data.lat; 
-            data.loc.geo.lng = data.lng; 
+        .then(function(data) {
+            data.loc.geo.lat = data.lat;
+            data.loc.geo.lng = data.lng;
             data.loc.exploreImage = data.url;
             $scope.showImage = true;
-          }, 
+          },
          function(data) {
-            data.loc.geo.lat = data.lat; 
-            data.loc.geo.lng = data.lng; 
+            data.loc.geo.lat = data.lat;
+            data.loc.geo.lng = data.lng;
             data.loc.exploreImage = data.url;
             $scope.showImage = false;
         });
@@ -99,7 +102,7 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
                              $scope.selected_access);
         $scope.totalNumber = $scope.filtered.length;
         $scope.currentPage = 1;
-        $scope.category.current = MatchCriteria.countCategoryElement($scope.filtered, 
+        $scope.category.current = MatchCriteria.countCategoryElement($scope.filtered,
                                     $scope.category.original);
      }
 
