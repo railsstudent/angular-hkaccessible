@@ -32,9 +32,12 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
         current : []
     };
 
-    $scope.$on('TRANSLATE_ACCESSIBILITY_DESC', function() {
-        $scope.access_obj = Accessible.translateAccessDesc($scope.service_area,
-            $scope.access_obj);
+    $scope.$on('TRANSLATE_ACCESSIBILITY_DESC', function(event, langKey) {
+        Accessible.translateAccessDesc($scope.service_area,
+            $scope.access_obj, langKey)
+        .then(function(data) {
+          $scope.access_obj =  data;
+        });
     });
 
     $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {

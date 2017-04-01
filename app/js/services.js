@@ -162,13 +162,18 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				});
 				return deferredData.promise;
 			},	// end of get
-			translateAccessDesc : function (service_area_array, nested_access_obj) {
-		  	    _.each (service_area_array, function(service_area) {
-		          	_.each (nested_access_obj[service_area], function(d1) {
-		            	 d1.desc = '(' + $translate.instant(d1.imgCode) + ')';
-		          	});
-		        });
-		        return nested_access_obj;
+			translateAccessDesc : function (service_area_array, nested_access_obj, langKey) {
+         var deferred = $q.defer();
+          $translate.use(langKey)
+          .then(function() {
+              _.each (service_area_array, function(service_area) {
+  		          	_.each (nested_access_obj[service_area], function(d1) {
+  		            	 d1.desc = '(' + $translate.instant(d1.imgCode) + ')';
+  		          	});
+  		        });
+	            deferred.resolve(nested_access_obj);
+          });
+          return deferred.promise;
 			}
 		};
 	}])
