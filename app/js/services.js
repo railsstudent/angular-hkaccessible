@@ -11,7 +11,7 @@ accessibleServices
   .value('version', '0.2.2')
   .value('author','Connie Leung');
 
-accessibleServices.factory('Accessible', ['$http', '$q', '$translate', 
+accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 	function($http, $q, $translate) {
 		var prependHttp = function(strUrl) {
 			if (strUrl != null && strUrl.indexOf("http://") == -1) {
@@ -31,10 +31,10 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				var baseUrl = "http://accessguide.hk/wp-content/uploads/2013/11/";
 				var codeValue = code['#text'];
 				if (_.isEqual(codeValue, "P2")) {
-					return [ { imgCode : "P1", descCode: "P2", imgUrl : baseUrl + 'P1.jpg' }, 
+					return [ { imgCode : "P1", descCode: "P2", imgUrl : baseUrl + 'P1.jpg' },
 					         { imgCode : "W2", descCode: "P2", imgUrl : baseUrl + 'W2.jpg' } ];
 				} else {
-					return [ { imgCode : codeValue, descCode: codeValue, 
+					return [ { imgCode : codeValue, descCode: codeValue,
 						imgUrl : baseUrl + codeValue + '.jpg' } ];
 				}
 			});
@@ -43,27 +43,27 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 
 		var baseUrl = "http://accessguide.hk/wp-content/uploads/2013/11/";
 		var arrAccessObj = [
-			{ logo: "<img src='" + baseUrl + "W0.jpg' class='multiSelect' />",  imgCode: "W0", 
+			{ logo: "<img src='" + baseUrl + "W0.jpg' class='multiSelect' />",  imgCode: "W0",
 				desc : "(Facilities inaccessible to wheelchair users)", ticked: false },
-			{ logo: "<img src='" + baseUrl + "W1.jpg' class='multiSelect' />",  imgCode: "W1", 
-				desc : "(Facilities accessible to wheelchair users but not up to local design standard)", 
+			{ logo: "<img src='" + baseUrl + "W1.jpg' class='multiSelect' />",  imgCode: "W1",
+				desc : "(Facilities accessible to wheelchair users but not up to local design standard)",
 				ticked: false },
-			{ logo: "<img src='" + baseUrl + "W2.jpg' class='multiSelect' />",  imgCode: "W2", 
-				desc : "(Facilities accessible to wheelchair users and meeting local design standard)", 
+			{ logo: "<img src='" + baseUrl + "W2.jpg' class='multiSelect' />",  imgCode: "W2",
+				desc : "(Facilities accessible to wheelchair users and meeting local design standard)",
 				ticked: false },
-			{ logo: "<img src='" + baseUrl + "H.jpg' class='multiSelect' />",  imgCode: "H", 
-				desc : "(Facilities available for hearing impaired persons)", 
+			{ logo: "<img src='" + baseUrl + "H.jpg' class='multiSelect' />",  imgCode: "H",
+				desc : "(Facilities available for hearing impaired persons)",
 				ticked: false },
-			{ logo: "<img src='" + baseUrl + "V.jpg' class='multiSelect' />",  imgCode: "V", 
-				desc : "(Facilities available for visually impaired persons)", 
+			{ logo: "<img src='" + baseUrl + "V.jpg' class='multiSelect' />",  imgCode: "V",
+				desc : "(Facilities available for visually impaired persons)",
 				ticked: false },
-			{ logo: "<img src='" + baseUrl + "P1.jpg' class='multiSelect' />",  imgCode: "P1", 
-				desc : "(Parking facilities available)", 
+			{ logo: "<img src='" + baseUrl + "P1.jpg' class='multiSelect' />",  imgCode: "P1",
+				desc : "(Parking facilities available)",
 				ticked: false },
-			//{ logo: "<img src='" + baseUrl + "P1.jpg' class='multiSelect' />",  imgCode: "P2", 
-			//	desc : "(Car park with reserved parking space for disabled drivers)", 
+			//{ logo: "<img src='" + baseUrl + "P1.jpg' class='multiSelect' />",  imgCode: "P2",
+			//	desc : "(Car park with reserved parking space for disabled drivers)",
 			//	ticked: false },
-			{ logo: "<img src='" + baseUrl + "L.jpg' class='multiSelect' />",  imgCode: "L", 
+			{ logo: "<img src='" + baseUrl + "L.jpg' class='multiSelect' />",  imgCode: "L",
 				desc : "(Locked)", ticked: false }
 		];
 
@@ -76,12 +76,12 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				var arrServiceArea = [];
 				var nestedAccessObj = [];
 				var orig_cat = [];
-				
+
 				var locationResult = {
 					data : [],
 					access_obj : [],
 					service_area : [],
-					category : { 
+					category : {
 						original : [],
 						current : []
 					}
@@ -96,13 +96,13 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		     			angular.forEach(arrLocation, function(loc, index) {
 					        loc.name_en = loc["name-en"];
 					        loc.address_en = loc["address-en"];
-					        loc.phone_number = loc["phone-number"];			       		
+					        loc.phone_number = loc["phone-number"];
 				       		loc.url_en = prependHttp(loc["url-en"]);
 				       		loc.url_hk = prependHttp(loc["url-zh-hk"]);
 							loc.name_en  = loc.name_en.replace("’", "'");
 							loc.name_zh_hk = loc["name-zh-hk"];
 
-							if (loc.catergory === "art-performance-centres" 
+							if (loc.catergory === "art-performance-centres"
 								|| loc.catergory == "art-performance-center")  {
 								loc.catergory = "arts-and-performance-centres";
 							} else if (loc.catergory === "computer-centres") {
@@ -114,28 +114,31 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				     		loc.exploreImage = '';
 				     		loc.geo = { lat : 0, lng : 0 };
 
-							if (_.contains(_.pluck(arrCategories, 'name'), loc.catergory) === false) {
-								arrCategories.push({ name: loc.catergory, count: 1 });
-								orig_cat.push({ name: loc.catergory, count: 1 });
-							} else {
-								var cat = _.find(arrCategories, 
-									function(c) { return _.isEqual(c.name, loc.catergory); });
-								cat.count = cat.count + 1;	
-							}
+                var isCategoryExists = _.includes(_.map(arrCategories,
+                        function(a) { return a.name; }), loc.catergory);
+
+  							if (isCategoryExists === false) {
+  								arrCategories.push({ name: loc.catergory, count: 1 });
+  								orig_cat.push({ name: loc.catergory, count: 1 });
+  							} else {
+  								var cat = _.find(arrCategories,
+  									             function(c) { return _.isEqual(c.name, loc.catergory); });
+  							  cat.count = cat.count + 1;
+  							}
 
   							_.each(loc.accessible, function(value, key) {
 					          var arrAccessCode = value;
 					          if (_.isEqual(_.isArray(value), false)) {
 					            arrAccessCode =  [value];
-					          } 
+					          }
 					          loc.accessible[key] =  processAccessCode(arrAccessCode);
-					        });  
+					        });
 							arrServiceArea = _.union(arrServiceArea, _.keys(loc.accessible));
 				        }); // end angular.forEach (arrLocation)
-						
+
 						arrServiceArea = arrServiceArea.sort();
 				        _.each (arrServiceArea, function(s_area) {
-				            nestedAccessObj[s_area] = []; 
+				            nestedAccessObj[s_area] = [];
 						    _.each (arrAccessObj, function(obj) {
 						    	var cloneObj = _.extend({}, obj);
 						    	nestedAccessObj[s_area].push(cloneObj);
@@ -170,8 +173,8 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		};
 	}])
 	.factory("MatchCriteria", [ "filterFilter", function(filterFilter) {
-		
-		return { 
+
+		return {
 			match : function(locationData, query) {
 				var criteria = {};
 		        if (_.isUndefined(query.name_en)) {
@@ -187,7 +190,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			            criteria.address_en = query.address_en;
 			        }
 		    	}
-		    	
+
 		        if (_.isUndefined(query.phone_number)) {
 		        } else {
 			        if (query.phone_number != "") {
@@ -217,10 +220,11 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 					var accessible_data = data.accessible;
 					var isMatched = _.every(arr_service_area, function(service_area) {
 						if (_.isEqual(_.has(selected_access, service_area), true)) {
-							var arr_selected = _.pluck(selected_access[service_area], 'imgCode');
+							var arr_selected = _.map(selected_access[service_area], function(a) { return a.imgCode; });
 							if (arr_selected.length > 0) {
 								if (_.isEqual(_.has(accessible_data, service_area), true)) {
-									var arr_accessible = _.pluck(accessible_data[service_area], 'imgCode');
+									var arr_accessible = _.map(accessible_data[service_area],
+                          function(a) { return a.imgCode; });
 									return _.isEqual(_.isEmpty(_.intersection(arr_accessible, arr_selected)), false);
 								} else {
 									return false;
@@ -240,7 +244,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				});
 
  				_.each(locationData, function(data) {
- 					if (_.isEqual(_.contains(arrCategoryCount, data.catergory), true)) {
+ 					if (_.isEqual(_.includes(arrCategoryCount, data.catergory), true)) {
  						arrCategoryName.push({name: data.category, count : 1});
  					} else {
  						var cat = _.find(arrCategoryCount, function(c) {
@@ -250,38 +254,38 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
  					}
  				});
 				return arrCategoryCount;
-			}	
+			}
 		};
 	}])
 .factory('GetAddress', ['$q', '$http', function($q, $http) {
 	return {
-		
-		getAddressNamesByKey : function(key) { 
+
+		getAddressNamesByKey : function(key) {
 
 			var name = "facilities/attractions.json";
 			if (_.isEqual(key, "attraction")) {
 				name = "facilities/attractions.json";
-			}	
+			}
 			if (_.isEqual(key, "shopping")) {
 				name = "facilities/shoppings.json";
-			}	
+			}
 			if (_.isEqual(key, "hotel")) {
 				name = "facilities/hotels.json";
-			}	
+			}
 			if (_.isEqual(key, "other")) {
 				name = "facilities/other_venues.json";
-			}	
-	
-			var deferred = $q.defer();		
+			}
+
+			var deferred = $q.defer();
 			$http.get(name).success(function(accessibleData) {
-				var tmp = [];				   
+				var tmp = [];
 				if (accessibleData) {
 					var data = undefined;
 					if (accessibleData.attractions) {
 						data = accessibleData.attractions.locations;
 					}
 					if (accessibleData.hotels) {
-						data = accessibleData.hotels.locations;						
+						data = accessibleData.hotels.locations;
 					}
 					if (accessibleData['shopping-dining']) {
 						data = accessibleData['shopping-dining'].locations;
@@ -290,7 +294,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 						data = accessibleData["other-venues"].locations;
 					}
 				   	var subResult = _.filter(data, function(d) {
-				    		return _.isEqual(_.isNull(d['address-en']), false) && 
+				    		return _.isEqual(_.isNull(d['address-en']), false) &&
 				    				_.isEqual(_.isEmpty(d['address-en']), false);
 				    	});
 
@@ -306,7 +310,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				deferred.resolve(tmp);
 			}).error(function(data) {
 				deferred.reject([]);
-			});		
+			});
 			return deferred.promise;
 		}
 	};
@@ -332,10 +336,10 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		var executeNext = function () {
 			var task = queue[0],
 			geocoder = new google.maps.Geocoder();
-			 
+
 			geocoder.geocode({ address : task.address }, function (result, status) {
 				if (status === google.maps.GeocoderStatus.OK) {
-				 
+
 					var parsedResult = {
 						lat: result[0].geometry.location.lat(),
 						lng: result[0].geometry.location.lng(),
@@ -346,12 +350,12 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 						address_zh_hk : task.address_zh_hk
 					};
 					locations[task.address] = parsedResult;
-					 
+
 					$localStorage.locations = JSON.stringify(locations);
-					 
+
 					queue.shift();
 					task.d.resolve(parsedResult);
-				 
+
 				} else if (status === google.maps.GeocoderStatus.ZERO_RESULTS) {
 					queue.shift();
 					task.d.reject({
@@ -381,7 +385,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 							', address=' + task.address
 					});
 				}
-	 
+
 				if (queue.length) {
 					if (status === google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
 						//var nextTask = queue[0];
@@ -391,10 +395,10 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 						$timeout(executeNext, 0);
 					}
 				}
-	
+
 				if (!$rootScope.$$phase) { $rootScope.$apply(); }
 			});
-		}; // end of executeNext 
+		}; // end of executeNext
 
 	return {
 		geocodeAddress : function (addressObj) {
@@ -420,7 +424,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		}
 	};
 }])
-.factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache',  
+.factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache',
 	function($http, $q, GeocoderCache) {
 
 	var clientId = "WYNS11XAUSZMO2SAJJ5TDNZYZ4YZMYID4NY1FDBSNTF0PARA";
@@ -442,20 +446,20 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		GeocoderCache.geocodeAddress(addressObj)
 			.then(function(data) {
 				var exploreUrl = apiUrl + data.lat + ',' + data.lng;
-				
+
 					$http.jsonp(exploreUrl)
 					 	.success(function(imgData) {
 					 		if (_.isEqual(_.isNull(imgData), false)) {
 								var firstItem = imgData.response.groups[0].items[0]
-													.venue.photos.groups[0].items[0]; 
+													.venue.photos.groups[0].items[0];
 								var imgUrl = firstItem.prefix + thumbnail + firstItem.suffix;
-								
+
 								var result = { url : imgUrl, loc : currLocation
 									, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
-								
+
 								d.resolve( result );
 							} else {
-								console.log("no image: [" + data.address + "]");	
+								console.log("no image: [" + data.address + "]");
 								var result = { url : "", loc : currLocation	, lat: "N/A", lng: "N/A" };
 								d.resolve( result );
 							}
@@ -466,7 +470,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 						});
 			}, function(data) {
 				d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
-			}); 
+			});
 		return d.promise;
 	};
 
@@ -474,4 +478,3 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 		getImageUrl : getExploreImageUrl
 	};
 }]);
-
