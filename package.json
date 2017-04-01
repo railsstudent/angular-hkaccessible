@@ -30,7 +30,7 @@
     "compression" : "1.4.3"
   },
   "engines": {
-    "node": "0.10.x",
+    "node": "0.12.x",
     "npm" : "2.9.x"
   }
 }
