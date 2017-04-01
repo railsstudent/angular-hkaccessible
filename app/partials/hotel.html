@@ -1,4 +1,4 @@
-<!-- http://stackoverflow.com/questions/16599105/twitter-follow-button-appears-as-link-in-angular-templates 
+<!-- http://stackoverflow.com/questions/16599105/twitter-follow-button-appears-as-link-in-angular-templates
 
 The real issue with Angular seems to be the asynchronous Javascript codes these platforms usually provide (which dynamically create a script tag calling the actual JS code needed to make the button work). If you call the right JS file directly (and synchronously), it works great.
 
@@ -6,7 +6,7 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 <!-- https://dev.twitter.com/docs/follow-button -->
 <div class="container-fluid">
 	<div class="jumbotron">
-		<div class="container=fluid">			
+		<div class="container=fluid">
 			<div class="row">
 				<h1 translate="APP_TITLE"></h1>
 				<h2>{{ 'HOTEL' | translate }}
@@ -24,11 +24,14 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 
 	<!-- create button group to filter by category -->
 	<div ng-include src="'partials/includes/category_buttons.html'"></div>
-	
+
 	<div class="row">
 		<!-- top pagination -->
-		<pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" ng-model="currentPage" items-per-page="itemsPerPage"
-		rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></pagination>
+		<ul uib-pagination boundary-links="true" total-items="totalNumber"
+		max-size="maxSize" ng-model="currentPage" items-per-page="itemsPerPage"
+		rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}"
+		last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}"
+		next-text="{{ 'NEXT' | translate }}"></ul>
 	</div>
 
 	<div class="row">
@@ -37,7 +40,10 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 
 	<div class="row">
 		<!-- bottom pagination -->
-		<pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" ng-model="currentPage" items-per-page="itemsPerPage"
-		rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></pagination>
+		<ul uib-pagination boundary-links="true" total-items="totalNumber"
+		max-size="maxSize" ng-model="currentPage" items-per-page="itemsPerPage"
+		rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" 
+		last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}"
+		next-text="{{ 'NEXT' | translate }}"></ul>
 	</div>
 </div>
