@@ -8,7 +8,7 @@
 var accessibleServices = angular.module('hkAccessibleServices', ['ngStorage']);
 
 accessibleServices
-  .value('version', '0.2.2')
+  .value('version', '0.3.0')
   .value('author','Connie Leung');
 
 accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
