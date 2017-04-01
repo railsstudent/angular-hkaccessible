@@ -234,7 +234,7 @@ var myApp = angular.module('hkAccessibleApp', [
   'ui.map',
   'ui.event',
   'ui.bootstrap',
-  'isteven-multi-select',
+  'multi-select',
   'dialogs.main',
   'dialogs.controllers'
 ]);
