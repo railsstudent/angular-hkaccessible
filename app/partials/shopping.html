@@ -32,6 +32,7 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 		<!-- top pagination -->
 		<ul uib-pagination boundary-links="true" total-items="totalNumber"
 		max-size="maxSize" ng-model="currentPage" items-per-page="itemsPerPage"
+		template-url="partials/pagination.html"
 		rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}"
 		last-text="{{ 'LAST' | translate }}" previous-text="{{ 'PREVIOUS' | translate }}"
 		next-text="{{ 'NEXT' | translate }}"></ul>
@@ -43,8 +44,10 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 
 	<div class="row">
 		<!-- bottom pagination -->
-		<ul uib-pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize" ng-model="currentPage"
-		items-per-page="itemsPerPage" rotate="false" class="pagination-sm"
+		<ul uib-pagination boundary-links="true" total-items="totalNumber"
+		max-size="maxSize" ng-model="currentPage" items-per-page="itemsPerPage"
+		template-url="partials/pagination.html"
+		rotate="false" class="pagination-sm"
 		first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}"
 		previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}">
 		</ul>

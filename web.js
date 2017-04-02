@@ -16,6 +16,10 @@ app.get('/', function(req, res) {
   res.sendfile('./app/index.html');
 });
 
+app.get('/app/lang/:lang.json', function(req, res) {
+  res.sendfile('./app/lang/' + req.params.lang + '.json');
+});
+
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);

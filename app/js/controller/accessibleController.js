@@ -7,9 +7,11 @@ var moduleCtrl = angular.module('accessibleController', []);
 // attraction controller
 // use filterFilter, https://docs.angularjs.org/guide/filter
 // example
-moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',  'PlaceExplorer',
-   '$location', '$anchorScroll', '$timeout', 'locationResult',
-   function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll, $timeout, locationResult) {
+moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',
+    'PlaceExplorer', '$location', '$anchorScroll', '$timeout', 'locationResult',
+    '$localStorage',
+   function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll,
+     $timeout, locationResult, $localStorage) {
 
     $scope.totalNumber = 0;
     $scope.currentPage = 1;
@@ -61,6 +63,12 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
     $scope.access_obj = locationResult.access_obj;
     $scope.category.original = locationResult.category.original;
     $scope.category.current = locationResult.category.current;
+
+    $scope.$storage = $localStorage;
+    if (!$scope.$storage.loadFirstTimeLang) {
+      $scope.$broadcast('TRANSLATE_ACCESSIBILITY_DESC', 'zh_hk');
+      $scope.$storage.loadFirstTimeLang = true;
+    }
 
     $scope.showImage = false;
     // http://stackoverflow.com/questions/19251226/load-from-http-get-on-accordion-group-open-using-angularjs
