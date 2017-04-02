@@ -18,10 +18,11 @@ var myApp = angular.module('hkAccessibleApp', [
   'multi-select',
   'dialogs.main',
   'dialogs.controllers'
-]); 
+]);
 
 myApp
-.config(['$translateProvider', function($translateProvider) {
+.config(['$translateProvider', '$localStorageProvider',
+  function($translateProvider, $localStorageProvider) {
     $translateProvider.useStaticFilesLoader({
         prefix: '/app/lang/',
         suffix: '.json'
@@ -29,6 +30,8 @@ myApp
     $translateProvider.preferredLanguage('zh_hk');
     $translateProvider.fallbackLanguage('zh_hk');
     $translateProvider.useMissingTranslationHandlerLog();
+
+    $localStorageProvider.set('loadFirstTimeLang', false);
 }])
 .constant('_', window._)
   // use in views, ng-repeat="x in _.range(3)"
