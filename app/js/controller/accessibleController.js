@@ -9,9 +9,9 @@ var moduleCtrl = angular.module('accessibleController', []);
 // example
 moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',
     'PlaceExplorer', '$location', '$anchorScroll', '$timeout', 'locationResult',
-    '$localStorage',
+    '$localStorage', 'translateHeader',
    function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll,
-     $timeout, locationResult, $localStorage) {
+     $timeout, locationResult, $localStorage, translateHeader) {
 
     $scope.totalNumber = 0;
     $scope.currentPage = 1;
@@ -33,6 +33,8 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
         original : [],
         current : []
     };
+
+    $scope.categoryName = translateHeader;
 
     $scope.$on('TRANSLATE_ACCESSIBILITY_DESC', function(event, langKey) {
         Accessible.translateAccessDesc($scope.service_area,
