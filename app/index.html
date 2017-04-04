@@ -28,29 +28,29 @@
         </button>
         <a class="navbar-brand" ui-sref="attractions">{{ 'BRAND' | translate }}</a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="HomeCtrl">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="HomeCtrl as vm">
         <ul class="nav navbar-nav pull-left">
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span translate="CHOOSE_CATEGORY"></span><span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li ng-class="{ active : isActive('/attractions') }">
+              <li ng-class="{ active : vm.isActive('/attractions') }">
                 <a ui-sref='attractions' >{{ 'ATTRACTION' | translate }}</a>
               </li>
-              <li ng-class="{ active : isActive('/shopping_dining') }">
+              <li ng-class="{ active : vm.isActive('/shopping_dining') }">
                 <a ui-sref='shopping_dining'>{{ 'SHOPPING' | translate }}</a>
               </li>
-              <li ng-class="{ active : isActive('/hotels') }">
+              <li ng-class="{ active : vm.isActive('/hotels') }">
                 <a ui-sref='hotels'>{{ 'HOTEL' | translate }}</a>
               </li>
-              <li ng-class="{ active : isActive('/other_venues') }">
+              <li ng-class="{ active : vm.isActive('/other_venues') }">
                 <a ui-sref='other_venues'>{{ 'OTHERVENUE' | translate }}</a>
               </li>
             </ul>
           </li>
-          <li ng-class="{ active : isActive('/geolocation') }">
+          <li ng-class="{ active : vm.isActive('/geolocation') }">
             <a ui-sref='geolocation'>{{ 'MAP' | translate }}</a>
           </li>
-          <li ng-class="{ active : isActive('/links') }">
+          <li ng-class="{ active : vm.isActive('/links') }">
             <a ui-sref='related_links'>{{ 'LINKS' | translate }}</a>
           </li>
         </ul>
@@ -59,8 +59,8 @@
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
               <span translate="CHANGE_LANG"></span> <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a ng-click="changeLanguage('en')" translate="EN_LANG">English</a></li>
-              <li><a ng-click="changeLanguage('zh_hk')" translate="TC_LANG">Traditional Chinese</a></li>
+              <li><a ng-click="vm.changeLanguage('en')" translate="EN_LANG">English</a></li>
+              <li><a ng-click="vm.changeLanguage('zh_hk')" translate="TC_LANG">Traditional Chinese</a></li>
             </ul>
           </li>
         </ul>
