@@ -10,8 +10,8 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 		<div class="container=fluid">
 			<div class="row">
 				<h1 translate="APP_TITLE"></h1>
-				<h2>{{ categoryName }}
-					<small translate="NUM" translate-values="{ result_count: totalNumber }"></small>
+				<h2>{{ vm.categoryName }}
+					<small translate="NUM" translate-values="{ result_count: vm.totalNumber }"></small>
 				</h2>
 				<!--
 				<a href="https://twitter.com/con_leung" class="twitter-follow-button" data-show-count="false">Follow @con_leung</a>
@@ -29,11 +29,10 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 	<!-- create button group to filter by category -->
 	<div ng-include src="'partials/includes/category_buttons.html'"></div>
 
-
 	<!-- top pagination -->
 	<div class="row">
-		<ul uib-pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize"
-			ng-model="currentPage" items-per-page="itemsPerPage"
+		<ul uib-pagination boundary-links="true" total-items="vm.totalNumber"  max-size="vm.maxSize"
+			ng-model="vm.currentPage" items-per-page="vm.itemsPerPage"
 			template-url="partials/pagination.html"
 			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}"
 			previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></ul>
@@ -45,8 +44,8 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 
 	<!-- bottom pagination -->
 	<div class="row">
-		<ul uib-pagination boundary-links="true" total-items="totalNumber"  max-size="maxSize"
-			ng-model="currentPage" items-per-page="itemsPerPage"
+		<ul uib-pagination boundary-links="true" total-items="vm.totalNumber"  max-size="vm.maxSize"
+			ng-model="vm.currentPage" items-per-page="vm.itemsPerPage"
 			template-url="partials/pagination.html"
 			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}"
 			last-text="{{ 'LAST' | translate }}"
