@@ -25,7 +25,8 @@ stateModule
 										return $translate('ATTRACTION');
 								}]
 	            },
-	            controller: 'AccessibleCtrl'
+	            controller: 'AccessibleCtrl',
+							controllerAs: 'vm'
 	          })
 	      .state('shopping_dining',
 	          {
@@ -39,7 +40,8 @@ stateModule
 										return $translate('SHOPPING');
 								}]
 	            },
-	            controller: 'AccessibleCtrl'
+	            controller: 'AccessibleCtrl',
+							controllerAs: 'vm'
 	          })
 	      .state('hotels',
 	          {
@@ -53,7 +55,8 @@ stateModule
 										return $translate('HOTEL');
 								}]
 	            },
-	            controller: 'AccessibleCtrl'
+	            controller: 'AccessibleCtrl',
+							controllerAs: 'vm'
 	          })
 	      .state('other_venues',
 	          {
@@ -67,7 +70,8 @@ stateModule
 										return $translate('OTHERVENUE');
 								}]
 	            },
-	            controller: 'AccessibleCtrl'
+	            controller: 'AccessibleCtrl',
+							controllerAs: 'vm'
 	          })
 	      .state('geolocation',
 	          {
@@ -78,12 +82,14 @@ stateModule
 	            		return Accessible.get("facilities/shoppings.json","shopping-dining");
 	            	}]
 	            },
-	            controller: 'MapCtrl'
+	            controller: 'MapCtrl',
+							controllerAs: 'vm'
 	          })
 	      .state('related_links',
 	        {
 	          url : '/links',
 	          templateUrl : 'partials/link.html',
-	          controller : 'LinkCtrl'
+	          controller : 'LinkCtrl',
+						controllerAs: 'vm'
 	        });
 	  }]);
