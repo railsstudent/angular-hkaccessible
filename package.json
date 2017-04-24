@@ -43,7 +43,7 @@
     "ngstorage": "0.3.11"
   },
   "engines": {
-    "node": "4.x",
-    "npm": "3.8.x"
+    "node": "6.9.x",
+    "npm": "4.4.x"
   }
 }
