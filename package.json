@@ -6,9 +6,8 @@
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "devDependencies": {
-    "bower": "1.8.0",
-    "http-server": "^0.6.1",
-    "shelljs": "^0.2.6"
+    "http-server": "0.6.1",
+    "shelljs": "0.2.6"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
