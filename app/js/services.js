@@ -8,7 +8,7 @@
 var accessibleServices = angular.module('hkAccessibleServices', ['ngStorage']);
 
 accessibleServices
-  .value('version', '0.3.0')
+  .value('version', '0.4.0')
   .value('author','Connie Leung');
 
 accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
@@ -432,13 +432,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 .factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache',
 	function($http, $q, GeocoderCache) {
 
-	var clientId = "WYNS11XAUSZMO2SAJJ5TDNZYZ4YZMYID4NY1FDBSNTF0PARA";
-	var clientSecret = "LDL3PMW1XTKFJDSWVB3JPAH3J4J2Q1HYVSI2VX5WBCRXYI5G";
-	var version = "20140630";
-	var apiUrl = "https://api.foursquare.com/v2/venues/explore?callback=JSON_CALLBACK" +
-		"&v=" + version + "&client_id=" + clientId + "&client_secret=" +
-		clientSecret + "&venuePhotos=1&limit=1&ll=";
-	var thumbnail = "180x180";
+	var apiUrl = '';
 
 	var getExploreImageUrl = function(loc, addressObj) {
 		var d = $q.defer();
@@ -448,16 +442,22 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			return d.reject({url: "", loc : currLocation, lat: "N/A", lng: "N/A"});
 		}
 
-		GeocoderCache.geocodeAddress(addressObj)
-			.then(function(data) {
-				var exploreUrl = apiUrl + data.lat + ',' + data.lng;
-
+    $http.get('/app/config.json')
+    .then(function(response) {
+          var data = response.data;
+          apiUrl = "https://api.foursquare.com/v2/venues/explore?callback=JSON_CALLBACK" +
+          		"&v=" + data.version + "&client_id=" + data.clientId + "&client_secret=" +
+          		data.clientSecret + "&venuePhotos=1&limit=1&ll=";
+         return GeocoderCache.geocodeAddress(addressObj);
+    })
+    .then(function(data) {
+          var exploreUrl = apiUrl + data.lat + ',' + data.lng;
 					$http.jsonp(exploreUrl)
 					 	.success(function(imgData) {
 					 		if (_.isEqual(_.isNull(imgData), false)) {
 								var firstItem = imgData.response.groups[0].items[0]
 													.venue.photos.groups[0].items[0];
-								var imgUrl = firstItem.prefix + thumbnail + firstItem.suffix;
+								var imgUrl = firstItem.prefix + "180x180" + firstItem.suffix;
 
 								var result = { url : imgUrl, loc : currLocation
 									, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
@@ -473,9 +473,12 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 							console.log("Error in PlaceExplorer Service get method.");
 							d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A"});
 						});
-			}, function(data) {
-				d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
-			});
+      })
+      .catch(function(err) {
+          console.error(err); 
+          d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
+      });
+        
 		return d.promise;
 	};
 

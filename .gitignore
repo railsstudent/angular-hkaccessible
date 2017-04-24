@@ -6,3 +6,6 @@ lib/
 tmp
 .DS_Store
 .idea
+
+app/config\.json
+.env
