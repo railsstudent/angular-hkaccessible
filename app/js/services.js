@@ -442,43 +442,49 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			return d.reject({url: "", loc : currLocation, lat: "N/A", lng: "N/A"});
 		}
 
+    var auth = null;
+
     $http.get('/app/config.json')
     .then(function(response) {
-          var data = response.data;
-          apiUrl = "https://api.foursquare.com/v2/venues/explore?callback=JSON_CALLBACK" +
-          		"&v=" + data.version + "&client_id=" + data.clientId + "&client_secret=" +
-          		data.clientSecret + "&venuePhotos=1&limit=1&ll=";
+          auth = response.data;
          return GeocoderCache.geocodeAddress(addressObj);
     })
     .then(function(data) {
-          var exploreUrl = apiUrl + data.lat + ',' + data.lng;
+          var exploreUrl = "https://api.foursquare.com/v2/venues/explore?callback=JSON_CALLBACK" +
+            "&v=" + auth.version + "&client_id=" + auth.clientId + "&client_secret=" +
+            auth.clientSecret + "&ll=" + data.lat + ',' + data.lng;
 					$http.jsonp(exploreUrl)
-					 	.success(function(imgData) {
-					 		if (_.isEqual(_.isNull(imgData), false)) {
-								var firstItem = imgData.response.groups[0].items[0]
-													.venue.photos.groups[0].items[0];
-								var imgUrl = firstItem.prefix + "180x180" + firstItem.suffix;
-
-								var result = { url : imgUrl, loc : currLocation
+					 	.then(function(imgData) {
+                return _.isEqual(_.isNull(imgData), false) ? imgData.data.response.groups[0].items[0].venue.id || null : null;
+            })
+            .then(function(venueId) {
+                console.log('venueId', venueId);
+                return venueId ? $http.jsonp("https://api.foursquare.com/v2/venues/" + venueId + "/photos?callback=JSON_CALLBACK" +
+                    "&v=" + auth.version + "&client_id=" + auth.clientId + "&client_secret=" + auth.clientSecret) : null;
+            })
+            .then(function(photoData) {
+              console.log('photoData', photoData);
+              var firstItem = photoData && photoData.data && photoData.data.response && photoData.data.response.photos && photoData.data.response.photos.items[0] || null;
+              if (firstItem) {
+                var imgUrl = firstItem.prefix + "180x180" + firstItem.suffix;
+                var result = { url : imgUrl, loc : currLocation
 									, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
-
 								d.resolve( result );
-							} else {
-								console.log("no image: [" + data.address + "]");
+              } else {
+                console.log("no image: [" + data.address + "]");
 								var result = { url : "", loc : currLocation	, lat: "N/A", lng: "N/A" };
 								d.resolve( result );
-							}
-						})
-						.error(function(data) {
-							console.log("Error in PlaceExplorer Service get method.");
+              }
+            })
+						.catch(function(err) {
+							console.error("Error in PlaceExplorer Service get method.", err);
 							d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A"});
 						});
       })
       .catch(function(err) {
-          console.error(err); 
+          console.error(err);
           d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
       });
-        
 		return d.promise;
 	};
 

@@ -3,6 +3,8 @@ var logfmt = require("logfmt");
 var compression = require("compression");
 var app = express();
 
+require('dotenv').config()
+
 app.use(compression());
 app.use(logfmt.requestLogger());
 
