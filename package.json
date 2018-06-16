@@ -6,8 +6,6 @@
   "repository": "https://github.com/railsstudent/angular-hkaccessible",
   "license": "MIT",
   "devDependencies": {
-    "dotenv": "6.0.0",
-    "http-server": "0.6.1",
     "shelljs": "0.2.6"
   },
   "scripts": {
@@ -38,6 +36,7 @@
     "bower": "1.8.0",
     "compression": "1.4.3",
     "express": "4.15.2",
+    "dotenv": "6.0.0",
     "jquery": "3.x",
     "lodash": "4.17.4",
     "logfmt": "1.2.0",
