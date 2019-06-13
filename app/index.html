@@ -1,10 +1,10 @@
-<!doctype html>
-<html lang="en" ng-app="hkAccessibleApp" >
-<head>
-  <meta charset="utf-8">
-  <title>AngularJS Accessible Places in Hong Kong </title>
+<!DOCTYPE html>
+<html lang="en" ng-app="hkAccessibleApp">
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Accessible Places in Hong Kong</title>
 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -12,104 +12,176 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-</head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle"
-          data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" ui-sref="attractions">{{ 'BRAND' | translate }}</a>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="attractions">{{
+            "BRAND" | translate
+          }}</a>
+        </div>
+        <div
+          class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
+          ng-controller="HomeCtrl as vm"
+        >
+          <ul class="nav navbar-nav pull-left">
+            <li class="dropdown">
+              <a
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                ><span translate="CHOOSE_CATEGORY"></span
+                ><span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li ng-class="{ active : vm.isActive('/attractions') }">
+                  <a ui-sref="attractions">{{ "ATTRACTION" | translate }}</a>
+                </li>
+                <li ng-class="{ active : vm.isActive('/shopping_dining') }">
+                  <a ui-sref="shopping_dining">{{ "SHOPPING" | translate }}</a>
+                </li>
+                <li ng-class="{ active : vm.isActive('/hotels') }">
+                  <a ui-sref="hotels">{{ "HOTEL" | translate }}</a>
+                </li>
+                <li ng-class="{ active : vm.isActive('/other_venues') }">
+                  <a ui-sref="other_venues">{{ "OTHERVENUE" | translate }}</a>
+                </li>
+              </ul>
+            </li>
+            <li ng-class="{ active : vm.isActive('/geolocation') }">
+              <a ui-sref="geolocation">{{ "MAP" | translate }}</a>
+            </li>
+            <li ng-class="{ active : vm.isActive('/links') }">
+              <a ui-sref="related_links">{{ "LINKS" | translate }}</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+              <a
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                <span translate="CHANGE_LANG"></span> <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a ng-click="vm.changeLanguage('en')" translate="EN_LANG"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a ng-click="vm.changeLanguage('zh_hk')" translate="TC_LANG"
+                    >Traditional Chinese</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="HomeCtrl as vm">
-        <ul class="nav navbar-nav pull-left">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span translate="CHOOSE_CATEGORY"></span><span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li ng-class="{ active : vm.isActive('/attractions') }">
-                <a ui-sref='attractions' >{{ 'ATTRACTION' | translate }}</a>
-              </li>
-              <li ng-class="{ active : vm.isActive('/shopping_dining') }">
-                <a ui-sref='shopping_dining'>{{ 'SHOPPING' | translate }}</a>
-              </li>
-              <li ng-class="{ active : vm.isActive('/hotels') }">
-                <a ui-sref='hotels'>{{ 'HOTEL' | translate }}</a>
-              </li>
-              <li ng-class="{ active : vm.isActive('/other_venues') }">
-                <a ui-sref='other_venues'>{{ 'OTHERVENUE' | translate }}</a>
-              </li>
-            </ul>
-          </li>
-          <li ng-class="{ active : vm.isActive('/geolocation') }">
-            <a ui-sref='geolocation'>{{ 'MAP' | translate }}</a>
-          </li>
-          <li ng-class="{ active : vm.isActive('/links') }">
-            <a ui-sref='related_links'>{{ 'LINKS' | translate }}</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              <span translate="CHANGE_LANG"></span> <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a ng-click="vm.changeLanguage('en')" translate="EN_LANG">English</a></li>
-              <li><a ng-click="vm.changeLanguage('zh_hk')" translate="TC_LANG">Traditional Chinese</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="container" ui-view id="top_page"></div>
+    <div class="container" ui-view id="top_page"></div>
 
-  <div class="footer">
+    <div class="footer">
       <div class="container">
         <p class="text-muted">
-          {{ 'AUTHOR' | translate }}<span app-author></span>
-          <br/>
-          {{ 'VERSION' | translate }}<span app-version></span>
+          {{ "AUTHOR" | translate }}<span app-author></span>
+          <br />
+          {{ "VERSION" | translate }}<span app-version></span>
         </p>
       </div>
-  </div>
+    </div>
 
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../lib/isteven-angular-multiselect/angular-multi-select.css">
-  <link rel="stylesheet" href="css/app.css"/>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/isteven-angular-multiselect/isteven-multi-select.css"
+    />
+    <link rel="stylesheet" href="css/app.css" />
 
-  <!-- http://ericsaupe.com/tag/angularjs-script-partial/ -->
-  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../node_modules/angular/angular.min.js"></script>
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-  <script type="text/javascript" src="../lib/isteven-angular-multiselect/angular-multi-select.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-translate/dist/angular-translate.min.js"></script>
-  <script type="text/javascript" src="../lib/angular-ui-utils/ui-utils.min.js"></script>
-  <script type="text/javascript" src="../lib/angular-ui-map/ui-map.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-translate-handler-log/angular-translate-handler-log.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
-  <script type="text/javascript" src="../node_modules/ngstorage/ngStorage.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-sanitize/angular-sanitize.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-dialog-service/dist/dialogs.min.js"></script>
-  <script type="text/javascript" src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="../node_modules/lodash/lodash.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC4sknOrVhEP1lg5vuGrTZgw5QNq_h1sN8"></script>
+    <!-- http://ericsaupe.com/tag/angularjs-script-partial/ -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script
+      type="text/javascript"
+      src="../lib/isteven-angular-multiselect/isteven-multi-select.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/angular-translate/dist/angular-translate.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../lib/angular-ui-utils/ui-utils.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../lib/angular-ui-map/ui-map.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/angular-translate-handler-log/angular-translate-handler-log.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/ngstorage/ngStorage.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/angular-sanitize/angular-sanitize.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/angular-dialog-service/dist/dialogs.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/lodash/lodash.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
+    ></script>
 
-  <script src="js/app.js"></script>
-  <script src="js/services.js"></script>
-  <script src="js/controller/controllers.js"></script>
-  <script src="js/controller/linkController.js"></script>
-  <script src="js/controller/mapController.js"></script>
-  <script src="js/controller/accessibleController.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/directives.js"></script>
-  <script src="js/routers.js"></script>
-</body>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controller/controllers.js"></script>
+    <script src="js/controller/linkController.js"></script>
+    <script src="js/controller/mapController.js"></script>
+    <script src="js/controller/accessibleController.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/routers.js"></script>
+  </body>
 </html>
