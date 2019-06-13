@@ -28,7 +28,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 
 			// if code is P2, break it into P1 + W1
 			var arr = _.map(origCodeArray, function(code) {
-				var baseUrl = "http://accessguide.hk/wp-content/uploads/2013/11/";
+				var baseUrl = "http://accessguide.hk/images/";
 				var codeValue = code['#text'];
 				if (_.isEqual(codeValue, "P2")) {
 					return [ { imgCode : "P1", descCode: "P2", imgUrl : baseUrl + 'P1.jpg' },
@@ -41,7 +41,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			return _.flatten(arr);
 		}
 
-		var baseUrl = "http://accessguide.hk/wp-content/uploads/2013/11/";
+		var baseUrl = "http://accessguide.hk/images/";
 		var arrAccessObj = [
 			{ logo: "<img src='" + baseUrl + "W0.jpg' class='multiSelect' />",  imgCode: "W0",
 				desc : "(Facilities inaccessible to wheelchair users)", ticked: false },

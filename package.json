@@ -26,7 +26,7 @@
     "angular-ui-bootstrap": "2.3.1",
     "angular-ui-router": "1.0.0-beta.3",
     "bootstrap": "3.3.x",
-    "bower": "1.8.0",
+    "bower": "1.8.8",
     "compression": "1.4.3",
     "express": "4.15.2",
     "dotenv": "6.0.0",
