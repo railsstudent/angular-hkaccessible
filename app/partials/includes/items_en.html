@@ -14,7 +14,7 @@
 	<div class="row gutter" ng-repeat="s_area in vm.service_area">
 		<div>{{ s_area | translate }}:</div>
 		<div
-		    multi-select
+			isteven-multi-select
 		    input-model="vm.access_obj[s_area]"
 		    output-model="vm.selected_access[s_area]"
 		    button-label="logo imgCode"
@@ -56,11 +56,11 @@
 				<div class="col-sx-6 col-sm-6 col-md-6 gutter">
 					<div ng-repeat="(key, codes) in location.accessible">
 						<div class="row">
-							<div class="col-sx-6 col-sm-6 col-md-6" tooltip="{{ key | translate }}">
+							<div class="col-sx-6 col-sm-6 col-md-6" uib-tooltip="{{ key | translate }}">
 								{{ key | translate }}:
 							</div>
 							<div class="col-sx-6 col-sm-6 col-md-6">
-								<img ng-repeat="code in codes" ng-src="{{ code.imgUrl }}" alt="{{ code.descCode | translate }}" tooltip-placement="right" tooltip="{{ code.descCode | translate }}" hspace="3">
+								<img ng-repeat="code in codes" ng-src="{{ code.imgUrl }}" alt="{{ code.descCode | translate }}" tooltip-placement="top" uib-tooltip="{{ code.descCode | translate }}" hspace="3">
 								</img>
 							</div>
 						</div>

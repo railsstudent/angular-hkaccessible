@@ -6,49 +6,82 @@ The real issue with Angular seems to be the asynchronous Javascript codes these 
 
 <!-- https://dev.twitter.com/docs/follow-button -->
 <div class="container-fluid">
-	<div class="jumbotron" >
-		<div class="container=fluid">
-			<div class="row">
-				<h1 translate="APP_TITLE"></h1>
-				<h2>{{ vm.categoryName }}
-					<small translate="NUM" translate-values="{ result_count: vm.totalNumber }"></small>
-				</h2>
-				<!--
+  <div class="jumbotron">
+    <div class="container=fluid">
+      <div class="row">
+        <h1 translate="APP_TITLE"></h1>
+        <h2>
+          {{ vm.categoryName }}
+          <small
+            translate="NUM"
+            translate-values="{ result_count: vm.totalNumber }"
+          ></small>
+        </h2>
+        <!--
 				<a href="https://twitter.com/con_leung" class="twitter-follow-button" data-show-count="false">Follow @con_leung</a>
 				<script src="js/custom.js"></script>
 				-->
-				<iframe allowtransparency="true" frameborder="0" scrolling="no"
-              		src="//platform.twitter.com/widgets/follow_button.html?screen_name=con_leung&show_count=true"
-              		style="width:220px; height:20px;"></iframe>
-		 		<iframe src="https://ghbtns.com/github-btn.html?user=railsstudent&repo=angular-hkaccessible&type=watch"
-		  		allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20" ></iframe>
-			</div>
-		</div>
-	</div>
+        <iframe
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          src="//platform.twitter.com/widgets/follow_button.html?screen_name=con_leung&show_count=true"
+          style="width:220px; height:20px;"
+        ></iframe>
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=railsstudent&repo=angular-hkaccessible&type=watch"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="0"
+          width="90"
+          height="20"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
-	<!-- create button group to filter by category -->
-	<div ng-include src="'partials/includes/category_buttons.html'"></div>
+  <!-- create button group to filter by category -->
+  <div ng-include src="'partials/includes/category_buttons.html'"></div>
 
-	<!-- top pagination -->
-	<div class="row">
-		<ul uib-pagination boundary-links="true" total-items="vm.totalNumber"  max-size="vm.maxSize"
-			ng-model="vm.currentPage" items-per-page="vm.itemsPerPage"
-			template-url="partials/pagination.html"
-			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}" last-text="{{ 'LAST' | translate }}"
-			previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></ul>
-	</div>
+  <!-- top pagination -->
+  <div class="row">
+    <ul
+      uib-pagination
+      boundary-links="true"
+      total-items="vm.totalNumber"
+      max-size="vm.maxSize"
+      ng-model="vm.currentPage"
+      items-per-page="vm.itemsPerPage"
+      template-url="partials/pagination.html"
+      rotate="false"
+      class="pagination-sm"
+      first-text="{{ 'FIRST' | translate }}"
+      last-text="{{ 'LAST' | translate }}"
+      previous-text="{{ 'PREVIOUS' | translate }}"
+      next-text="{{ 'NEXT' | translate }}"
+    ></ul>
+  </div>
 
-	<div class="row">
-		<div  ng-include src="'partials/includes/items_en.html'"></div>
-	</div>
+  <div class="row">
+    <div ng-include src="'partials/includes/items_en.html'"></div>
+  </div>
 
-	<!-- bottom pagination -->
-	<div class="row">
-		<ul uib-pagination boundary-links="true" total-items="vm.totalNumber"  max-size="vm.maxSize"
-			ng-model="vm.currentPage" items-per-page="vm.itemsPerPage"
-			template-url="partials/pagination.html"
-			rotate="false" class="pagination-sm" first-text="{{ 'FIRST' | translate }}"
-			last-text="{{ 'LAST' | translate }}"
-			previous-text="{{ 'PREVIOUS' | translate }}" next-text="{{ 'NEXT' | translate }}"></ul>
-	</div>
+  <!-- bottom pagination -->
+  <div class="row">
+    <ul
+      uib-pagination
+      boundary-links="true"
+      total-items="vm.totalNumber"
+      max-size="vm.maxSize"
+      ng-model="vm.currentPage"
+      items-per-page="vm.itemsPerPage"
+      template-url="partials/pagination.html"
+      rotate="false"
+      class="pagination-sm"
+      first-text="{{ 'FIRST' | translate }}"
+      last-text="{{ 'LAST' | translate }}"
+      previous-text="{{ 'PREVIOUS' | translate }}"
+      next-text="{{ 'NEXT' | translate }}"
+    ></ul>
+  </div>
 </div>
