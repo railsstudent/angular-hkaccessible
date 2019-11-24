@@ -8,9 +8,9 @@ var moduleCtrl = angular.module('accessibleController', []);
 // use filterFilter, https://docs.angularjs.org/guide/filter
 // example
 moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',
-    'PlaceExplorer', '$location', '$anchorScroll', '$timeout', 'locationResult',
+    '$location', '$anchorScroll', '$timeout', 'locationResult',
     '$localStorage', 'translateHeader',
-   function($scope, Accessible, MatchCriteria, PlaceExplorer, $location, $anchorScroll,
+   function($scope, Accessible, MatchCriteria, $location, $anchorScroll,
      $timeout, locationResult, $localStorage, translateHeader) {
 
     var vm = this;
@@ -77,29 +77,29 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
 
     this.showImage = false;
     // http://stackoverflow.com/questions/19251226/load-from-http-get-on-accordion-group-open-using-angularjs
-    this.loadExploreImage = function loadImg(location) {
+    // this.loadExploreImage = function loadImg(location) {
 
-      var geoAddress = {
-        address_en : location.address_en + ', Hong Kong',
-        address_zh_hk : location["address-zh-hk"],
-        name_en : location.name_en,
-        name_zh_hk : location.name_zh_hk
-      };
+    //   // var geoAddress = {
+    //   //   address_en : location.address_en + ', Hong Kong',
+    //   //   address_zh_hk : location["address-zh-hk"],
+    //   //   name_en : location.name_en,
+    //   //   name_zh_hk : location.name_zh_hk
+    //   // };
 
-      PlaceExplorer.getImageUrl(location, geoAddress)
-        .then(function(data) {
-            data.loc.geo.lat = data.lat;
-            data.loc.geo.lng = data.lng;
-            data.loc.exploreImage = data.url;
-            vm.showImage = true;
-          },
-         function(data) {
-            data.loc.geo.lat = data.lat;
-            data.loc.geo.lng = data.lng;
-            data.loc.exploreImage = data.url;
-            vm.showImage = false;
-        });
-    };
+    //   // PlaceExplorer.getImageUrl(location, geoAddress)
+    //   //   .then(function(data) {
+    //   //       data.loc.geo.lat = data.lat;
+    //   //       data.loc.geo.lng = data.lng;
+    //   //       data.loc.exploreImage = data.url;
+    //   //       vm.showImage = true;
+    //   //     },
+    //   //    function(data) {
+    //   //       data.loc.geo.lat = data.lat;
+    //   //       data.loc.geo.lng = data.lng;
+    //   //       data.loc.exploreImage = data.url;
+    //   //       vm.showImage = false;
+    //   //   });
+    // };
 
     this.scrollToElement = function scrollTo(id) {
         $location.hash(id);
