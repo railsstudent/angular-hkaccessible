@@ -8,7 +8,7 @@
 var accessibleServices = angular.module('hkAccessibleServices', ['ngStorage']);
 
 accessibleServices
-  .value('version', '0.3.0')
+  .value('version', '0.5.0')
   .value('author','Connie Leung');
 
 accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
@@ -28,7 +28,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 
 			// if code is P2, break it into P1 + W1
 			var arr = _.map(origCodeArray, function(code) {
-				var baseUrl = "http://accessguide.hk/wp-content/uploads/2013/11/";
+				var baseUrl = "http://accessguide.hk/images/";
 				var codeValue = code['#text'];
 				if (_.isEqual(codeValue, "P2")) {
 					return [ { imgCode : "P1", descCode: "P2", imgUrl : baseUrl + 'P1.jpg' },
@@ -41,7 +41,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			return _.flatten(arr);
 		}
 
-		var baseUrl = "http://accessguide.hk/wp-content/uploads/2013/11/";
+		var baseUrl = "http://accessguide.hk/images/";
 		var arrAccessObj = [
 			{ logo: "<img src='" + baseUrl + "W0.jpg' class='multiSelect' />",  imgCode: "W0",
 				desc : "(Facilities inaccessible to wheelchair users)", ticked: false },
@@ -90,7 +90,8 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				$http({
 			      method: "GET",
 			      url: callUrl
-			    }).success(function(data) {
+			    }).then(function(results) {
+					const data = results.data;
 			     	if (rootElement) {
 		     			arrLocation = data[rootElement].locations;
 		     			angular.forEach(arrLocation, function(loc, index) {
@@ -157,7 +158,7 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 					};
 		     		deferredData.resolve(locationResult);
 
-				}).error(function(data) {
+				}).catch(function(data) {
 			     	deferredData.reject(locationResult);
 				});
 				return deferredData.promise;
@@ -282,7 +283,8 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			}
 
 			var deferred = $q.defer();
-			$http.get(name).success(function(accessibleData) {
+			$http.get(name).then(function(results) {
+				const accessibleData = results.data;
 				var tmp = [];
 				if (accessibleData) {
 					var data = undefined;
@@ -313,7 +315,8 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 				   	});
 				}
 				deferred.resolve(tmp);
-			}).error(function(data) {
+			}).cathc(function(err) {
+				console.log('err', err);
 				deferred.reject([]);
 			});
 			return deferred.promise;
@@ -428,58 +431,60 @@ accessibleServices.factory('Accessible', ['$http', '$q', '$translate',
 			return d.promise;
 		}
 	};
-}])
-.factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache',
-	function($http, $q, GeocoderCache) {
-
-	var clientId = "WYNS11XAUSZMO2SAJJ5TDNZYZ4YZMYID4NY1FDBSNTF0PARA";
-	var clientSecret = "LDL3PMW1XTKFJDSWVB3JPAH3J4J2Q1HYVSI2VX5WBCRXYI5G";
-	var version = "20140630";
-	var apiUrl = "https://api.foursquare.com/v2/venues/explore?callback=JSON_CALLBACK" +
-		"&v=" + version + "&client_id=" + clientId + "&client_secret=" +
-		clientSecret + "&venuePhotos=1&limit=1&ll=";
-	var thumbnail = "180x180";
-
-	var getExploreImageUrl = function(loc, addressObj) {
-		var d = $q.defer();
-		var currLocation = loc;
-
-		if (_.isNull(addressObj) || _.isUndefined(addressObj)) {
-			return d.reject({url: "", loc : currLocation, lat: "N/A", lng: "N/A"});
-		}
-
-		GeocoderCache.geocodeAddress(addressObj)
-			.then(function(data) {
-				var exploreUrl = apiUrl + data.lat + ',' + data.lng;
-
-					$http.jsonp(exploreUrl)
-					 	.success(function(imgData) {
-					 		if (_.isEqual(_.isNull(imgData), false)) {
-								var firstItem = imgData.response.groups[0].items[0]
-													.venue.photos.groups[0].items[0];
-								var imgUrl = firstItem.prefix + thumbnail + firstItem.suffix;
-
-								var result = { url : imgUrl, loc : currLocation
-									, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
-
-								d.resolve( result );
-							} else {
-								console.log("no image: [" + data.address + "]");
-								var result = { url : "", loc : currLocation	, lat: "N/A", lng: "N/A" };
-								d.resolve( result );
-							}
-						})
-						.error(function(data) {
-							console.log("Error in PlaceExplorer Service get method.");
-							d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A"});
-						});
-			}, function(data) {
-				d.reject({ url : "", loc : currLocation, lat: "N/A", lng: "N/A" });
-			});
-		return d.promise;
-	};
-
-	return {
-		getImageUrl : getExploreImageUrl
-	};
 }]);
+// .factory('PlaceExplorer', ['$http', '$q', 'GeocoderCache',
+// 	function($http, $q, GeocoderCache) {
+
+// 	var getExploreImageUrl = function(loc, addressObj) {
+// 		var d = $q.defer();
+// 		var currLocation = loc;
+//     var auth = null;
+
+// 		if (_.isNull(addressObj) || _.isUndefined(addressObj)) {
+// 			return d.reject({url: "", loc : currLocation, lat: "N/A", lng: "N/A"});
+// 		}
+
+//     $http.get('/app/config.json')
+//     .then(function(response) {
+//       auth = response.data;
+//       return GeocoderCache.geocodeAddress(addressObj);
+//     })
+//     .then(function(data) {
+//           var credential = "&v=" + auth.version + "&client_id=" + auth.clientId + "&client_secret=" + auth.clientSecret;
+//           var exploreUrl = "https://api.foursquare.com/v2/venues/explore?callback=JSON_CALLBACK" + credential + "&ll=" + data.lat + ',' + data.lng + "&limit=1";
+// 					$http.jsonp(exploreUrl)
+// 					 	.then(function(imgData) {
+//                 return _.isEqual(_.isNull(imgData), false) ? imgData.data.response.groups[0].items[0].venue.id || null : null;
+//             })
+//             .then(function(venueId) {
+//                 return venueId ? $http.jsonp("https://api.foursquare.com/v2/venues/" + venueId + "/photos?limit=1&callback=JSON_CALLBACK" + credential) : null;
+//             })
+//             .then(function(photoData) {
+//               var firstItem = photoData && photoData.data && photoData.data.response && photoData.data.response.photos && photoData.data.response.photos.items[0] || null;
+//               if (firstItem) {
+//                 var imgUrl = firstItem.prefix + "180x180" + firstItem.suffix;
+//                 var result = { url: imgUrl, loc: currLocation
+// 									, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
+// 								d.resolve( result );
+//               } else {
+//                 console.log("no image: [" + data.address + "]");
+// 								var result = { url: "", loc: currLocation	, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) };
+// 								d.resolve( result );
+//               }
+//             })
+// 						.catch(function(err) {
+// 							console.error("Error in PlaceExplorer Service get method.", err);
+// 							d.reject({ url: "", loc: currLocation , lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) });
+// 						});
+//       })
+//       .catch(function(err) {
+//           console.error(err);
+//           d.reject({ url: "", loc: currLocation, lat: parseFloat(data.lat).toFixed(4), lng: parseFloat(data.lng).toFixed(4) });
+//       });
+// 		return d.promise;
+// 	};
+
+// 	return {
+// 		getImageUrl : getExploreImageUrl
+// 	};
+// }]);

@@ -1,65 +1,66 @@
-
 <div class="col-sx-2 col-sm-4 col-md-2">
 	<div class="row" translate='SEARCH'>
 	</div>
 	<div class="row gutter">
-		<input ng-model="query.name_en" placeholder="{{ 'LOCNAME_HINT' | translate }}">
+		<input ng-model="vm.query.name_en" placeholder="{{ 'LOCNAME_HINT' | translate }}">
 	</div>
 	<div class="row gutter">
-		<input ng-model="query.address_en" placeholder="{{ 'ADDRESSNAME_HINT' | translate }}">
+		<input ng-model="vm.query.address_en" placeholder="{{ 'ADDRESSNAME_HINT' | translate }}">
 	</div>
 	<div class="row gutter">
-		<input ng-model="query.phone_number" placeholder="{{ 'PHONENUM_HINT' | translate }}">
+		<input ng-model="vm.query.phone_number" placeholder="{{ 'PHONENUM_HINT' | translate }}">
 	</div>
-	<div class="row gutter" ng-repeat="s_area in service_area">
+	<div class="row gutter" ng-repeat="s_area in vm.service_area">
 		<div>{{ s_area | translate }}:</div>
-		<div
-		    multi-select
-		    input-model="access_obj[s_area]"
-		    output-model="selected_access[s_area]"
-		    button-label="logo imgCode"
-		    item-label="logo imgCode desc"
-		    max-labels="3"
-		    helper-elements="'all' 'none'"
-		    tick-property="ticked">
+		<div isteven-multi-select input-model="vm.access_obj[s_area]" output-model="vm.selected_access[s_area]"
+			button-label="logo imgCode" item-label="logo imgCode desc" max-labels="3" helper-elements="'all' 'none'"
+			tick-property="ticked">
 		</div>
 	</div>
 </div>
 <div class="col-sx-10 col-sm-8 col-md-10">
 
-	 <uib-accordion close-others="true">
-	 	<div uib-accordion-group class="panel-default"
-	 		ng-repeat="location in filtered | offset: (currentPage - 1) * itemsPerPage | limitTo: itemsPerPage" ng-click="loadExploreImage(location)" is-open="status.open" >
-      		<uib-accordion-heading>
-	      		{{ location.name_en }}/ {{ location.name_zh_hk }}
-      			<i class="pull-right glyphicon " ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"> </i>
-	      	</uib-accordion-heading>
+	<uib-accordion close-others="true">
+		<div uib-accordion-group class="panel-default"
+			ng-repeat="location in vm.filtered | offset: (vm.currentPage - 1) * vm.itemsPerPage | limitTo: vm.itemsPerPage"
+			is-open="status.open">
+			<uib-accordion-heading>
+				{{ location.name_en }}/ {{ location.name_zh_hk }}
+				<i class="pull-right glyphicon "
+					ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"> </i>
+			</uib-accordion-heading>
 			<div class="row bg-primary">
 				<div class="col-sx-6 col-sm-6 col-md-6 gutter">
-					<li>
+					<li style="list-style-type: none;">
 						<!-- http://stackoverflow.com/questions/21129912/ng-show-true-but-still-has-class-ng-hide -->
-						<p ng-show="showImage">
-							<img ng-src="{{ location.exploreImage }}" class="img-responsive" alt="Responsive Image"></img>
-						</p>
-						<p translate="LAT_LNG" translate-values='{lat: location.geo.lat,  lng: location.geo.lng }'> </p>
+						<!-- <p ng-show="vm.showImage">
+							<img ng-src="{{ location.exploreImage }}" class="img-responsive"
+								alt="Responsive Image"></img>
+						</p> -->
+						<!-- <p translate="LAT_LNG" translate-values='{lat: location.geo.lat,  lng: location.geo.lng }'> </p> -->
 						<p>{{ 'CATEGORY' | translate }} {{ location.catergory | translate }}</p>
 						<p translate='NAME' translate-values='{ displayvalue : location.name_en }'></p>
 						<p translate='ADDRESS' translate-values='{ displayvalue : location.address_en}'></p>
-						<p ng-show="{{location['phone-number'] }}" translate='PHONENUM' translate-values="{ displayvalue : location['phone-number'] }"></p>
-						<p ng-show="{{ location['fax-number'] }}" translate='FAXNUM' translate-values="{ displayvalue : location['fax-number'] }"></p>
+						<p ng-show="{{location['phone-number'] }}" translate='PHONENUM'
+							translate-values="{ displayvalue : location['phone-number'] }"></p>
+						<p ng-show="{{ location['fax-number'] }}" translate='FAXNUM'
+							translate-values="{ displayvalue : location['fax-number'] }"></p>
 						<p ng-show="{{ location.url_en }}">
-							{{ 'URL' | translate }} <a ng-href="{{ location.url_en }}" target="_blank" role="button" class="btn-default active btn-sm">{{location.url_en}}</a>
+							{{ 'URL' | translate }} <a ng-href="{{ location.url_en }}" target="_blank" role="button"
+								class="btn-default active btn-sm">{{location.url_en}}</a>
 						</p>
 					</li>
 				</div>
 				<div class="col-sx-6 col-sm-6 col-md-6 gutter">
 					<div ng-repeat="(key, codes) in location.accessible">
 						<div class="row">
-							<div class="col-sx-6 col-sm-6 col-md-6" tooltip="{{ key | translate }}">
+							<div class="col-sx-6 col-sm-6 col-md-6" uib-tooltip="{{ key | translate }}">
 								{{ key | translate }}:
 							</div>
 							<div class="col-sx-6 col-sm-6 col-md-6">
-								<img ng-repeat="code in codes" ng-src="{{ code.imgUrl }}" alt="{{ code.descCode | translate }}" tooltip-placement="right" tooltip="{{ code.descCode | translate }}" hspace="3">
+								<img ng-repeat="code in codes" ng-src="{{ code.imgUrl }}"
+									alt="{{ code.descCode | translate }}" tooltip-placement="top"
+									uib-tooltip="{{ code.descCode | translate }}" hspace="3">
 								</img>
 							</div>
 						</div>
@@ -68,11 +69,11 @@
 			</div>
 			<div class="row bg-primary">
 				<div class="col-sx-12 col-sm-12 col-md-12">
-					<a ng-click="scrollToElement('top_page')" class="btn btn-default"  style="margin-bottom: 10px">
+					<a ng-click="scrollToElement('top_page')" class="btn btn-default" style="margin-bottom: 10px">
 						<span class="glyphicon glyphicon-arrow-up"></span>
 					</a>
 				</div>
 			</div>
 		</div>
-	 </uib-accordion>
+	</uib-accordion>
 </div>

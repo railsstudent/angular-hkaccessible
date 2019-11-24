@@ -5,7 +5,7 @@
 		<h1 translate="{{ 'LINKS' }}"></h1>
 	</div>
 	<div class="row">
-		<ul ng-repeat="link in links">
+		<ul ng-repeat="link in vm.links">
 			<li>
 				<a ng-href="{{link.url}}" target="_blank">{{ link.desc }}</a>
 			</li>
