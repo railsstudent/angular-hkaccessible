@@ -9,9 +9,9 @@ var moduleCtrl = angular.module('accessibleController', []);
 // example
 moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria',
     '$location', '$anchorScroll', '$timeout', 'locationResult',
-    '$localStorage', 'translateHeader',
+    '$localStorage', 'translateHeader', '$translate',
    function($scope, Accessible, MatchCriteria, $location, $anchorScroll,
-     $timeout, locationResult, $localStorage, translateHeader) {
+     $timeout, locationResult, $localStorage, translateHeader, $translate) {
 
     var vm = this;
     this.totalNumber = 0;
@@ -46,6 +46,27 @@ moduleCtrl.controller('AccessibleCtrl', ['$scope', 'Accessible', 'MatchCriteria'
           .then(function(data) {
             ref.access_obj =  data;
           });
+        })
+    );
+
+    $scope.$on('TRANSLATE_HEADER',
+      angular.bind(this,
+        function(event, langKey) {
+          var ref = this;
+          const path = $location.path()
+          if (path === '/attractions') {
+            $translate('ATTRACTION', {}, undefined, undefined, langKey)
+              .then(value => ref.categoryName = value)
+          } else if (path === '/shopping_dining') {
+            $translate('SHOPPING', {}, undefined, undefined, langKey)
+              .then(value => ref.categoryName = value)
+          } else if (path === '/hotels') {
+            $translate('HOTEL', {}, undefined, undefined, langKey)
+              .then(value => ref.categoryName = value)
+          } else if (path === '/other_venues') {
+            $translate('OTHERVENUE', {}, undefined, undefined, langKey)
+              .then(value => ref.categoryName = value)
+          }
         })
     );
 

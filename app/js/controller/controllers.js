@@ -14,6 +14,7 @@ moduleCtrl.controller("HomeCtrl", ["$location", '$translate', '$rootScope',
       $translate.use(langKey);
       // broadcast event to translation  the description in multiselect accessibility dropdown
       $rootScope.$broadcast('TRANSLATE_ACCESSIBILITY_DESC', langKey);
+      $rootScope.$broadcast('TRANSLATE_HEADER', langKey);
     };
 
   }]);
