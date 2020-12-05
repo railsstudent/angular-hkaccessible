@@ -1,6 +1,6 @@
 'use strict';
 
-var  stateModule = angular.module('hkRouter', ['ui.router']);
+const  stateModule = angular.module('hkRouter', ['ui.router']);
 
 stateModule
 	.config(['$stateProvider', '$urlRouterProvider',

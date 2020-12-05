@@ -3,7 +3,7 @@
 /* Directives */
 
 
-var app = angular.module('hkDirectives', []);
+const app = angular.module('hkDirectives', []);
 
 app.
   directive('appVersion', ['version', function(version) {
