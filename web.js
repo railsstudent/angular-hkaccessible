@@ -6,6 +6,7 @@ const rateLimit = require("express-rate-limit");
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const app = express();
+const path = require('path');
 
 require("dotenv").config();
 
@@ -29,11 +30,11 @@ app.use("/lib", express.static(__dirname + "/lib"));
 app.use("/node_modules", express.static(__dirname + "/node_modules"));
 
 app.get("/", function(req, res) {
-  res.sendFile("./app/index.html");
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("/app/lang/:lang.json", function(req, res) {
-  res.sendFile("./app/lang/" + req.params.lang + ".json");
+  res.sendFile(path.join(__dirname, "app", "lang", `${req.params.lang}.json`));
 });
 
 app.get("/app/config.json", function(req, res) {
