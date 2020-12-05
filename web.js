@@ -12,7 +12,12 @@ require("dotenv").config();
 
 app.use(bodyParser.json({ limit: '50Mb' }))
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: {
+    frameSrc: ["'self'", 'https://platform.twitter.com/', 'https://ghbtns.com/'],
+    imgSrc: ["'self'", 'https://accessguide.hk/images/*.jpg'],
+  }  
+}));
 app.use(compression());
 app.use(morgan('dev'))
 app.use(cors());
