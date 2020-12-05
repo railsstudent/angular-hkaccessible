@@ -10,16 +10,22 @@ const path = require('path');
 
 require("dotenv").config();
 
-app.use(bodyParser.json({ limit: '50Mb' }))
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(helmet({
-  contentSecurityPolicy: {
-    frameSrc: ["'self'", 'https://platform.twitter.com/', 'https://ghbtns.com/'],
-    imgSrc: ["'self'", 'https://accessguide.hk/images/*.jpg'],
-  }  
-}));
+app.use(bodyParser.json({ limit: '50Mb' }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(helmet());
+app.use(helmet.contentSecurityPolicy(
+  {
+    directives: {
+      defaultSrc: ["'self'"],
+      frameSrc: ["'self'", 'https://platform.twitter.com/', 'https://ghbtns.com/', 
+        'http://platform.twitter.com/', 'http://ghbtns.com/'],
+      imgSrc: ["'self'", 'http://accessguide.hk'],
+      styleSrc: ["'self'", "'unsafe-inline'"]
+    }
+  }
+));
 app.use(compression());
-app.use(morgan('dev'))
+app.use(morgan('dev'));
 app.use(cors());
 
 const limiter = rateLimit({
